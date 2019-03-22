@@ -1,0 +1,30 @@
+// Better rendering for light text on dark background
+@mixin light-on-dark() {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@mixin uppercase( $sizeValue: false, $letterSpace: 1 ) {
+	@if ( $sizeValue ) {
+		@include font-size( $sizeValue );
+	}
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: $letterSpace * 1px;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@mixin button {
+	border: 1px solid currentColor;
+	border-radius: 3px;
+	color: rgba( 0, 0, 0, .8 );
+	@include font-size( 0.75 );
+	line-height: 1;
+	padding: .6em 1em .4em;
+
+	@include hover-state {}
+
+	&:focus {}
+}
