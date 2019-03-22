@@ -1,39 +1,24 @@
-const { src, dest, parallel, series, watch } = require('gulp');
-const sass = require('gulp-sass');
-const minifyCSS = require('gulp-csso');
-const babel = require('gulp-babel');
-const concat = require('gulp-concat');
-const browserSync = require('browser-sync').create();
-
-function browser() {
-    browserSync.init({
-        proxy: '2019.wcus.test',
-        files: [
-            '*.php'
-        ]
-    });
-
-    watch('./sass/**/*.scss', css);
-    watch('./js/*.js', js).on('change', browserSync.reload);
-}
+const gulp = require( 'gulp' );
+var sass = require( 'gulp-sass' );
+var postcss = require( 'gulp-postcss' );
+var autoprefixer = require( 'autoprefixer' );
+var livereload = require('gulp-livereload');
 
 function css() {
-    return src('./sass/*.scss', { sourcemaps: true })
-		.pipe(sass())
-		// .pipe(minifyCSS())
-        .pipe(dest('./'), { sourcemaps: true })
-		.pipe(browserSync.stream());
+	var processors = [
+		autoprefixer( { browsers: ['last 2 versions'] } )
+	];
+	return gulp.src( './sass/style.scss' )
+		.pipe( sass().on( 'error', sass.logError ) )
+		.pipe( postcss( processors ) )
+		.pipe( gulp.dest( '.' ) )
+		.pipe( livereload() );
 }
 
-function js() {
-    return src('./js/*.js', { sourcemaps: true })
-        .pipe(babel({
-            presets: ['@babel/env']
-        }))
-		.pipe(concat('build.min.js'))
-		.pipe(dest('./js/min', { sourcemaps: true }));
+function watch() {
+	livereload.listen();
+	gulp.watch( 'sass/**/*.scss', css );
 }
 
 exports.css = css;
-exports.js = js;
-exports.default = browser;
+exports.default = gulp.series( css, watch );
