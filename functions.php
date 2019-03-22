@@ -8,6 +8,24 @@
  */
 
 /**
+ * Turn on "new" features for this local site. New features are enabled based on time of site
+ * creation, approximated based on ID number in the wordcamp.org network. That doesn't map to
+ * local sites, so there is difference in markup for some features if we don't whitelist the ID.
+ *
+ * Change this to the Site ID of your local development site (though it will likely be 47 if
+ * this is the first additional site you've created)
+ */
+function wcus_2019_enable_features( $sites ) {
+	$sites[] = 49;
+	return $sites;
+}
+add_filter( 'wcpt_speaker_post_avatar_enabled_site_ids',       'wcus_2019_enable_features' );
+add_filter( 'wcpt_session_post_speaker_info_enabled_site_ids', 'wcus_2019_enable_features' );
+add_filter( 'wcpt_session_post_slides_info_enabled_site_ids',  'wcus_2019_enable_features' );
+add_filter( 'wcpt_session_post_video_info_enabled_site_ids',   'wcus_2019_enable_features' );
+add_filter( 'wcpt_speaker_post_session_info_enabled_site_ids', 'wcus_2019_enable_features' );
+
+/**
  * Enqueue child theme style and dequeue the parent style.
  */
 function wcus_2019_enqueue_styles() {
