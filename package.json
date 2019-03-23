@@ -1,17 +1,24 @@
 {
-  "name": "wcus-2019",
+  "name": "WCUS-2019",
   "version": "1.0.0",
   "description": "Child theme of campsite-2017 for WCUS 2019 development",
-  "main": "index.js",
+  "author": "WordCamp US Design & Web Team",
+  "license": "GPL-2.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "github:wcus/wcus-2019"
+  },
+  "engines": {
+    "node": "10.15.3",
+    "npm": "6.9.0"
+  },
   "scripts": {
     "build": "gulp lint && gulp css",
     "watch": "gulp",
     "lint": "stylelint sass"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "9.4.9",
+    "autoprefixer": "9.5.0",
     "gulp": "4.0.0",
     "gulp-livereload": "4.0.1",
     "gulp-postcss": "8.0.0",
