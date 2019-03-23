@@ -1,2 +1,14 @@
 $size__site-main: 100%;
 $size__site-sidebar: 25%;
+
+@function spacing( $i: 1 ) {
+	@if ( $i == 0 ) {
+		@return 15px;
+	}
+
+	@if ( $i == 1 ) {
+		@return 20px;
+	}
+
+	@return ( $i - 1 ) * 30px;
+}

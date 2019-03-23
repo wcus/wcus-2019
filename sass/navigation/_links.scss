@@ -1,22 +1,11 @@
 a {
-	color: $color__link;
+	color: $lipstick-red;
 
 	&:visited {
-		color: $color__link-visited;
+		color: $lipstick-red;
 	}
 
-	&:hover,
-	&:focus,
-	&:active {
-		color: $color__link-hover;
-	}
-
-	&:focus {
-		outline: thin dotted;
-	}
-
-	&:hover,
-	&:active {
-		outline: 0;
+	@include hover-state {
+		color: $marine-blue;
 	}
 }

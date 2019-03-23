@@ -1,17 +1,27 @@
-$color__background-body: #fff;
-$color__background-screen: #f1f1f1;
+
+// Base colors
+$white: #fff;
+$pale-grey: #fffff9;
+$marine-blue: #003b66;
+$lipstick-red: #cc0e25;
+$dark-grey: #35352f;
+
+// Secondary colors
+$warm-grey: #a18a7c;
+$grey-blue: #76a2bb;
+$neon-red: #ff122f;
+$salmon-pink: #ff7b83;
+
+// Main colors in use
+$color__text: $dark-grey;
+$color__background-body: $white;
+
+// General page elements
 $color__background-hr: #ccc;
-$color__background-button: #e6e6e6;
 $color__background-pre: #eee;
-$color__background-ins: #fff9c0;
+$color__background-ins: #ffedc4;
+$color__border-abbr: currentColor;
 
-$color__text-screen: #21759b;
-$color__text-input: #666;
-$color__text-input-focus: #111;
-$color__link: #026;
-$color__link-visited: #800080;
-$color__link-hover: #191970;
-$color__text-main: #404040;
-
-$color__border-input: #ccc;
-$color__border-abbr: #666;
+// Used for focused screen-reader-text, should be high-contrast.
+$color__text-screen: $color__text;
+$color__background-screen: $pale-grey;
