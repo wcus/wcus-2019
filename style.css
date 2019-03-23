@@ -356,6 +356,15 @@ table {
   margin: 0 0 1.5em;
   width: 100%; }
 
+.entry-content .wp-block-button__link {
+  border: 1px solid currentColor;
+  border-radius: 3px;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1;
+  padding: 0.6em 1em 0.4em; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
