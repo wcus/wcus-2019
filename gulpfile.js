@@ -1,6 +1,7 @@
 const gulp = require( 'gulp' );
 var sass = require( 'gulp-sass' );
 var postcss = require( 'gulp-postcss' );
+var stylelint = require( 'gulp-stylelint' );
 var autoprefixer = require( 'autoprefixer' );
 var livereload = require('gulp-livereload');
 
@@ -15,10 +16,21 @@ function css() {
 		.pipe( livereload() );
 }
 
+function lint() {
+	return gulp.src( './sass/**/*.scss' )
+		.pipe( stylelint( {
+			reporters: [ {
+				formatter: 'string',
+				console: true
+			} ]
+		} ) )
+}
+
 function watch() {
 	livereload.listen();
-	gulp.watch( 'sass/**/*.scss', css );
+	gulp.watch( 'sass/**/*.scss', gulp.series( lint, css ) );
 }
 
 exports.css = css;
-exports.default = gulp.series( css, watch );
+exports.lint = lint;
+exports.default = gulp.series( lint, css, watch );
