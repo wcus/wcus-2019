@@ -6,7 +6,10 @@
 
 // Shortcut for hover/active/focus styling
 @mixin hover-state {
-	&:hover, &:active, &:focus {
+
+	&:hover,
+	&:active,
+	&:focus {
 		@content;
 	}
 }
@@ -32,7 +35,7 @@
 
 // Hide content visually only, leave visible to screen reader users
 @mixin visually-hidden() {
-	clip: rect( 1px, 1px, 1px, 1px );
+	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
 	height: 1px;
 	width: 1px;
@@ -41,15 +44,19 @@
 
 // Shortcut for styling input placeholder content
 @mixin input-placeholder {
+
 	::-webkit-input-placeholder {
 		@content;
 	}
+
 	::-moz-placeholder {
 		@content;
 	}
+
 	:-ms-input-placeholder {
 		@content;
 	}
+
 	:-moz-placeholder {
 		@content;
 	}

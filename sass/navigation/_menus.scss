@@ -24,6 +24,7 @@
 			}
 
 			li {
+
 				&:hover > ul,
 				&.focus > ul {
 					left: 100%;
@@ -77,19 +78,21 @@
 
 .menu-toggle,
 .dropdown-toggle {
-  display: none;
+	display: none;
 }
 
 .js .menu-toggle,
 .js .dropdown-toggle {
-  display: block;
+	display: block;
 }
 
 @media screen and (min-width: 37.5em) {
+
 	.js .menu-toggle,
 	.js .dropdown-toggle {
 		display: none;
 	}
+
 	.page-navigation-container ul {
 		display: block;
 	}

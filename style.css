@@ -36,7 +36,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Content
 	## Posts and pages
 	## Comments
-# Infinite scroll
 # Media
 	## Captions
 	## Galleries
@@ -93,7 +92,7 @@ abbr[title] {
 
 b,
 strong {
-  font-weight: bold; }
+  font-weight: 600; }
 
 dfn {
   font-style: italic; }
@@ -208,7 +207,7 @@ textarea {
   overflow: auto; }
 
 optgroup {
-  font-weight: bold; }
+  font-weight: 600; }
 
 table {
   border-collapse: collapse;
@@ -232,13 +231,21 @@ textarea {
   font-size: 1rem;
   line-height: 1.5; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   clear: both; }
 
 p {
   margin-bottom: 1.5em; }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
   font-style: italic; }
 
 blockquote {
@@ -249,7 +256,7 @@ address {
 
 pre {
   background: #eee;
-  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-family: "Courier 10 Pitch", courier, monospace;
   font-size: 15px;
   font-size: 0.9375rem;
   line-height: 1.6;
@@ -258,16 +265,21 @@ pre {
   overflow: auto;
   padding: 1.6em; }
 
-code, kbd, tt, var {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+code,
+kbd,
+tt,
+var {
+  font-family: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem; }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted #666;
   cursor: help; }
 
-mark, ins {
+mark,
+ins {
   background: #fff9c0;
   text-decoration: none; }
 
@@ -281,20 +293,26 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+/*
+ * Inherit box-sizing to make it easier to change the property for components
+ * that leverage other behavior.
+ * See http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
 *,
-*:before,
-*:after {
-  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+*::before,
+*::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
 body {
-  background: #fff;
-  /* Fallback for when there is no custom background color defined. */ }
+  background: #fff; }
 
-blockquote, q {
+blockquote,
+q {
   quotes: "" ""; }
-  blockquote:before, blockquote:after, q:before, q:after {
+  blockquote::before, blockquote::after,
+  q::before,
+  q::after {
     content: ""; }
 
 hr {
@@ -303,7 +321,8 @@ hr {
   height: 1px;
   margin-bottom: 1.5em; }
 
-ul, ol {
+ul,
+ol {
   margin: 0 0 1.5em 3em; }
 
 ul {
@@ -318,7 +337,7 @@ li > ol {
   margin-left: 1.5em; }
 
 dt {
-  font-weight: bold; }
+  font-weight: 600; }
 
 dd {
   margin: 0 1.5em 1.5em; }
@@ -350,7 +369,7 @@ input[type="submit"] {
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
-  padding: .6em 1em .4em; }
+  padding: 0.6em 1em 0.4em; }
 
 input[type="text"],
 input[type="email"],
@@ -510,7 +529,7 @@ a {
     display: block;
     font-size: 14px;
     font-size: 0.875rem;
-    font-weight: bold;
+    font-weight: 600;
     height: auto;
     left: 5px;
     line-height: normal;
@@ -547,28 +566,28 @@ a {
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
-.clear:before,
-.clear:after,
-.entry-content:before,
-.entry-content:after,
-.comment-content:before,
-.comment-content:after,
-.site-header:before,
-.site-header:after,
-.site-content:before,
-.site-content:after,
-.site-footer:before,
-.site-footer:after {
+.clear::before,
+.clear::after,
+.entry-content::before,
+.entry-content::after,
+.comment-content::before,
+.comment-content::after,
+.site-header::before,
+.site-header::after,
+.site-content::before,
+.site-content::after,
+.site-footer::before,
+.site-footer::after {
   content: "";
   display: table;
   table-layout: fixed; }
 
-.clear:after,
-.entry-content:after,
-.comment-content:after,
-.site-header:after,
-.site-content:after,
-.site-footer:after {
+.clear::after,
+.entry-content::after,
+.comment-content::after,
+.site-header::after,
+.site-content::after,
+.site-footer::after {
   clear: both; }
 
 /*--------------------------------------------------------------
@@ -620,19 +639,6 @@ a {
   word-wrap: break-word; }
 
 .bypostauthor {
-  display: block; }
-
-/*--------------------------------------------------------------
-# Infinite scroll
---------------------------------------------------------------*/
-/* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .posts-navigation,
-.infinite-scroll.neverending .site-footer {
-  /* Theme Footer (when set to scrolling) */
-  display: none; }
-
-/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
-.infinity-end.neverending .site-footer {
   display: block; }
 
 /*--------------------------------------------------------------
