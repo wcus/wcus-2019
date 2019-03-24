@@ -1,5 +1,9 @@
-$size__site-main: 100%;
-$size__site-sidebar: 25%;
+$size__width--nav: 1240px;
+$size__width--main: 940px;
+$size__width--post: 620px;
+
+// Sidebar TBD
+$size__width--sidebar: $size__width--main/4;
 
 @function spacing( $i: 1 ) {
 	@if ( $i == 0 ) {
