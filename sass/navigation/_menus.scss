@@ -105,9 +105,21 @@
 		background: url("#{$icon-arrow-down}") no-repeat center;
 	}
 
-	.callout > a {
-		@include button;
-		margin-left: spacing(1);
+	.callout {
+
+		> a {
+			@include button;
+			margin-top: 10px;
+			margin-left: spacing(1);
+			padding: 15px spacing(1) 15px #{spacing(1) + 27};
+			background-image: url("#{$icon-pencil}") !important;
+			background-position: spacing(1) center !important;
+			background-size: 17px 17px;
+		}
+
+		&:hover > a {
+			color: $pale-grey;
+		}
 	}
 
 	.current_page_item,
