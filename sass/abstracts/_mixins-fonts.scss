@@ -19,7 +19,6 @@
 @mixin button {
 	font-family: $font-button;
 	@include uppercase( $font__size--body, 1.67 );
-	font-weight: 900;
 	color: $pale-grey;
 	background-color: $lipstick-red;
 	border: none;

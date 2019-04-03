@@ -411,7 +411,6 @@ table {
   line-height: 1.2;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 900;
   color: #fffff9;
   background-color: #cc0e25;
   border: none;
@@ -436,7 +435,6 @@ input[type="submit"] {
   line-height: 1.2;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 900;
   color: #fffff9;
   background-color: #cc0e25;
   border: none;
@@ -579,7 +577,6 @@ a {
     line-height: 1.2;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-weight: 900;
     color: #fffff9;
     background-color: #cc0e25;
     border: none;
