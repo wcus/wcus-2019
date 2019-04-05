@@ -3,7 +3,6 @@
 	line-height: $font__line-height--header;
 
 	ul {
-		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
@@ -79,7 +78,7 @@
 	}
 
 	a {
-		display: block;
+		display: inline-block;
 		padding: 25px #{ spacing(2) / 2};
 		font-family: $font-button;
 		font-weight: 700;
@@ -138,30 +137,62 @@
 	}
 }
 
-/* Small menu. */
-.page-navigation-container.toggled-on ul {
-	display: block;
-}
-
-.menu-toggle,
-.dropdown-toggle {
+.js .menu-toggle,
+.js .dropdown-toggle {
 	display: none;
 }
 
-.js .menu-toggle,
-.js .dropdown-toggle {
-	display: block;
-}
+@media screen and (max-width: $breakpoint-medium) {
 
-@media screen and (min-width: 37.5em) {
-
-	.js .menu-toggle,
 	.js .dropdown-toggle {
-		display: none;
+		display: inline-block;
+		vertical-align: middle;
+		width: 24px;
+		height: 24px;
+		background: transparent url("#{$icon-arrow-down}") no-repeat center;
+		background-size: 16px 16px;
 	}
 
-	.page-navigation-container ul {
-		display: block;
+	.js .menu-toggle {
+		display: inline-block;
+		margin-top: 10px;
+		margin-left: spacing(1);
+		padding: 15px spacing(1);
+	}
+
+	.page-navigation-container {
+
+		ul {
+			display: none;
+		}
+
+		&.toggled-on .menu {
+			display: block;
+		}
+
+		.sub-menu {
+			position: static;
+			display: none;
+			background-color: transparent;
+			padding: 0;
+			border: none;
+
+			&.toggled-on {
+				display: block;
+			}
+		}
+
+		li {
+			display: block;
+		}
+
+		a {
+			padding: spacing(0);
+		}
+
+		.menu-item-has-children > a::after {
+			display: none;
+		}
 	}
 }
 

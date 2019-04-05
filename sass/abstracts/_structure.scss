@@ -18,3 +18,11 @@ $size__width--sidebar: $size__width--main/4;
 
 	@return ( $i - 1 ) * 30px;
 }
+
+// Breakpoints
+$breakpoint-huge:  1440px;
+$breakpoint-wide:  1280px;
+$breakpoint-large:  960px;
+$breakpoint-medium: 782px;
+$breakpoint-small:  600px;
+$breakpoint-mobile: 480px;

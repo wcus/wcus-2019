@@ -5,6 +5,10 @@
 .site-content {
 	margin: 0 auto;
 	max-width: $size__width--main;
+
+	@media (max-width: #{$size__width--main + spacing(2) * 2} ) {
+		padding: 0 spacing(2);
+	}
 }
 
 .site-header {
@@ -13,6 +17,10 @@
 	margin-left: auto;
 	margin-right: auto;
 	max-width: $size__width--nav;
+
+	@media (max-width: #{$size__width--nav + spacing(2) * 2} ) {
+		padding: 0 spacing(2);
+	}
 
 	* {
 		z-index: 1;
