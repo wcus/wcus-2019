@@ -331,6 +331,29 @@ ins {
 big {
   font-size: 125%; }
 
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-family: "Nunito", "Tahoma", "Verdana", sans-serif;
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.67px;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #cc0e25;
+  background-color: transparent;
+  border: 2px solid #cc0e25;
+  border-radius: 12px;
+  text-decoration: none; }
+  .cta-button:hover, .cta-button:active, .cta-button:focus {
+    color: #fffff9;
+    background-color: #cc0e25; }
+  .cta-button:focus {
+    outline: none; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -401,7 +424,9 @@ table {
   margin: 0 0 1.5em;
   width: 100%; }
 
-.entry-content .wp-block-button__link {
+.entry-content .wp-block-button .wp-block-button__link {
+  display: inline-block;
+  padding: 15px 30px;
   font-family: "Nunito", "Tahoma", "Verdana", sans-serif;
   font-size: 18px;
   font-size: 1.8rem;
@@ -415,9 +440,33 @@ table {
   background-color: #cc0e25;
   border: none;
   border-radius: 12px; }
-  .entry-content .wp-block-button__link:hover, .entry-content .wp-block-button__link:active, .entry-content .wp-block-button__link:focus {
+  .entry-content .wp-block-button .wp-block-button__link:hover, .entry-content .wp-block-button .wp-block-button__link:active, .entry-content .wp-block-button .wp-block-button__link:focus {
     color: #fffff9;
     background-color: #35352f; }
+  .entry-content .wp-block-button .wp-block-button__link:focus {
+    outline: none; }
+
+.entry-content .wp-block-button.is-style-outline .wp-block-button__link {
+  display: inline-block;
+  padding: 15px 30px;
+  font-family: "Nunito", "Tahoma", "Verdana", sans-serif;
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.67px;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #cc0e25;
+  background-color: transparent;
+  border: 2px solid #cc0e25;
+  border-radius: 12px; }
+  .entry-content .wp-block-button.is-style-outline .wp-block-button__link:hover, .entry-content .wp-block-button.is-style-outline .wp-block-button__link:active, .entry-content .wp-block-button.is-style-outline .wp-block-button__link:focus {
+    color: #fffff9;
+    background-color: #cc0e25; }
+  .entry-content .wp-block-button.is-style-outline .wp-block-button__link:focus {
+    outline: none; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -426,6 +475,8 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
+  display: inline-block;
+  padding: 15px 30px;
   font-family: "Nunito", "Tahoma", "Verdana", sans-serif;
   font-size: 18px;
   font-size: 1.8rem;
@@ -451,6 +502,11 @@ input[type="submit"] {
   input[type="submit"]:focus {
     color: #fffff9;
     background-color: #35352f; }
+  button:focus,
+  input[type="button"]:focus,
+  input[type="reset"]:focus,
+  input[type="submit"]:focus {
+    outline: none; }
 
 input[type="text"],
 input[type="email"],
@@ -567,6 +623,8 @@ a {
     height: 1em;
     background: url("/wp-content/themes/wcus-2019/assets/arrow-down.svg") no-repeat center; }
   .page-navigation-container .callout > a {
+    display: inline-block;
+    padding: 15px 30px;
     font-family: "Nunito", "Tahoma", "Verdana", sans-serif;
     font-size: 18px;
     font-size: 1.8rem;
@@ -589,6 +647,8 @@ a {
     .page-navigation-container .callout > a:hover, .page-navigation-container .callout > a:active, .page-navigation-container .callout > a:focus {
       color: #fffff9;
       background-color: #35352f; }
+    .page-navigation-container .callout > a:focus {
+      outline: none; }
   .page-navigation-container .callout:hover > a {
     color: #fffff9; }
   .page-navigation-container .current_page_item > a,
@@ -796,6 +856,14 @@ a {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1; }
+
+.footer-widgets-block#footer-widget-2, .footer-widgets-block#footer-widget-3 {
+  background: #003b66;
+  color: #fff; }
+
+.footer-widgets-block .widget {
+  max-width: 940px;
+  margin: 0 auto; }
 
 /*--------------------------------------------------------------
 ## Posts and pages

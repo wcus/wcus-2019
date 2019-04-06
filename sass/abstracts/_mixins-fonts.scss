@@ -17,6 +17,8 @@
 }
 
 @mixin button {
+	display: inline-block;
+	padding: spacing(0) spacing(2);
 	font-family: $font-button;
 	@include uppercase( $font__size--body, 1.67 );
 	color: $pale-grey;
@@ -28,5 +30,28 @@
 		color: $pale-grey;
 		background-color: $dark-grey;
 	}
-	// &:focus {}
+
+	&:focus {
+		outline: none;
+	}
+}
+
+@mixin button-outline {
+	display: inline-block;
+	padding: spacing(0) spacing(2);
+	font-family: $font-button;
+	@include uppercase( $font__size--body, 1.67 );
+	color: $lipstick-red;
+	background-color: transparent;
+	border: 2px solid $lipstick-red;
+	border-radius: 12px;
+
+	@include hover-state {
+		color: $pale-grey;
+		background-color: $lipstick-red;
+	}
+
+	&:focus {
+		outline: none;
+	}
 }
