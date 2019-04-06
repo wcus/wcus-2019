@@ -54,3 +54,17 @@
 .main-navigation {
 	flex: 1;
 }
+
+.footer-widgets-block {
+
+	&#footer-widget-2,
+	&#footer-widget-3 {
+		background: $marine-blue;
+		color: $white;
+	}
+
+	.widget {
+		max-width: $size__width--main;
+		margin: 0 auto;
+	}
+}
