@@ -1,4 +1,11 @@
-/* stylelint-disable selector-class-pattern */
+#footer-widget-1 {
+	margin: spacing(4) 0;
+
+	.textwidget {
+		text-align: center;
+	}
+}
+
 .wcb_widget_sponsors {
 
 	.widget-title {

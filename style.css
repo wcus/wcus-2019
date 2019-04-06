@@ -846,7 +846,11 @@ a {
   .widget select {
     max-width: 100%; }
 
-/* stylelint-disable selector-class-pattern */
+#footer-widget-1 {
+  margin: 90px 0; }
+  #footer-widget-1 .textwidget {
+    text-align: center; }
+
 .wcb_widget_sponsors .widget-title {
   margin: 0 0 90px;
   font-size: 36px;
