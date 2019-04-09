@@ -17,13 +17,16 @@
 }
 
 @mixin button {
-	border: 1px solid currentColor;
-	border-radius: 6px;
-	color: rgba(0, 0, 0, 0.8);
-	@include font-size( 1.6 );
-	line-height: 1;
-	padding: 0.6em 1em 0.4em;
+	font-family: $font-button;
+	@include uppercase( $font__size--body, 1.67 );
+	color: $pale-grey;
+	background-color: $lipstick-red;
+	border: none;
+	border-radius: 12px;
 
-	// @include hover-state {}
+	@include hover-state {
+		color: $pale-grey;
+		background-color: $dark-grey;
+	}
 	// &:focus {}
 }

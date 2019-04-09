@@ -2,6 +2,8 @@ $size__width--nav: 1240px;
 $size__width--main: 940px;
 $size__width--post: 620px;
 
+$size__height--nav: 73px;
+
 // Sidebar TBD
 $size__width--sidebar: $size__width--main/4;
 
@@ -16,3 +18,11 @@ $size__width--sidebar: $size__width--main/4;
 
 	@return ( $i - 1 ) * 30px;
 }
+
+// Breakpoints
+$breakpoint-huge:  1440px;
+$breakpoint-wide:  1280px;
+$breakpoint-large:  960px;
+$breakpoint-medium: 782px;
+$breakpoint-small:  600px;
+$breakpoint-mobile: 480px;

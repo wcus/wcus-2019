@@ -1,22 +1,22 @@
 .page-navigation-container {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
+	text-align: right;
+	line-height: $font__line-height--header;
 
 	ul {
-		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
 
 		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
 			position: absolute;
-			top: 1.5em;
+			top: $size__height--nav;
 			left: -999em;
 			z-index: 99999;
+			text-align: left;
+			background-color: $white;
+			padding: spacing(0) 0;
+			border: 1px solid rgba($grey-blue, 0.2);
+			border-top: none;
 
 			ul {
 				left: -999em;
@@ -32,14 +32,27 @@
 			}
 
 			a {
-				width: 200px;
+				width: 280px;
+				padding: spacing(0)/2 40px spacing(0)/2 spacing(0);
+				background-image: none !important;
+				border-left: 3px solid transparent;
 			}
 
-			// :hover > a,
-			// .focus > a {}
-			//
-			// a:hover,
-			// a.focus {}
+			:hover > a::after {
+				content: "";
+				position: absolute;
+				top: spacing(1)/2;
+				right: spacing(1);
+				display: block;
+				width: 16px;
+				height: 16px;
+				transform: rotate(-90deg);
+				background: url("#{$icon-arrow-down-hover}") no-repeat center;
+			}
+
+			.focus > a {
+				border-left: 3px solid currentColor;
+			}
 		}
 
 		li:hover > ul,
@@ -49,48 +62,137 @@
 	}
 
 	li {
-		float: left;
+		display: inline-block;
 		position: relative;
 
-		// &:hover > a,
-		// &.focus > a {}
+		&:hover > a,
+		&.focus > a {
+			color: $lipstick-red;
+			background-image: url("#{$icon-underline-hover}");
+		}
+
+		&.menu-item-has-children:hover > a::after,
+		&.menu-item-has-children.focus > a::after {
+			background-image: url("#{$icon-arrow-down-hover}");
+		}
 	}
 
 	a {
-		display: block;
+		display: inline-block;
+		padding: 25px #{ spacing(2) / 2};
+		font-family: $font-button;
+		font-weight: 700;
+		color: $marine-blue;
 		text-decoration: none;
+
+		background-repeat: no-repeat;
+		background-size: 100% 3px;
+		background-position: bottom center;
+
+		&:focus {
+			outline: none;
+		}
 	}
 
-	// .current_page_item > a,
-	// .current-menu-item > a,
-	// .current_page_ancestor > a,
-	// .current-menu-ancestor > a {}
-}
+	.menu-item-has-children > a::after {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: spacing(0);
+		width: 16px;
+		height: 1em;
+		background: url("#{$icon-arrow-down}") no-repeat center;
+	}
 
-/* Small menu. */
-.page-navigation-container.toggled-on ul {
-	display: block;
-}
+	.callout {
 
-.menu-toggle,
-.dropdown-toggle {
-	display: none;
+		> a {
+			@include button;
+			margin-top: 10px;
+			margin-left: spacing(1);
+			padding: 15px spacing(1) 15px #{spacing(1) + 27};
+			background-image: url("#{$icon-pencil}") !important;
+			background-position: spacing(1) center !important;
+			background-size: 17px 17px;
+		}
+
+		&:hover > a {
+			color: $pale-grey;
+		}
+	}
+
+	.current_page_item,
+	.current-menu-item,
+	.current_page_ancestor,
+	.current-menu-ancestor {
+
+		> a {
+			color: $dark-grey;
+			background-image: url("#{$icon-underline-current}");
+		}
+
+		&.menu-item-has-children > a::after {
+			background-image: url("#{$icon-arrow-down-current}");
+		}
+	}
 }
 
 .js .menu-toggle,
 .js .dropdown-toggle {
-	display: block;
+	display: none;
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (max-width: $breakpoint-medium) {
 
-	.js .menu-toggle,
 	.js .dropdown-toggle {
-		display: none;
+		display: inline-block;
+		vertical-align: middle;
+		width: 24px;
+		height: 24px;
+		background: transparent url("#{$icon-arrow-down}") no-repeat center;
+		background-size: 16px 16px;
 	}
 
-	.page-navigation-container ul {
-		display: block;
+	.js .menu-toggle {
+		display: inline-block;
+		margin-top: 10px;
+		margin-left: spacing(1);
+		padding: 15px spacing(1);
+	}
+
+	.page-navigation-container {
+
+		ul {
+			display: none;
+		}
+
+		&.toggled-on .menu {
+			display: block;
+		}
+
+		.sub-menu {
+			position: static;
+			display: none;
+			background-color: transparent;
+			padding: 0;
+			border: none;
+
+			&.toggled-on {
+				display: block;
+			}
+		}
+
+		li {
+			display: block;
+		}
+
+		a {
+			padding: spacing(0);
+		}
+
+		.menu-item-has-children > a::after {
+			display: none;
+		}
 	}
 }
 
