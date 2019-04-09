@@ -11,7 +11,7 @@ class Mock_Subscriptions_Widget extends WP_Widget {
 			'mock_subscription_widget',
 			'Mock Subscription',
 			array(
-				'classname' => 'mock_subscription_widget',
+				'classname' => 'mock_subscription_widget widget_blog_subscription',
 				'description' => 'Mock of an email signup form to style.',
 			)
 		);

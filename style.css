@@ -849,6 +849,11 @@ a {
 #footer-widget-1 .textwidget {
   text-align: center; }
 
+.widget_blog_subscription {
+  color: #fffffa; }
+  .widget_blog_subscription h2 {
+    color: #fffffa; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
