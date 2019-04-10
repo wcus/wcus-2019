@@ -40,17 +40,24 @@
 }
 
 @mixin button-outline {
-	display: inline-block;
-	padding: spacing(0) spacing(2);
-	font-family: $font-button;
-	@include uppercase( $font__size--body, 1.67 );
+	@include button;
 	color: $red;
 	background-color: transparent;
 	border: 2px solid $red;
-	border-radius: 12px;
 
 	@include hover-state {
 		color: $cream;
+		background-color: $red;
+	}
+}
+
+@mixin button-light {
+	@include button;
+	color: $blue;
+	background-color: $white;
+
+	@include hover-state {
+		color: $white;
 		background-color: $red;
 	}
 }

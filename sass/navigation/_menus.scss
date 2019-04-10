@@ -111,6 +111,7 @@
 			margin-top: 10px;
 			margin-left: spacing(1);
 			padding: 15px spacing(1) 15px #{spacing(1) + 27};
+			background-color: $red;
 			background-image: url("#{$icon-pencil}") !important;
 			background-position: spacing(1) center !important;
 			background-size: 17px 17px;

@@ -335,19 +335,26 @@ big {
   display: inline-block;
   padding: 15px 30px;
   font-family: "Nunito", "Tahoma", "Verdana", sans-serif;
+  font-weight: 700;
   font-size: 18px;
   font-size: 1.8rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1.67px;
-  line-height: 1.2;
+  color: #fff;
+  background-color: #003b63;
+  border: none;
+  border-radius: 6px;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #bd2b2e;
   background-color: transparent;
   border: 2px solid #bd2b2e;
-  border-radius: 12px;
   text-decoration: none; }
+  .cta-button:hover, .cta-button:active, .cta-button:focus {
+    color: #fffffa;
+    background-color: #303030; }
+  .cta-button:focus {
+    outline: none; }
   .cta-button:hover, .cta-button:active, .cta-button:focus {
     color: #fffffa;
     background-color: #bd2b2e; }
@@ -447,21 +454,31 @@ table {
   display: inline-block;
   padding: 15px 30px;
   font-family: "Nunito", "Tahoma", "Verdana", sans-serif;
+  font-weight: 700;
   font-size: 18px;
   font-size: 1.8rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1.67px;
-  line-height: 1.2;
+  color: #fff;
+  background-color: #003b63;
+  border: none;
+  border-radius: 6px;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #bd2b2e;
   background-color: transparent;
-  border: 2px solid #bd2b2e;
-  border-radius: 12px; }
+  border: 2px solid #bd2b2e; }
+  .entry-content .wp-block-button.is-style-outline .wp-block-button__link:hover, .entry-content .wp-block-button.is-style-outline .wp-block-button__link:active, .entry-content .wp-block-button.is-style-outline .wp-block-button__link:focus {
+    color: #fffffa;
+    background-color: #303030; }
+  .entry-content .wp-block-button.is-style-outline .wp-block-button__link:focus {
+    outline: none; }
   .entry-content .wp-block-button.is-style-outline .wp-block-button__link:hover, .entry-content .wp-block-button.is-style-outline .wp-block-button__link:active, .entry-content .wp-block-button.is-style-outline .wp-block-button__link:focus {
     color: #fffffa;
     background-color: #bd2b2e; }
+
+.entry-content .wp-block-button.is-style-squared .wp-block-button__link {
+  border-radius: 0; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -634,6 +651,7 @@ a {
     margin-top: 10px;
     margin-left: 20px;
     padding: 15px 20px 15px 47px;
+    background-color: #bd2b2e;
     background-image: url("/wp-content/themes/wcus-2019/assets/pencil.svg") !important;
     background-position: 20px center !important;
     background-size: 17px 17px; }
