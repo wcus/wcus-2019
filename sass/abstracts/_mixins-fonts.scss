@@ -20,15 +20,18 @@
 	display: inline-block;
 	padding: spacing(0) spacing(2);
 	font-family: $font-button;
-	@include uppercase( $font__size--body, 1.67 );
-	color: $pale-grey;
-	background-color: $lipstick-red;
+	font-weight: 700;
+	@include font-size( $font__size--body );
+	color: $white;
+	background-color: $blue;
 	border: none;
-	border-radius: 12px;
+	border-radius: 6px;
+	transition: all 0.1s ease-in-out;
+	@include light-on-dark;
 
 	@include hover-state {
-		color: $pale-grey;
-		background-color: $dark-grey;
+		color: $cream;
+		background-color: $grey;
 	}
 
 	&:focus {
@@ -41,17 +44,13 @@
 	padding: spacing(0) spacing(2);
 	font-family: $font-button;
 	@include uppercase( $font__size--body, 1.67 );
-	color: $lipstick-red;
+	color: $red;
 	background-color: transparent;
-	border: 2px solid $lipstick-red;
+	border: 2px solid $red;
 	border-radius: 12px;
 
 	@include hover-state {
-		color: $pale-grey;
-		background-color: $lipstick-red;
-	}
-
-	&:focus {
-		outline: none;
+		color: $cream;
+		background-color: $red;
 	}
 }
