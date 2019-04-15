@@ -593,6 +593,20 @@ a {
   margin-left: auto;
   margin-right: auto; }
 
+.alignfull,
+.alignwide {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  max-width: none; }
+  .alignfull img,
+  .alignwide img {
+    width: 100%; }
+
+.alignwide {
+  width: 100%;
+  margin-left: auto;
+  max-width: 1024px; }
+
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
