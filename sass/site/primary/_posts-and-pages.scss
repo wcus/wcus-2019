@@ -20,10 +20,43 @@
 	display: inline;
 }
 
+.page,
+.single {
+
+	.entry-header {
+		background: $marine-blue;
+		color: $white;
+		margin-bottom: 95px;
+		margin-left: calc(50% - 50vw);
+		max-width: none;
+		padding: 80px 40px 60px;
+		position: relative;
+		text-align: center;
+		width: 100vw;
+
+		&::after {
+			content: "";
+			background: url("#{$short_wave}") no-repeat center;
+			position: absolute;
+			left: 0;
+			bottom: -95px;
+			height: 95px;
+			width: 100vw;
+		}
+
+		.entry-title {
+			margin: 0 auto;
+			max-width: $size__width--post;
+			width: 100%;
+		}
+	}
+}
+
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
+	margin: 1.5em auto 0;
+	max-width: $size__width--post;
 }
 
 .page-links {
