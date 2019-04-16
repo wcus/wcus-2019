@@ -1,11 +1,11 @@
 a {
-	color: $lipstick-red;
+	color: $red;
 
 	&:visited {
-		color: $lipstick-red;
+		color: $red;
 	}
 
 	@include hover-state {
-		color: $marine-blue;
+		color: $blue;
 	}
 }

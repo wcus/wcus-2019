@@ -15,7 +15,7 @@
 			text-align: left;
 			background-color: $white;
 			padding: spacing(0) 0;
-			border: 1px solid rgba($grey-blue, 0.2);
+			border: 1px solid rgba($light-blue, 0.2);
 			border-top: none;
 
 			ul {
@@ -67,7 +67,7 @@
 
 		&:hover > a,
 		&.focus > a {
-			color: $lipstick-red;
+			color: $red;
 			background-image: url("#{$icon-underline-hover}");
 		}
 
@@ -82,7 +82,7 @@
 		padding: 25px #{ spacing(2) / 2};
 		font-family: $font-button;
 		font-weight: 700;
-		color: $marine-blue;
+		color: $blue;
 		text-decoration: none;
 
 		background-repeat: no-repeat;
@@ -111,13 +111,14 @@
 			margin-top: 10px;
 			margin-left: spacing(1);
 			padding: 15px spacing(1) 15px #{spacing(1) + 27};
+			background-color: $red;
 			background-image: url("#{$icon-pencil}") !important;
 			background-position: spacing(1) center !important;
 			background-size: 17px 17px;
 		}
 
 		&:hover > a {
-			color: $pale-grey;
+			color: $cream;
 		}
 	}
 
@@ -127,7 +128,7 @@
 	.current-menu-ancestor {
 
 		> a {
-			color: $dark-grey;
+			color: $grey;
 			background-image: url("#{$icon-underline-current}");
 		}
 
