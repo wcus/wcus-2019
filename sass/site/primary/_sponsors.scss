@@ -1,0 +1,82 @@
+.wcorg-sponsors,
+.wcb_widget_sponsors {
+
+	.widget-title {
+		margin: 0 0 spacing(4);
+		@include uppercase( $font__size--level-1, 0 );
+		font-weight: 900;
+		color: $grey;
+		text-align: center;
+	}
+
+	.sponsor-level-title,
+	[class^="wcorg-sponsor-level-"] > h2 {
+		margin: 0 0 spacing(0);
+		@include font-size( $font__size--level-2 );
+		font-weight: 700;
+		color: $blue;
+		letter-spacing: 0;
+		text-transform: none;
+		text-align: center;
+	}
+
+	.sponsor-logo.sponsor-logo,
+	.wcorg-sponsor {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: spacing(2) spacing(1);
+		background-color: $off-white;
+
+		img {
+			max-height: 100px;
+		}
+	}
+
+	.sponsor-level,
+	[class^="wcorg-sponsor-level-"] {
+		display: grid;
+		grid-gap: spacing(1);
+		margin-bottom: spacing(4);
+	}
+
+	.sponsor-level.diamond,
+	.wcorg-sponsor-level-diamond {
+		grid-template-columns: repeat(2, 1fr);
+
+		.sponsor-level-title,
+		h2 {
+			grid-column: 1 / span 2;
+		}
+	}
+
+	.sponsor-level.platinum,
+	.wcorg-sponsor-level-platinum {
+		grid-template-columns: repeat(3, 1fr);
+
+		.sponsor-level-title,
+		h2 {
+			grid-column: 1 / span 3;
+		}
+	}
+
+	.sponsor-level.gold,
+	.wcorg-sponsor-level-gold {
+		grid-template-columns: repeat(4, 1fr);
+
+		.sponsor-level-title,
+		h2 {
+			grid-column: 1 / span 4;
+		}
+	}
+
+	.sponsor-level.silver,
+	.wcorg-sponsor-level-silver {
+		grid-template-columns: repeat(5, 1fr);
+
+		.sponsor-level-title,
+		h2 {
+			grid-column: 1 / span 5;
+		}
+	}
+}
