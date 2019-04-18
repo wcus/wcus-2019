@@ -17,16 +17,93 @@
 }
 
 @mixin button {
+	display: inline-block;
+	padding: spacing(0);
 	font-family: $font-button;
-	@include uppercase( $font__size--body, 1.67 );
-	color: $pale-grey;
-	background-color: $lipstick-red;
+	font-weight: 700;
+	@include font-size( $font__size--body );
+	color: $white;
+	background-color: $red;
 	border: none;
-	border-radius: 12px;
+	border-radius: 6px;
+	transition: all 0.1s ease-in-out;
+	@include light-on-dark;
 
 	@include hover-state {
-		color: $pale-grey;
-		background-color: $dark-grey;
+		color: $white;
+		background-color: $grey;
 	}
-	// &:focus {}
+
+	&:focus {
+		outline: 2px dotted $grey;
+		outline-offset: 2px;
+	}
+
+	&:active {
+		transform: translateY(1px);
+	}
+}
+
+@mixin button-on-dark {
+	@include button;
+	color: $red;
+	background-color: $white;
+
+	@include hover-state {
+		color: $red;
+		background-color: rgba($white, 0.9);
+	}
+
+	&:focus {
+		outline: 2px dotted rgba($white, 0.9);
+	}
+}
+
+@mixin button-alt {
+	@include button;
+	background-color: $blue;
+}
+
+@mixin button-alt-on-dark {
+	@include button-alt;
+	color: $blue;
+	background-color: $white;
+
+	@include hover-state {
+		color: $blue;
+		background-color: rgba($white, 0.9);
+	}
+
+	&:focus {
+		outline: 2px dotted rgba($white, 0.9);
+	}
+}
+
+@mixin button-outline {
+	@include button;
+	color: $red;
+	background-color: transparent;
+	padding: spacing(0) - 2;
+	border: 2px solid $red;
+
+	@include hover-state {
+		color: $gray;
+		background-color: transparent;
+		border-color: $gray;
+	}
+}
+
+@mixin button-outline-on-dark {
+	@include button-outline;
+	color: $white;
+	border-color: $white;
+
+	@include hover-state {
+		color: rgba($white, 0.9);
+		border-color: rgba($white, 0.9);
+	}
+
+	&:focus {
+		outline: 2px dotted rgba($white, 0.9);
+	}
 }

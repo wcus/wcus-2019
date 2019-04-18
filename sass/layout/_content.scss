@@ -1,5 +1,5 @@
 .site {
-	background-color: $pale-grey;
+	background-color: $cream;
 }
 
 .site-content {
@@ -35,7 +35,7 @@
 		left: calc((50vw - #{ $size__width--nav/2 }) * -1);
 		width: 100vw;
 		background-color: $white;
-		border-bottom: 1px solid rgba($grey-blue, 0.2);
+		border-bottom: 1px solid rgba($light-blue, 0.2);
 	}
 
 	@media ( max-width: $size__width--nav ) {
