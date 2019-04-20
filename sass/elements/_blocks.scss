@@ -15,3 +15,51 @@
 		}
 	}
 }
+
+hr {
+	border-bottom: 3px dotted $light-brown;
+
+	&.wp-block-separator {
+
+		&.is-style-dots {
+
+			&::before {
+				content: url("#{$sep-dots-sparkles}");
+				padding-left: 0;
+			}
+		}
+
+		&.is-style-default {
+			background: transparent;
+			border-style: dotted;
+			border-color: $light-brown;
+			border-image: url("#{$sep-dots}");
+			border-image-width: 4px;
+			border-image-slice: 2;
+			border-image-repeat: round;
+		}
+
+		&.is-style-wide {
+			background: transparent;
+			border-bottom: 3px dotted $light-brown;
+			border-style: dotted;
+			border-color: $light-brown;
+			border-image: url("#{$sep-dots}");
+			border-image-width: 4px;
+			border-image-slice: 2;
+			border-image-repeat: round;
+			margin: 40px 0;
+
+			&::before {
+				content: url("#{$sep-wide-sparkles}");
+				background: $cream;
+				padding: 0 20px;
+				position: absolute;
+				left: 50%;
+				margin-top: -28px;
+				margin-left: -57px;
+			}
+		}
+	}
+
+}
