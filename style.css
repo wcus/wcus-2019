@@ -620,7 +620,7 @@ a {
         height: 16px;
         -webkit-transform: rotate(-90deg);
                 transform: rotate(-90deg);
-        background: url("/wp-content/themes/wcus-2019/assets/arrow-down-hover.svg") no-repeat center; }
+        background: url("https://wc-us.org/wp-content/uploads/2019/04/arrow-down-hover.svg") no-repeat center; }
       .page-navigation-container ul ul .focus > a {
         border-left: 3px solid currentColor; }
     .page-navigation-container ul li:hover > ul,
@@ -632,10 +632,10 @@ a {
     .page-navigation-container li:hover > a,
     .page-navigation-container li.focus > a {
       color: #bd2b2e;
-      background-image: url("/wp-content/themes/wcus-2019/assets/underline-hover.svg"); }
+      background-image: url("https://wc-us.org/wp-content/uploads/2019/04/underline-hover.svg"); }
     .page-navigation-container li.menu-item-has-children:hover > a::after,
     .page-navigation-container li.menu-item-has-children.focus > a::after {
-      background-image: url("/wp-content/themes/wcus-2019/assets/arrow-down-hover.svg"); }
+      background-image: url("https://wc-us.org/wp-content/uploads/2019/04/arrow-down-hover.svg"); }
   .page-navigation-container a {
     display: inline-block;
     padding: 25px 15px;
@@ -655,7 +655,7 @@ a {
     margin-left: 15px;
     width: 16px;
     height: 1em;
-    background: url("/wp-content/themes/wcus-2019/assets/arrow-down.svg") no-repeat center; }
+    background: url("https://wc-us.org/wp-content/uploads/2019/04/arrow-down.svg") no-repeat center; }
   .page-navigation-container .callout > a {
     display: inline-block;
     padding: 15px;
@@ -675,7 +675,7 @@ a {
     margin-left: 20px;
     padding: 15px 20px 15px 47px;
     background-color: #bd2b2e;
-    background-image: url("/wp-content/themes/wcus-2019/assets/pencil.svg") !important;
+    background-image: url("https://wc-us.org/wp-content/uploads/2019/04/pencil.svg") !important;
     background-position: 20px center !important;
     background-size: 17px 17px; }
     .page-navigation-container .callout > a:hover, .page-navigation-container .callout > a:active, .page-navigation-container .callout > a:focus {
@@ -694,12 +694,12 @@ a {
   .page-navigation-container .current_page_ancestor > a,
   .page-navigation-container .current-menu-ancestor > a {
     color: #303030;
-    background-image: url("/wp-content/themes/wcus-2019/assets/underline-current.svg"); }
+    background-image: url("https://wc-us.org/wp-content/uploads/2019/04/underline-current.svg"); }
   .page-navigation-container .current_page_item.menu-item-has-children > a::after,
   .page-navigation-container .current-menu-item.menu-item-has-children > a::after,
   .page-navigation-container .current_page_ancestor.menu-item-has-children > a::after,
   .page-navigation-container .current-menu-ancestor.menu-item-has-children > a::after {
-    background-image: url("/wp-content/themes/wcus-2019/assets/arrow-down-current.svg"); }
+    background-image: url("https://wc-us.org/wp-content/uploads/2019/04/arrow-down-current.svg"); }
 
 .js .menu-toggle,
 .js .dropdown-toggle {
@@ -711,7 +711,7 @@ a {
     vertical-align: middle;
     width: 24px;
     height: 24px;
-    background: transparent url("/wp-content/themes/wcus-2019/assets/arrow-down.svg") no-repeat center;
+    background: transparent url("https://wc-us.org/wp-content/uploads/2019/04/arrow-down.svg") no-repeat center;
     background-size: 16px 16px; }
   .js .menu-toggle {
     display: inline-block;
