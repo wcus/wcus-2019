@@ -65,8 +65,15 @@
 
 	&#footer-widget-2,
 	&#footer-widget-3 {
+		padding: spacing(3) spacing(2);
 		background: $blue;
 		color: $white;
+	}
+
+	&#footer-widget-3 {
+		padding: spacing(2);
+		background-image: url("#{$border-light-blue}");
+		background-repeat: repeat-x;
 	}
 
 	.widget {
