@@ -27,11 +27,37 @@
 		justify-content: center;
 		padding: spacing(2) spacing(1);
 		background-color: $off-white;
+		border-radius: 4px;
+		border: 2px solid transparent;
 
 		img {
 			max-height: 100px;
 		}
+
+		@include hover-state {
+			border-color: $light-brown;
+		}
+
+		&:focus-within {
+			outline: 2px dotted $grey;
+			outline-offset: 2px;
+			border-color: $light-brown;
+		}
+
+		a {
+			outline: none;
+		}
 	}
+
+	.wcorg-sponsor {
+		padding: 0;
+
+		a {
+			display: block;
+			padding: spacing(2) spacing(1);
+		}
+	}
+
 
 	.sponsor-level,
 	[class^="wcorg-sponsor-level-"] {

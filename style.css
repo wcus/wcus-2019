@@ -980,12 +980,45 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 30px 20px;
-  background-color: #f7f7f2; }
+  background-color: #f7f7f2;
+  border-radius: 4px;
+  border: 2px solid transparent; }
   .wcorg-sponsors .sponsor-logo.sponsor-logo img,
   .wcorg-sponsors .wcorg-sponsor img,
   .wcb_widget_sponsors .sponsor-logo.sponsor-logo img,
   .wcb_widget_sponsors .wcorg-sponsor img {
     max-height: 100px; }
+  .wcorg-sponsors .sponsor-logo.sponsor-logo:hover, .wcorg-sponsors .sponsor-logo.sponsor-logo:active, .wcorg-sponsors .sponsor-logo.sponsor-logo:focus,
+  .wcorg-sponsors .wcorg-sponsor:hover,
+  .wcorg-sponsors .wcorg-sponsor:active,
+  .wcorg-sponsors .wcorg-sponsor:focus,
+  .wcb_widget_sponsors .sponsor-logo.sponsor-logo:hover,
+  .wcb_widget_sponsors .sponsor-logo.sponsor-logo:active,
+  .wcb_widget_sponsors .sponsor-logo.sponsor-logo:focus,
+  .wcb_widget_sponsors .wcorg-sponsor:hover,
+  .wcb_widget_sponsors .wcorg-sponsor:active,
+  .wcb_widget_sponsors .wcorg-sponsor:focus {
+    border-color: #9e8b7e; }
+  .wcorg-sponsors .sponsor-logo.sponsor-logo:focus-within,
+  .wcorg-sponsors .wcorg-sponsor:focus-within,
+  .wcb_widget_sponsors .sponsor-logo.sponsor-logo:focus-within,
+  .wcb_widget_sponsors .wcorg-sponsor:focus-within {
+    outline: 2px dotted #303030;
+    outline-offset: 2px;
+    border-color: #9e8b7e; }
+  .wcorg-sponsors .sponsor-logo.sponsor-logo a,
+  .wcorg-sponsors .wcorg-sponsor a,
+  .wcb_widget_sponsors .sponsor-logo.sponsor-logo a,
+  .wcb_widget_sponsors .wcorg-sponsor a {
+    outline: none; }
+
+.wcorg-sponsors .wcorg-sponsor,
+.wcb_widget_sponsors .wcorg-sponsor {
+  padding: 0; }
+  .wcorg-sponsors .wcorg-sponsor a,
+  .wcb_widget_sponsors .wcorg-sponsor a {
+    display: block;
+    padding: 30px 20px; }
 
 .wcorg-sponsors .sponsor-level,
 .wcorg-sponsors [class^="wcorg-sponsor-level-"],
