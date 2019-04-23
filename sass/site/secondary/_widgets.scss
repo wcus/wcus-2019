@@ -15,4 +15,25 @@
 	}
 }
 
+#footer-widget-3 {
+
+	.widget_media_image {
+
+		img {
+			width: 210px;
+			height: 15px;
+		}
+	}
+
+	.jetpack_widget_social_icons {
+		margin-top: spacing(1);
+
+		@media (min-width: $breakpoint-medium) {
+			text-align: right;
+			margin-top: -27px; // Height of logo.
+		}
+	}
+}
+
 @import "subscribe";
+@import "social-links";
