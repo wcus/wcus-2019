@@ -19,10 +19,11 @@ class Mock_Subscriptions_Widget extends WP_Widget {
 
 	public function widget( $args, $instance ) {
 		echo $args['before_widget'];
-		echo $args['before_title'] . 'Keep updated' . $args['after_title']; ?>
+		echo $args['before_title'] . $args['after_title']; ?>
 
 		<form action="#" method="post" accept-charset="utf-8" id="subscribe-blog-blog_subscription-3">
 			<div id="subscribe-text">
+				<h2>Keep updated</h2>
 				<p>We'll only email you with important updates.</p>
 			</div>
 			<p id="subscribe-email">
