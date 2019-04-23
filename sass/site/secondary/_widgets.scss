@@ -7,4 +7,12 @@
 	}
 }
 
-@import "footer";
+#footer-widget-1 {
+	margin: spacing(4) 0;
+
+	.textwidget {
+		text-align: center;
+	}
+}
+
+@import "subscribe";

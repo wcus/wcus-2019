@@ -864,8 +864,10 @@ a {
   .widget select {
     max-width: 100%; }
 
-#footer-widget-1 .textwidget {
-  text-align: center; }
+#footer-widget-1 {
+  margin: 90px 0; }
+  #footer-widget-1 .textwidget {
+    text-align: center; }
 
 .widget_blog_subscription {
   color: #fffffa; }
