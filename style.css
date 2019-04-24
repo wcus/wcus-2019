@@ -1098,8 +1098,8 @@ a {
 
 .footer-widgets-block#footer-widget-4 {
   margin: 0 auto;
-  padding: 30px 0;
-  max-width: 940px;
+  padding: 30px;
+  max-width: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -1107,17 +1107,11 @@ a {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1; }
-  .footer-widgets-block#footer-widget-4 .widget:nth-of-type(even) {
-    padding-right: 30px; }
-  .footer-widgets-block#footer-widget-4 .widget:nth-of-type(odd) {
-    padding-left: 30px; }
   @media (max-width: 600px) {
     .footer-widgets-block#footer-widget-4 {
       display: block; }
       .footer-widgets-block#footer-widget-4 .widget {
-        text-align: left;
-        padding-right: 30px;
-        padding-left: 30px; }
+        text-align: left; }
         .footer-widgets-block#footer-widget-4 .widget + .widget {
           margin-top: 20px; } }
 
