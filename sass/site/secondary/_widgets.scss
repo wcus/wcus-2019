@@ -35,5 +35,26 @@
 	}
 }
 
+#footer-widget-4 {
+
+	.widget_text {
+		text-align: right;
+
+		p {
+			margin: 0;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		font-weight: 700;
+	}
+}
+
+.site-info {
+	display: none;
+}
+
 @import "subscribe";
 @import "social-links";
+@import "nav-menu";
