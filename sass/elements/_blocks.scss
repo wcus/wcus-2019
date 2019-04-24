@@ -17,13 +17,13 @@
 }
 
 hr {
-	border-bottom: 5px dotted $light-brown;
+	border-bottom: 4px dotted $light-brown;
 	background: transparent;
 	border-style: dotted;
 	border-color: $light-brown;
 	border-image: url("#{$sep-dots}");
-	border-image-width: 4px;
-	border-image-slice: 2;
+	border-image-slice: 4 4 4;
+	border-image-width: 0 0 4px;
 	border-image-repeat: round;
 	margin: 3.75em 0;
 
