@@ -497,38 +497,42 @@ table {
   border-radius: 0; }
 
 hr {
-  border-bottom: 3px dotted #9e8b7e; }
+  border-bottom: 5px dotted #9e8b7e;
+  background: transparent;
+  border-style: dotted;
+  border-color: #9e8b7e;
+  -o-border-image: url("/wp-content/themes/wcus-2019/assets/border-dot.svg");
+     border-image: url("/wp-content/themes/wcus-2019/assets/border-dot.svg");
+  border-image-width: 4px;
+  border-image-slice: 2;
+  border-image-repeat: round;
+  margin: 3.75em 0; }
   hr.wp-block-separator.is-style-dots::before {
     content: url("https://wc-us.org/wp-content/uploads/2019/04/Separator-Dots-Sparkles.svg");
     padding-left: 0; }
-  hr.wp-block-separator.is-style-default {
-    background: transparent;
-    border-style: dotted;
-    border-color: #9e8b7e;
-    -o-border-image: url("/wp-content/themes/wcus-2019/assets/border-dot.svg");
-       border-image: url("/wp-content/themes/wcus-2019/assets/border-dot.svg");
-    border-image-width: 4px;
-    border-image-slice: 2;
-    border-image-repeat: round; }
   hr.wp-block-separator.is-style-wide {
-    background: transparent;
-    border-bottom: 3px dotted #9e8b7e;
-    border-style: dotted;
-    border-color: #9e8b7e;
-    -o-border-image: url("/wp-content/themes/wcus-2019/assets/border-dot.svg");
-       border-image: url("/wp-content/themes/wcus-2019/assets/border-dot.svg");
-    border-image-width: 4px;
-    border-image-slice: 2;
-    border-image-repeat: round;
-    margin: 40px 0; }
-    hr.wp-block-separator.is-style-wide::before {
-      content: url("https://wc-us.org/wp-content/uploads/2019/04/Separator-Wide-Sparkles.svg");
-      background: #fffffa;
-      padding: 0 20px;
+    background-image: url("https://wc-us.org/wp-content/uploads/2019/04/Separator-Wide-Sparkles.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-width: 0;
+    height: 72px;
+    margin: 40px 0;
+    position: relative; }
+    hr.wp-block-separator.is-style-wide::before, hr.wp-block-separator.is-style-wide::after {
+      content: "";
+      border-bottom: 3px dotted #9e8b7e;
+      border-style: dotted;
+      border-color: #9e8b7e;
+      -o-border-image: url("/wp-content/themes/wcus-2019/assets/border-dot.svg");
+         border-image: url("/wp-content/themes/wcus-2019/assets/border-dot.svg");
+      border-image-width: 4px;
+      border-image-slice: 2;
+      border-image-repeat: round;
       position: absolute;
-      left: 50%;
-      margin-top: -28px;
-      margin-left: -57px; }
+      top: calc(50% - 2px);
+      width: calc(50% - 75px); }
+    hr.wp-block-separator.is-style-wide::after {
+      right: 0; }
 
 /*--------------------------------------------------------------
 # Forms

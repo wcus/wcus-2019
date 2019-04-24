@@ -17,7 +17,15 @@
 }
 
 hr {
-	border-bottom: 3px dotted $light-brown;
+	border-bottom: 5px dotted $light-brown;
+	background: transparent;
+	border-style: dotted;
+	border-color: $light-brown;
+	border-image: url("#{$sep-dots}");
+	border-image-width: 4px;
+	border-image-slice: 2;
+	border-image-repeat: round;
+	margin: 3.75em 0;
 
 	&.wp-block-separator {
 
@@ -29,35 +37,32 @@ hr {
 			}
 		}
 
-		&.is-style-default {
-			background: transparent;
-			border-style: dotted;
-			border-color: $light-brown;
-			border-image: url("#{$sep-dots}");
-			border-image-width: 4px;
-			border-image-slice: 2;
-			border-image-repeat: round;
-		}
-
 		&.is-style-wide {
-			background: transparent;
-			border-bottom: 3px dotted $light-brown;
-			border-style: dotted;
-			border-color: $light-brown;
-			border-image: url("#{$sep-dots}");
-			border-image-width: 4px;
-			border-image-slice: 2;
-			border-image-repeat: round;
+			background-image: url("#{$sep-wide-sparkles}");
+			background-repeat: no-repeat;
+			background-position: center center;
+			border-width: 0;
+			height: 72px;
 			margin: 40px 0;
+			position: relative;
 
-			&::before {
-				content: url("#{$sep-wide-sparkles}");
-				background: $cream;
-				padding: 0 20px;
+			&::before,
+			&::after {
+				content: "";
+				border-bottom: 3px dotted $light-brown;
+				border-style: dotted;
+				border-color: $light-brown;
+				border-image: url("#{$sep-dots}");
+				border-image-width: 4px;
+				border-image-slice: 2;
+				border-image-repeat: round;
 				position: absolute;
-				left: 50%;
-				margin-top: -28px;
-				margin-left: -57px;
+				top: calc(50% - 2px);
+				width: calc(50% - 75px);
+			}
+
+			&::after {
+				right: 0;
 			}
 		}
 	}
