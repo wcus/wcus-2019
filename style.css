@@ -496,6 +496,44 @@ table {
 .entry-content .wp-block-button.is-style-squared .wp-block-button__link {
   border-radius: 0; }
 
+.wp-block-latest-posts {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Nunito", "Tahoma", "Verdana", sans-serif;
+  font-weight: 700;
+  margin: 30px 0; }
+  .wp-block-latest-posts li {
+    background: #353530;
+    color: #fff;
+    padding: 30px;
+    border-radius: 12px; }
+  .wp-block-latest-posts a {
+    font-size: 24px;
+    font-size: 2.4rem;
+    line-height: 1.4;
+    color: #fff;
+    text-decoration: none; }
+    .wp-block-latest-posts a:hover, .wp-block-latest-posts a:focus, .wp-block-latest-posts a:visited {
+      color: #fff; }
+    .wp-block-latest-posts a:hover, .wp-block-latest-posts a:focus {
+      text-decoration: underline; }
+  .wp-block-latest-posts time {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 900;
+    margin-top: 1em; }
+  @media (min-width: 600px) {
+    .wp-block-latest-posts li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .wp-block-latest-posts li > * {
+        width: 100%; }
+      .wp-block-latest-posts li a {
+        -ms-flex-item-align: end;
+            align-self: flex-end; } }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/

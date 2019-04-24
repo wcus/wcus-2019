@@ -1,0 +1,53 @@
+.wp-block-latest-posts {
+	@include light-on-dark;
+	font-family: $font-button;
+	font-weight: 700;
+	margin: spacing(2) 0;
+
+	li {
+		background: $grey--alt;
+		color: $white;
+		padding: spacing(2);
+		border-radius: $size__border-radius;
+	}
+
+	a {
+		@include font-size( 2.4 );
+		line-height: $font__line-height--small;
+		color: $white;
+		text-decoration: none;
+
+		&:hover,
+		&:focus,
+		&:visited {
+			color: $white;
+		}
+
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
+	}
+
+	time {
+		color: rgba(255, 255, 255, 0.7);
+		font-weight: 900;
+		margin-top: 1em;
+	}
+
+	@media (min-width: $breakpoint-small) {
+
+		li {
+			display: flex;
+			flex-wrap: wrap;
+
+			> * {
+				width: 100%;
+			}
+
+			a {
+				align-self: flex-end;
+			}
+		}
+	}
+}
