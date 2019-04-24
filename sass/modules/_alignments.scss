@@ -28,9 +28,9 @@
 }
 
 .alignwide {
-	max-width: 940px;
+	max-width: $size__width--main;
 
-	@media (min-width: $breakpoint-large) {
+	@media (min-width: $size__width--main) {
 		width: $size__width--main;
 		margin-left: 50%;
 		transform: translateX(-50%);

@@ -26,25 +26,36 @@
 	.entry-header {
 		background: $blue;
 		color: $white;
-		margin-bottom: 95px;
+		margin-bottom: $size__height--wave;
 		margin-left: calc(50% - 50vw);
 		max-width: none;
-		padding: 80px 40px 60px;
+		padding: spacing(5) spacing(2) spacing(4);
 		position: relative;
 		text-align: center;
 		width: 100vw;
 
+		@media (min-width: $size__width--main) {
+			margin-bottom: $size__height--wave-huge;
+		}
+
 		&::after {
 			content: "";
-			background: url("#{$short_wave}") no-repeat center;
+			background: url("#{$short_wave}") no-repeat top;
 			position: absolute;
 			left: 0;
-			bottom: -95px;
-			height: 95px;
+			bottom: -$size__height--wave;
+			height: $size__height--wave;
 			width: 100vw;
+
+			@media (min-width: $breakpoint-huge) {
+				background-size: cover;
+				bottom: -$size__height--wave-huge;
+				height: $size__height--wave-huge;
+			}
 		}
 
 		.entry-title {
+			@include font-size( $font__size--header );
 			margin: 0 auto;
 			max-width: $size__width--post;
 			width: 100%;
