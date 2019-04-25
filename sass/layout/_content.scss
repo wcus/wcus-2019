@@ -54,3 +54,53 @@
 .main-navigation {
 	flex: 1;
 }
+
+.footer-widgets-block {
+
+	&#footer-widget-1 {
+		margin: spacing(4) auto;
+		padding: spacing(2);
+		max-width: $size__width--main + spacing(2) * 2;
+	}
+
+	&#footer-widget-2,
+	&#footer-widget-3 {
+		padding: spacing(3) spacing(2);
+		background: $blue;
+		color: $white;
+	}
+
+	&#footer-widget-3 {
+		padding: spacing(2);
+		background-image: url("#{$border-light-blue}");
+		background-repeat: repeat-x;
+	}
+
+	&#footer-widget-4 {
+		margin: 0 auto;
+		padding: spacing(2);
+		max-width: $size__width--main + spacing(2) * 2;
+		display: flex;
+
+		.widget {
+			flex: 1;
+		}
+
+		@media (max-width: $breakpoint-small) {
+			display: block;
+
+			.widget {
+				text-align: left;
+
+				+ .widget {
+					margin-top: spacing(1);
+				}
+			}
+		}
+	}
+
+	.widget {
+		max-width: $size__width--main;
+		margin: 0 auto;
+	}
+}

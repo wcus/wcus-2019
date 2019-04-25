@@ -1,0 +1,127 @@
+@mixin make-cols($n: 2) {
+	grid-template-columns: repeat($n, 1fr);
+
+	.sponsor-level-title,
+	h2 {
+		grid-column: 1 / span $n;
+	}
+
+	@media (max-width: $breakpoint-small) {
+		// Max out at 3 columns on small screens (n-1 => 4-1 => 3 )
+		@if $n > 4 {
+			$n: 4;
+		}
+
+		grid-template-columns: repeat(#{$n - 1}, 1fr);
+
+		.sponsor-level-title,
+		h2 {
+			grid-column-end: span #{$n - 1};
+		}
+	}
+}
+
+.wcorg-sponsors,
+.wcb_widget_sponsors {
+
+	.widget-title {
+		margin: 0 0 spacing(4);
+		@include uppercase( $font__size--level-1, 0 );
+		font-weight: 900;
+		color: $grey;
+		text-align: center;
+	}
+
+	.sponsor-level-title,
+	[class^="wcorg-sponsor-level-"] > h2 {
+		margin: 0 0 spacing(0);
+		@include font-size( $font__size--level-2 );
+		font-weight: 700;
+		color: $blue;
+		letter-spacing: 0;
+		text-transform: none;
+		text-align: center;
+	}
+
+	.sponsor-logo.sponsor-logo,
+	.wcorg-sponsor {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: spacing(2) spacing(1);
+		background-color: $off-white;
+		border-radius: 4px;
+		border: 2px solid transparent;
+
+		img {
+			max-height: 100px;
+		}
+
+		@include hover-state {
+			border-color: $light-brown;
+		}
+
+		&:focus-within {
+			outline: 2px dotted $grey;
+			outline-offset: 2px;
+			border-color: $light-brown;
+		}
+
+		a {
+			outline: none;
+		}
+
+		@media (max-width: $breakpoint-medium) {
+			padding: spacing(1) spacing(0);
+		}
+	}
+
+	.wcorg-sponsor {
+		padding: 0;
+
+		a {
+			display: block;
+			padding: spacing(2) spacing(1);
+
+			@media (max-width: $breakpoint-medium) {
+				padding: spacing(1) spacing(0);
+			}
+		}
+	}
+
+	.sponsor-level,
+	[class^="wcorg-sponsor-level-"] {
+		display: grid;
+		grid-gap: spacing(1);
+		margin-bottom: spacing(4);
+
+		@media (max-width: $breakpoint-medium) {
+			grid-gap: spacing(1)/2;
+		}
+	}
+
+	.sponsor-level.diamond,
+	.wcorg-sponsor-level-diamond {
+		@include make-cols( 2 );
+	}
+
+	.sponsor-level.platinum,
+	.wcorg-sponsor-level-platinum {
+		@include make-cols( 3 );
+	}
+
+	.sponsor-level.gold,
+	.wcorg-sponsor-level-gold {
+		@include make-cols( 4 );
+	}
+
+	.sponsor-level.silver,
+	.wcorg-sponsor-level-silver {
+		@include make-cols( 5 );
+	}
+
+	.sponsor-level.bronze,
+	.wcorg-sponsor-level-bronze {
+		@include make-cols( 6 );
+	}
+}
