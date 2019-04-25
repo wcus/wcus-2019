@@ -1011,6 +1011,12 @@ a {
   .wcb_widget_sponsors .sponsor-logo.sponsor-logo a,
   .wcb_widget_sponsors .wcorg-sponsor a {
     outline: none; }
+  @media (max-width: 782px) {
+    .wcorg-sponsors .sponsor-logo.sponsor-logo,
+    .wcorg-sponsors .wcorg-sponsor,
+    .wcb_widget_sponsors .sponsor-logo.sponsor-logo,
+    .wcb_widget_sponsors .wcorg-sponsor {
+      padding: 20px 15px; } }
 
 .wcorg-sponsors .wcorg-sponsor,
 .wcb_widget_sponsors .wcorg-sponsor {
@@ -1019,6 +1025,10 @@ a {
   .wcb_widget_sponsors .wcorg-sponsor a {
     display: block;
     padding: 30px 20px; }
+    @media (max-width: 782px) {
+      .wcorg-sponsors .wcorg-sponsor a,
+      .wcb_widget_sponsors .wcorg-sponsor a {
+        padding: 20px 15px; } }
 
 .wcorg-sponsors .sponsor-level,
 .wcorg-sponsors [class^="wcorg-sponsor-level-"],
@@ -1041,7 +1051,22 @@ a {
   .wcb_widget_sponsors .sponsor-level.diamond h2,
   .wcb_widget_sponsors .wcorg-sponsor-level-diamond .sponsor-level-title,
   .wcb_widget_sponsors .wcorg-sponsor-level-diamond h2 {
-    grid-column: 1 / span 2; }
+    grid-column: 1/span 2; }
+  @media (max-width: 600px) {
+    .wcorg-sponsors .sponsor-level.diamond,
+    .wcorg-sponsors .wcorg-sponsor-level-diamond,
+    .wcb_widget_sponsors .sponsor-level.diamond,
+    .wcb_widget_sponsors .wcorg-sponsor-level-diamond {
+      grid-template-columns: repeat(1, 1fr); }
+      .wcorg-sponsors .sponsor-level.diamond .sponsor-level-title,
+      .wcorg-sponsors .sponsor-level.diamond h2,
+      .wcorg-sponsors .wcorg-sponsor-level-diamond .sponsor-level-title,
+      .wcorg-sponsors .wcorg-sponsor-level-diamond h2,
+      .wcb_widget_sponsors .sponsor-level.diamond .sponsor-level-title,
+      .wcb_widget_sponsors .sponsor-level.diamond h2,
+      .wcb_widget_sponsors .wcorg-sponsor-level-diamond .sponsor-level-title,
+      .wcb_widget_sponsors .wcorg-sponsor-level-diamond h2 {
+        grid-column-end: span 1; } }
 
 .wcorg-sponsors .sponsor-level.platinum,
 .wcorg-sponsors .wcorg-sponsor-level-platinum,
@@ -1056,7 +1081,22 @@ a {
   .wcb_widget_sponsors .sponsor-level.platinum h2,
   .wcb_widget_sponsors .wcorg-sponsor-level-platinum .sponsor-level-title,
   .wcb_widget_sponsors .wcorg-sponsor-level-platinum h2 {
-    grid-column: 1 / span 3; }
+    grid-column: 1/span 3; }
+  @media (max-width: 600px) {
+    .wcorg-sponsors .sponsor-level.platinum,
+    .wcorg-sponsors .wcorg-sponsor-level-platinum,
+    .wcb_widget_sponsors .sponsor-level.platinum,
+    .wcb_widget_sponsors .wcorg-sponsor-level-platinum {
+      grid-template-columns: repeat(2, 1fr); }
+      .wcorg-sponsors .sponsor-level.platinum .sponsor-level-title,
+      .wcorg-sponsors .sponsor-level.platinum h2,
+      .wcorg-sponsors .wcorg-sponsor-level-platinum .sponsor-level-title,
+      .wcorg-sponsors .wcorg-sponsor-level-platinum h2,
+      .wcb_widget_sponsors .sponsor-level.platinum .sponsor-level-title,
+      .wcb_widget_sponsors .sponsor-level.platinum h2,
+      .wcb_widget_sponsors .wcorg-sponsor-level-platinum .sponsor-level-title,
+      .wcb_widget_sponsors .wcorg-sponsor-level-platinum h2 {
+        grid-column-end: span 2; } }
 
 .wcorg-sponsors .sponsor-level.gold,
 .wcorg-sponsors .wcorg-sponsor-level-gold,
@@ -1071,7 +1111,22 @@ a {
   .wcb_widget_sponsors .sponsor-level.gold h2,
   .wcb_widget_sponsors .wcorg-sponsor-level-gold .sponsor-level-title,
   .wcb_widget_sponsors .wcorg-sponsor-level-gold h2 {
-    grid-column: 1 / span 4; }
+    grid-column: 1/span 4; }
+  @media (max-width: 600px) {
+    .wcorg-sponsors .sponsor-level.gold,
+    .wcorg-sponsors .wcorg-sponsor-level-gold,
+    .wcb_widget_sponsors .sponsor-level.gold,
+    .wcb_widget_sponsors .wcorg-sponsor-level-gold {
+      grid-template-columns: repeat(3, 1fr); }
+      .wcorg-sponsors .sponsor-level.gold .sponsor-level-title,
+      .wcorg-sponsors .sponsor-level.gold h2,
+      .wcorg-sponsors .wcorg-sponsor-level-gold .sponsor-level-title,
+      .wcorg-sponsors .wcorg-sponsor-level-gold h2,
+      .wcb_widget_sponsors .sponsor-level.gold .sponsor-level-title,
+      .wcb_widget_sponsors .sponsor-level.gold h2,
+      .wcb_widget_sponsors .wcorg-sponsor-level-gold .sponsor-level-title,
+      .wcb_widget_sponsors .wcorg-sponsor-level-gold h2 {
+        grid-column-end: span 3; } }
 
 .wcorg-sponsors .sponsor-level.silver,
 .wcorg-sponsors .wcorg-sponsor-level-silver,
@@ -1086,7 +1141,52 @@ a {
   .wcb_widget_sponsors .sponsor-level.silver h2,
   .wcb_widget_sponsors .wcorg-sponsor-level-silver .sponsor-level-title,
   .wcb_widget_sponsors .wcorg-sponsor-level-silver h2 {
-    grid-column: 1 / span 5; }
+    grid-column: 1/span 5; }
+  @media (max-width: 600px) {
+    .wcorg-sponsors .sponsor-level.silver,
+    .wcorg-sponsors .wcorg-sponsor-level-silver,
+    .wcb_widget_sponsors .sponsor-level.silver,
+    .wcb_widget_sponsors .wcorg-sponsor-level-silver {
+      grid-template-columns: repeat(3, 1fr); }
+      .wcorg-sponsors .sponsor-level.silver .sponsor-level-title,
+      .wcorg-sponsors .sponsor-level.silver h2,
+      .wcorg-sponsors .wcorg-sponsor-level-silver .sponsor-level-title,
+      .wcorg-sponsors .wcorg-sponsor-level-silver h2,
+      .wcb_widget_sponsors .sponsor-level.silver .sponsor-level-title,
+      .wcb_widget_sponsors .sponsor-level.silver h2,
+      .wcb_widget_sponsors .wcorg-sponsor-level-silver .sponsor-level-title,
+      .wcb_widget_sponsors .wcorg-sponsor-level-silver h2 {
+        grid-column-end: span 3; } }
+
+.wcorg-sponsors .sponsor-level.bronze,
+.wcorg-sponsors .wcorg-sponsor-level-bronze,
+.wcb_widget_sponsors .sponsor-level.bronze,
+.wcb_widget_sponsors .wcorg-sponsor-level-bronze {
+  grid-template-columns: repeat(6, 1fr); }
+  .wcorg-sponsors .sponsor-level.bronze .sponsor-level-title,
+  .wcorg-sponsors .sponsor-level.bronze h2,
+  .wcorg-sponsors .wcorg-sponsor-level-bronze .sponsor-level-title,
+  .wcorg-sponsors .wcorg-sponsor-level-bronze h2,
+  .wcb_widget_sponsors .sponsor-level.bronze .sponsor-level-title,
+  .wcb_widget_sponsors .sponsor-level.bronze h2,
+  .wcb_widget_sponsors .wcorg-sponsor-level-bronze .sponsor-level-title,
+  .wcb_widget_sponsors .wcorg-sponsor-level-bronze h2 {
+    grid-column: 1/span 6; }
+  @media (max-width: 600px) {
+    .wcorg-sponsors .sponsor-level.bronze,
+    .wcorg-sponsors .wcorg-sponsor-level-bronze,
+    .wcb_widget_sponsors .sponsor-level.bronze,
+    .wcb_widget_sponsors .wcorg-sponsor-level-bronze {
+      grid-template-columns: repeat(3, 1fr); }
+      .wcorg-sponsors .sponsor-level.bronze .sponsor-level-title,
+      .wcorg-sponsors .sponsor-level.bronze h2,
+      .wcorg-sponsors .wcorg-sponsor-level-bronze .sponsor-level-title,
+      .wcorg-sponsors .wcorg-sponsor-level-bronze h2,
+      .wcb_widget_sponsors .sponsor-level.bronze .sponsor-level-title,
+      .wcb_widget_sponsors .sponsor-level.bronze h2,
+      .wcb_widget_sponsors .wcorg-sponsor-level-bronze .sponsor-level-title,
+      .wcb_widget_sponsors .wcorg-sponsor-level-bronze h2 {
+        grid-column-end: span 3; } }
 
 /*--------------------------------------------------------------
 ## Comments
