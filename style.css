@@ -846,6 +846,9 @@ a {
   .widget select {
     max-width: 100%; }
 
+#footer-widget-1 .textwidget {
+  text-align: center; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -895,8 +898,21 @@ a {
       -ms-flex: 1;
           flex: 1; }
 
+.footer-widgets-block#footer-widget-1 {
+  margin: 90px auto;
+  padding: 30px;
+  max-width: 1000px; }
+
+.footer-widgets-block#footer-widget-2, .footer-widgets-block#footer-widget-3 {
+  background: #003b63;
+  color: #fff; }
+
+.footer-widgets-block .widget {
+  max-width: 940px;
+  margin: 0 auto; }
+
 /*--------------------------------------------------------------
-## Posts and pages
+## Content
 --------------------------------------------------------------*/
 .sticky {
   display: block; }
@@ -924,6 +940,262 @@ a {
 .page-links {
   clear: both;
   margin: 0 0 1.5em; }
+
+.wcorg-sponsors .widget-title,
+.wcb_widget_sponsors .widget-title {
+  margin: 0 0 90px;
+  font-size: 36px;
+  font-size: 3.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 900;
+  color: #303030;
+  text-align: center; }
+
+.wcorg-sponsors .sponsor-level-title,
+.wcorg-sponsors [class^="wcorg-sponsor-level-"] > h2,
+.wcb_widget_sponsors .sponsor-level-title,
+.wcb_widget_sponsors [class^="wcorg-sponsor-level-"] > h2 {
+  margin: 0 0 15px;
+  font-size: 32px;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #003b63;
+  letter-spacing: 0;
+  text-transform: none;
+  text-align: center; }
+
+.wcorg-sponsors .sponsor-logo.sponsor-logo,
+.wcorg-sponsors .wcorg-sponsor,
+.wcb_widget_sponsors .sponsor-logo.sponsor-logo,
+.wcb_widget_sponsors .wcorg-sponsor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 20px;
+  background-color: #f7f7f2;
+  border-radius: 4px;
+  border: 2px solid transparent; }
+  .wcorg-sponsors .sponsor-logo.sponsor-logo img,
+  .wcorg-sponsors .wcorg-sponsor img,
+  .wcb_widget_sponsors .sponsor-logo.sponsor-logo img,
+  .wcb_widget_sponsors .wcorg-sponsor img {
+    max-height: 100px; }
+  .wcorg-sponsors .sponsor-logo.sponsor-logo:hover, .wcorg-sponsors .sponsor-logo.sponsor-logo:active, .wcorg-sponsors .sponsor-logo.sponsor-logo:focus,
+  .wcorg-sponsors .wcorg-sponsor:hover,
+  .wcorg-sponsors .wcorg-sponsor:active,
+  .wcorg-sponsors .wcorg-sponsor:focus,
+  .wcb_widget_sponsors .sponsor-logo.sponsor-logo:hover,
+  .wcb_widget_sponsors .sponsor-logo.sponsor-logo:active,
+  .wcb_widget_sponsors .sponsor-logo.sponsor-logo:focus,
+  .wcb_widget_sponsors .wcorg-sponsor:hover,
+  .wcb_widget_sponsors .wcorg-sponsor:active,
+  .wcb_widget_sponsors .wcorg-sponsor:focus {
+    border-color: #9e8b7e; }
+  .wcorg-sponsors .sponsor-logo.sponsor-logo:focus-within,
+  .wcorg-sponsors .wcorg-sponsor:focus-within,
+  .wcb_widget_sponsors .sponsor-logo.sponsor-logo:focus-within,
+  .wcb_widget_sponsors .wcorg-sponsor:focus-within {
+    outline: 2px dotted #303030;
+    outline-offset: 2px;
+    border-color: #9e8b7e; }
+  .wcorg-sponsors .sponsor-logo.sponsor-logo a,
+  .wcorg-sponsors .wcorg-sponsor a,
+  .wcb_widget_sponsors .sponsor-logo.sponsor-logo a,
+  .wcb_widget_sponsors .wcorg-sponsor a {
+    outline: none; }
+  @media (max-width: 782px) {
+    .wcorg-sponsors .sponsor-logo.sponsor-logo,
+    .wcorg-sponsors .wcorg-sponsor,
+    .wcb_widget_sponsors .sponsor-logo.sponsor-logo,
+    .wcb_widget_sponsors .wcorg-sponsor {
+      padding: 20px 15px; } }
+
+.wcorg-sponsors .wcorg-sponsor,
+.wcb_widget_sponsors .wcorg-sponsor {
+  padding: 0; }
+  .wcorg-sponsors .wcorg-sponsor a,
+  .wcb_widget_sponsors .wcorg-sponsor a {
+    display: block;
+    padding: 30px 20px; }
+    @media (max-width: 782px) {
+      .wcorg-sponsors .wcorg-sponsor a,
+      .wcb_widget_sponsors .wcorg-sponsor a {
+        padding: 20px 15px; } }
+
+.wcorg-sponsors .sponsor-level,
+.wcorg-sponsors [class^="wcorg-sponsor-level-"],
+.wcb_widget_sponsors .sponsor-level,
+.wcb_widget_sponsors [class^="wcorg-sponsor-level-"] {
+  display: grid;
+  grid-gap: 20px;
+  margin-bottom: 90px; }
+  @media (max-width: 782px) {
+    .wcorg-sponsors .sponsor-level,
+    .wcorg-sponsors [class^="wcorg-sponsor-level-"],
+    .wcb_widget_sponsors .sponsor-level,
+    .wcb_widget_sponsors [class^="wcorg-sponsor-level-"] {
+      grid-gap: 10px; } }
+
+.wcorg-sponsors .sponsor-level.diamond,
+.wcorg-sponsors .wcorg-sponsor-level-diamond,
+.wcb_widget_sponsors .sponsor-level.diamond,
+.wcb_widget_sponsors .wcorg-sponsor-level-diamond {
+  grid-template-columns: repeat(2, 1fr); }
+  .wcorg-sponsors .sponsor-level.diamond .sponsor-level-title,
+  .wcorg-sponsors .sponsor-level.diamond h2,
+  .wcorg-sponsors .wcorg-sponsor-level-diamond .sponsor-level-title,
+  .wcorg-sponsors .wcorg-sponsor-level-diamond h2,
+  .wcb_widget_sponsors .sponsor-level.diamond .sponsor-level-title,
+  .wcb_widget_sponsors .sponsor-level.diamond h2,
+  .wcb_widget_sponsors .wcorg-sponsor-level-diamond .sponsor-level-title,
+  .wcb_widget_sponsors .wcorg-sponsor-level-diamond h2 {
+    grid-column: 1/span 2; }
+  @media (max-width: 600px) {
+    .wcorg-sponsors .sponsor-level.diamond,
+    .wcorg-sponsors .wcorg-sponsor-level-diamond,
+    .wcb_widget_sponsors .sponsor-level.diamond,
+    .wcb_widget_sponsors .wcorg-sponsor-level-diamond {
+      grid-template-columns: repeat(1, 1fr); }
+      .wcorg-sponsors .sponsor-level.diamond .sponsor-level-title,
+      .wcorg-sponsors .sponsor-level.diamond h2,
+      .wcorg-sponsors .wcorg-sponsor-level-diamond .sponsor-level-title,
+      .wcorg-sponsors .wcorg-sponsor-level-diamond h2,
+      .wcb_widget_sponsors .sponsor-level.diamond .sponsor-level-title,
+      .wcb_widget_sponsors .sponsor-level.diamond h2,
+      .wcb_widget_sponsors .wcorg-sponsor-level-diamond .sponsor-level-title,
+      .wcb_widget_sponsors .wcorg-sponsor-level-diamond h2 {
+        grid-column-end: span 1; } }
+
+.wcorg-sponsors .sponsor-level.platinum,
+.wcorg-sponsors .wcorg-sponsor-level-platinum,
+.wcb_widget_sponsors .sponsor-level.platinum,
+.wcb_widget_sponsors .wcorg-sponsor-level-platinum {
+  grid-template-columns: repeat(3, 1fr); }
+  .wcorg-sponsors .sponsor-level.platinum .sponsor-level-title,
+  .wcorg-sponsors .sponsor-level.platinum h2,
+  .wcorg-sponsors .wcorg-sponsor-level-platinum .sponsor-level-title,
+  .wcorg-sponsors .wcorg-sponsor-level-platinum h2,
+  .wcb_widget_sponsors .sponsor-level.platinum .sponsor-level-title,
+  .wcb_widget_sponsors .sponsor-level.platinum h2,
+  .wcb_widget_sponsors .wcorg-sponsor-level-platinum .sponsor-level-title,
+  .wcb_widget_sponsors .wcorg-sponsor-level-platinum h2 {
+    grid-column: 1/span 3; }
+  @media (max-width: 600px) {
+    .wcorg-sponsors .sponsor-level.platinum,
+    .wcorg-sponsors .wcorg-sponsor-level-platinum,
+    .wcb_widget_sponsors .sponsor-level.platinum,
+    .wcb_widget_sponsors .wcorg-sponsor-level-platinum {
+      grid-template-columns: repeat(2, 1fr); }
+      .wcorg-sponsors .sponsor-level.platinum .sponsor-level-title,
+      .wcorg-sponsors .sponsor-level.platinum h2,
+      .wcorg-sponsors .wcorg-sponsor-level-platinum .sponsor-level-title,
+      .wcorg-sponsors .wcorg-sponsor-level-platinum h2,
+      .wcb_widget_sponsors .sponsor-level.platinum .sponsor-level-title,
+      .wcb_widget_sponsors .sponsor-level.platinum h2,
+      .wcb_widget_sponsors .wcorg-sponsor-level-platinum .sponsor-level-title,
+      .wcb_widget_sponsors .wcorg-sponsor-level-platinum h2 {
+        grid-column-end: span 2; } }
+
+.wcorg-sponsors .sponsor-level.gold,
+.wcorg-sponsors .wcorg-sponsor-level-gold,
+.wcb_widget_sponsors .sponsor-level.gold,
+.wcb_widget_sponsors .wcorg-sponsor-level-gold {
+  grid-template-columns: repeat(4, 1fr); }
+  .wcorg-sponsors .sponsor-level.gold .sponsor-level-title,
+  .wcorg-sponsors .sponsor-level.gold h2,
+  .wcorg-sponsors .wcorg-sponsor-level-gold .sponsor-level-title,
+  .wcorg-sponsors .wcorg-sponsor-level-gold h2,
+  .wcb_widget_sponsors .sponsor-level.gold .sponsor-level-title,
+  .wcb_widget_sponsors .sponsor-level.gold h2,
+  .wcb_widget_sponsors .wcorg-sponsor-level-gold .sponsor-level-title,
+  .wcb_widget_sponsors .wcorg-sponsor-level-gold h2 {
+    grid-column: 1/span 4; }
+  @media (max-width: 600px) {
+    .wcorg-sponsors .sponsor-level.gold,
+    .wcorg-sponsors .wcorg-sponsor-level-gold,
+    .wcb_widget_sponsors .sponsor-level.gold,
+    .wcb_widget_sponsors .wcorg-sponsor-level-gold {
+      grid-template-columns: repeat(3, 1fr); }
+      .wcorg-sponsors .sponsor-level.gold .sponsor-level-title,
+      .wcorg-sponsors .sponsor-level.gold h2,
+      .wcorg-sponsors .wcorg-sponsor-level-gold .sponsor-level-title,
+      .wcorg-sponsors .wcorg-sponsor-level-gold h2,
+      .wcb_widget_sponsors .sponsor-level.gold .sponsor-level-title,
+      .wcb_widget_sponsors .sponsor-level.gold h2,
+      .wcb_widget_sponsors .wcorg-sponsor-level-gold .sponsor-level-title,
+      .wcb_widget_sponsors .wcorg-sponsor-level-gold h2 {
+        grid-column-end: span 3; } }
+
+.wcorg-sponsors .sponsor-level.silver,
+.wcorg-sponsors .wcorg-sponsor-level-silver,
+.wcb_widget_sponsors .sponsor-level.silver,
+.wcb_widget_sponsors .wcorg-sponsor-level-silver {
+  grid-template-columns: repeat(5, 1fr); }
+  .wcorg-sponsors .sponsor-level.silver .sponsor-level-title,
+  .wcorg-sponsors .sponsor-level.silver h2,
+  .wcorg-sponsors .wcorg-sponsor-level-silver .sponsor-level-title,
+  .wcorg-sponsors .wcorg-sponsor-level-silver h2,
+  .wcb_widget_sponsors .sponsor-level.silver .sponsor-level-title,
+  .wcb_widget_sponsors .sponsor-level.silver h2,
+  .wcb_widget_sponsors .wcorg-sponsor-level-silver .sponsor-level-title,
+  .wcb_widget_sponsors .wcorg-sponsor-level-silver h2 {
+    grid-column: 1/span 5; }
+  @media (max-width: 600px) {
+    .wcorg-sponsors .sponsor-level.silver,
+    .wcorg-sponsors .wcorg-sponsor-level-silver,
+    .wcb_widget_sponsors .sponsor-level.silver,
+    .wcb_widget_sponsors .wcorg-sponsor-level-silver {
+      grid-template-columns: repeat(3, 1fr); }
+      .wcorg-sponsors .sponsor-level.silver .sponsor-level-title,
+      .wcorg-sponsors .sponsor-level.silver h2,
+      .wcorg-sponsors .wcorg-sponsor-level-silver .sponsor-level-title,
+      .wcorg-sponsors .wcorg-sponsor-level-silver h2,
+      .wcb_widget_sponsors .sponsor-level.silver .sponsor-level-title,
+      .wcb_widget_sponsors .sponsor-level.silver h2,
+      .wcb_widget_sponsors .wcorg-sponsor-level-silver .sponsor-level-title,
+      .wcb_widget_sponsors .wcorg-sponsor-level-silver h2 {
+        grid-column-end: span 3; } }
+
+.wcorg-sponsors .sponsor-level.bronze,
+.wcorg-sponsors .wcorg-sponsor-level-bronze,
+.wcb_widget_sponsors .sponsor-level.bronze,
+.wcb_widget_sponsors .wcorg-sponsor-level-bronze {
+  grid-template-columns: repeat(6, 1fr); }
+  .wcorg-sponsors .sponsor-level.bronze .sponsor-level-title,
+  .wcorg-sponsors .sponsor-level.bronze h2,
+  .wcorg-sponsors .wcorg-sponsor-level-bronze .sponsor-level-title,
+  .wcorg-sponsors .wcorg-sponsor-level-bronze h2,
+  .wcb_widget_sponsors .sponsor-level.bronze .sponsor-level-title,
+  .wcb_widget_sponsors .sponsor-level.bronze h2,
+  .wcb_widget_sponsors .wcorg-sponsor-level-bronze .sponsor-level-title,
+  .wcb_widget_sponsors .wcorg-sponsor-level-bronze h2 {
+    grid-column: 1/span 6; }
+  @media (max-width: 600px) {
+    .wcorg-sponsors .sponsor-level.bronze,
+    .wcorg-sponsors .wcorg-sponsor-level-bronze,
+    .wcb_widget_sponsors .sponsor-level.bronze,
+    .wcb_widget_sponsors .wcorg-sponsor-level-bronze {
+      grid-template-columns: repeat(3, 1fr); }
+      .wcorg-sponsors .sponsor-level.bronze .sponsor-level-title,
+      .wcorg-sponsors .sponsor-level.bronze h2,
+      .wcorg-sponsors .wcorg-sponsor-level-bronze .sponsor-level-title,
+      .wcorg-sponsors .wcorg-sponsor-level-bronze h2,
+      .wcb_widget_sponsors .sponsor-level.bronze .sponsor-level-title,
+      .wcb_widget_sponsors .sponsor-level.bronze h2,
+      .wcb_widget_sponsors .wcorg-sponsor-level-bronze .sponsor-level-title,
+      .wcb_widget_sponsors .wcorg-sponsor-level-bronze h2 {
+        grid-column-end: span 3; } }
 
 /*--------------------------------------------------------------
 ## Comments
