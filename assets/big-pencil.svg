@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>outline-border_color-24px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-885.000000, -675.000000)" fill="#FFFFFA" fill-rule="nonzero" id="Header">
+            <g transform="translate(0.000000, 71.000000)">
+                <g id="Sign-up" transform="translate(824.000000, 562.000000)">
+                    <g id="outline-border_color-24px" transform="translate(61.000000, 42.000000)">
+                        <path d="M19.9970593,6.50404352 L0,26.5011028 L0,34 L7.49889722,34 L27.4959565,14.0029407 L19.9970593,6.50404352 Z M5.8391413,30.0005881 L3.99941185,30.0005881 L3.99941185,28.1608587 L19.9970593,12.1632113 L21.8367887,14.0029407 L5.8391413,30.0005881 Z M33.415086,8.0838112 C34.1949713,7.30392589 34.1949713,6.04411116 33.415086,5.26422585 L28.7357742,0.584913983 C27.9558888,-0.194971328 26.6960741,-0.194971328 25.9161888,0.584913983 L21.9967652,4.5043376 L29.4956624,12.0032348 L33.415086,8.0838112 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
