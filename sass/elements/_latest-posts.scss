@@ -5,7 +5,7 @@
 	margin: spacing(2) 0;
 
 	li {
-		background: $grey--alt;
+		background: $grey;
 		color: $white;
 		padding: spacing(2);
 		border-radius: $size__border-radius;
@@ -17,20 +17,19 @@
 		color: $white;
 		text-decoration: none;
 
-		&:hover,
-		&:focus,
+		@include hover-state {
+			color: $white;
+			text-decoration: underline;
+		}
+
 		&:visited {
 			color: $white;
 		}
 
-		&:hover,
-		&:focus {
-			text-decoration: underline;
-		}
 	}
 
 	time {
-		color: rgba(255, 255, 255, 0.7);
+		color: rgba($white, 0.7);
 		font-weight: 900;
 		margin-top: 1em;
 	}

@@ -503,7 +503,7 @@ table {
   font-weight: 700;
   margin: 30px 0; }
   .wp-block-latest-posts li {
-    background: #353530;
+    background: #303030;
     color: #fff;
     padding: 30px;
     border-radius: 12px; }
@@ -513,10 +513,11 @@ table {
     line-height: 1.4;
     color: #fff;
     text-decoration: none; }
-    .wp-block-latest-posts a:hover, .wp-block-latest-posts a:focus, .wp-block-latest-posts a:visited {
-      color: #fff; }
-    .wp-block-latest-posts a:hover, .wp-block-latest-posts a:focus {
+    .wp-block-latest-posts a:hover, .wp-block-latest-posts a:active, .wp-block-latest-posts a:focus {
+      color: #fff;
       text-decoration: underline; }
+    .wp-block-latest-posts a:visited {
+      color: #fff; }
   .wp-block-latest-posts time {
     color: rgba(255, 255, 255, 0.7);
     font-weight: 900;
