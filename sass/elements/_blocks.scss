@@ -15,3 +15,52 @@
 		}
 	}
 }
+
+hr {
+	border-bottom: 4px dotted $light-brown;
+	background: transparent;
+	border-image: url("#{$sep-dots}");
+	border-image-slice: 4 4 4;
+	border-image-width: 0 0 4px;
+	border-image-repeat: round;
+	margin: spacing(3) 0;
+
+	&.wp-block-separator {
+
+		&.is-style-dots {
+
+			&::before {
+				content: url("#{$sep-dots-sparkles}");
+				padding-left: 0;
+			}
+		}
+
+		&.is-style-wide {
+			background-image: url("#{$sep-wide-sparkles}");
+			background-repeat: no-repeat;
+			background-position: center center;
+			border-width: 0;
+			height: 72px;
+			margin: spacing(2) 0;
+			position: relative;
+
+			&::before,
+			&::after {
+				content: "";
+				border-bottom: 4px dotted $light-brown;
+				border-image: url("#{$sep-dots}");
+				border-image-slice: 4 4 4;
+				border-image-width: 0 0 4px;
+				border-image-repeat: round;
+				position: absolute;
+				top: calc(50% - 2px);
+				width: calc(50% - 75px);
+			}
+
+			&::after {
+				right: 0;
+			}
+		}
+	}
+
+}
