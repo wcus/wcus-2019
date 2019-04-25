@@ -899,7 +899,7 @@ a {
           flex: 1; }
 
 .footer-widgets-block#footer-widget-1 {
-  margin: 90px 0;
+  margin: 90px auto;
   padding: 30px;
   max-width: 1000px; }
 
