@@ -38,3 +38,6 @@ function wcus_2019_enqueue_styles() {
 	wp_enqueue_style( 'wcus-2019-style', get_stylesheet_directory_uri() . '/style.css', array(), $version );
 }
 add_action( 'wp_enqueue_scripts', 'wcus_2019_enqueue_styles', 12 );
+
+// Enqueue a mock subscription widget (Jetpack requires a live site).
+require_once __DIR__ . '/mock-widget-subscriptions.php';
