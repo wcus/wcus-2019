@@ -57,6 +57,12 @@
 
 .footer-widgets-block {
 
+	&#footer-widget-1 {
+		margin: spacing(4) 0;
+		padding: spacing(2);
+		max-width: $size__width--main + spacing(2) * 2;
+	}
+
 	&#footer-widget-2,
 	&#footer-widget-3 {
 		background: $blue;
