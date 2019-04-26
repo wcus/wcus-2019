@@ -67,6 +67,11 @@
 		background: $red;
 		color: $white;
 
+		span {
+			// Takes up space of visible focus border
+			border-bottom: 2px dotted transparent;
+		}
+
 		span::before {
 			$icon-size: 34px;
 			content: "";
@@ -76,6 +81,14 @@
 			height: $icon-size;
 			display: block;
 			padding-bottom: spacing(0);
+		}
+
+		&:focus {
+			outline: none;
+
+			span {
+				border-bottom: 2px dotted $white;
+			}
 		}
 	}
 

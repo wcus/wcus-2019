@@ -1160,6 +1160,8 @@ a {
     bottom: 0;
     background: #bd2b2e;
     color: #fff; }
+    #wcus-hero .wcus-hero__signup span {
+      border-bottom: 2px dotted transparent; }
     #wcus-hero .wcus-hero__signup span::before {
       content: "";
       -webkit-box-sizing: content-box;
@@ -1169,6 +1171,10 @@ a {
       height: 34px;
       display: block;
       padding-bottom: 15px; }
+    #wcus-hero .wcus-hero__signup:focus {
+      outline: none; }
+      #wcus-hero .wcus-hero__signup:focus span {
+        border-bottom: 2px dotted #fff; }
   #wcus-hero::after {
     content: "";
     background: url("https://wc-us.org/wp-content/uploads/2019/04/bottom-wave.svg");
