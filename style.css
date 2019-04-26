@@ -1204,14 +1204,19 @@ a {
   position: relative;
   text-align: center;
   width: 100vw; }
-  @media (min-width: 940px) {
+  @media (min-width: 1440px) {
     .page .entry-header,
     .single .entry-header {
       margin-bottom: 7vw; } }
+  @media (max-width: 480px) {
+    .page .entry-header,
+    .single .entry-header {
+      margin-bottom: 60px; } }
   .page .entry-header::after,
   .single .entry-header::after {
     content: "";
     background: url("https://wc-us.org/wp-content/uploads/2019/04/short-wave.svg") no-repeat top;
+    background-size: contain;
     position: absolute;
     left: 0;
     bottom: -95px;
@@ -1220,9 +1225,13 @@ a {
     @media (min-width: 1440px) {
       .page .entry-header::after,
       .single .entry-header::after {
-        background-size: contain;
         bottom: -7vw;
         height: 7vw; } }
+    @media (max-width: 480px) {
+      .page .entry-header::after,
+      .single .entry-header::after {
+        bottom: -60px;
+        height: 60px; } }
   .page .entry-header .entry-title,
   .single .entry-header .entry-title {
     font-size: 48px;

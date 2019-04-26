@@ -34,13 +34,18 @@
 		text-align: center;
 		width: 100vw;
 
-		@media (min-width: $size__width--main) {
+		@media (min-width: $breakpoint-huge) {
 			margin-bottom: $size__height--wave-huge;
+		}
+
+		@media (max-width: $breakpoint-mobile) {
+			margin-bottom: $size__height--wave-small;
 		}
 
 		&::after {
 			content: "";
 			background: url("#{$short_wave}") no-repeat top;
+			background-size: contain;
 			position: absolute;
 			left: 0;
 			bottom: -$size__height--wave;
@@ -48,9 +53,13 @@
 			width: 100vw;
 
 			@media (min-width: $breakpoint-huge) {
-				background-size: contain;
 				bottom: -$size__height--wave-huge;
 				height: $size__height--wave-huge;
+			}
+
+			@media (max-width: $breakpoint-mobile) {
+				bottom: -$size__height--wave-small;
+				height: $size__height--wave-small;
 			}
 		}
 
