@@ -68,7 +68,12 @@
 		color: $white;
 
 		span::before {
-			content: url("#{$icon-pencil--big}");
+			$icon-size: 34px;
+			content: "";
+			box-sizing: content-box;
+			background: transparent url("#{$icon-pencil}") top center no-repeat;
+			background-size: $icon-size $icon-size;
+			height: $icon-size;
 			display: block;
 			padding-bottom: spacing(0);
 		}
@@ -110,6 +115,9 @@
 			@include font-size(1.4);
 
 			span::before {
+				$icon-size: 21px;
+				background-size: $icon-size $icon-size;
+				height: $icon-size;
 				padding-bottom: spacing(0)/2;
 			}
 		}
