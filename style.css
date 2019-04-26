@@ -1054,124 +1054,6 @@ a {
   .widget select {
     max-width: 100%; }
 
-#header-widgets {
-  width: 100vw;
-  margin-left: calc(50% - 50vw); }
-  #header-widgets #header-widget-1 {
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    margin-bottom: 0;
-    position: relative;
-    overflow: hidden; }
-    #header-widgets #header-widget-1 .widget_media_image {
-      height: 100%;
-      overflow: hidden; }
-    #header-widgets #header-widget-1 .widget_media_image > img {
-      width: auto;
-      height: auto;
-      max-width: 1000%;
-      min-height: 100%;
-      min-width: 100vw;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translateX(-50%) translateY(-50%);
-              transform: translateX(-50%) translateY(-50%);
-      z-index: 1; }
-    @supports ((-o-object-fit: cover) or (object-fit: cover)) {
-      #header-widgets #header-widget-1 .widget_media_image > img {
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        -o-object-fit: cover;
-           object-fit: cover;
-        -webkit-transform: none;
-                transform: none; } }
-    #header-widgets #header-widget-1 img {
-      display: block;
-      width: 100%; }
-    #header-widgets #header-widget-1::after {
-      content: "";
-      background: url("https://wc-us.org/wp-content/uploads/2019/04/bottom-wave.svg");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center bottom;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 140px;
-      z-index: 2; }
-      @media (min-width: 1440px) {
-        #header-widgets #header-widget-1::after {
-          background-size: 100% 140px; } }
-
-#wcus-hp-widgets {
-  margin: 120px auto 150px;
-  position: relative;
-  z-index: 3; }
-  #wcus-hp-widgets .wcus-hp-logo,
-  #wcus-hp-widgets .wcus-hp-signup {
-    position: absolute; }
-  #wcus-hp-widgets .wcus-hp-logo {
-    content: url("https://wc-us.org/wp-content/uploads/2019/04/logo-badge.svg");
-    max-width: 230px;
-    top: -69px;
-    left: -28px; }
-  #wcus-hp-widgets .wcus-hp-signup {
-    font-size: 18px;
-    font-size: 1.8rem;
-    background: #bd2b2e;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 45px;
-    -webkit-box-shadow: 0 1 10 #561315;
-            box-shadow: 0 1 10 #561315;
-    border-radius: 100%;
-    right: 0;
-    bottom: 0; }
-    #wcus-hp-widgets .wcus-hp-signup::before {
-      content: url("/wp-content/themes/wcus-2019/assets/big-pencil.svg");
-      display: block; }
-  #wcus-hp-widgets .wcus-hp-circle {
-    background: #003b63;
-    border-radius: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: relative;
-    width: 580px;
-    height: 580px;
-    margin: 0 auto; }
-  #wcus-hp-widgets .wcus-hp-message {
-    color: #fff;
-    padding: 20px 50px;
-    text-align: center;
-    line-height: 1.375; }
-    #wcus-hp-widgets .wcus-hp-message h2 {
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      font-size: 48px;
-      font-size: 4.8rem;
-      color: #fff;
-      margin-top: 0; }
-    #wcus-hp-widgets .wcus-hp-message p {
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      font-family: "Nunito", "Tahoma", "Verdana", sans-serif;
-      font-weight: 700;
-      font-size: 32px;
-      font-size: 3.2rem;
-      margin: 20px auto 0;
-      max-width: 420px; }
-
 #footer-widget-1 {
   margin: 90px 0; }
   #footer-widget-1 .textwidget {
@@ -1199,6 +1081,103 @@ a {
 
 .site-info {
   display: none; }
+
+#wcus-hero {
+  position: relative;
+  margin-left: calc(50% - 50vw);
+  padding: 120px 0 210px;
+  width: 100vw;
+  max-width: none;
+  background: url("/wp-content/uploads/sites/49/2019/04/wcus-background.jpg") no-repeat center;
+  background-size: cover; }
+  #wcus-hero .wcus-hero__circle {
+    background: #003b63;
+    border-radius: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    width: 580px;
+    height: 580px;
+    margin: 0 auto; }
+  #wcus-hero .wcus-hero__circle-small {
+    position: absolute;
+    -webkit-box-shadow: 0 1px 10px rgba(86, 19, 21, 0.5);
+            box-shadow: 0 1px 10px rgba(86, 19, 21, 0.5);
+    border-radius: 100%; }
+  #wcus-hero .wcus-hero__logo {
+    background: #fffffa url("/wp-content/themes/wcus-2019/assets/logo-badge.svg") center no-repeat;
+    width: 230px;
+    height: 230px;
+    top: -69px;
+    left: -28px; }
+  #wcus-hero .wcus-hero__message {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #fff;
+    text-align: center;
+    line-height: 1.375; }
+    #wcus-hero .wcus-hero__message h2 {
+      margin-top: 30px;
+      font-size: 48px;
+      font-size: 4.8rem;
+      color: #fff; }
+    #wcus-hero .wcus-hero__message p {
+      margin: 30px 0 0;
+      font-size: 32px;
+      font-size: 3.2rem; }
+  #wcus-hero .wcus-hero__signup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    text-decoration: none;
+    width: 160px;
+    height: 160px;
+    right: 0;
+    bottom: 0;
+    background: #bd2b2e;
+    color: #fff; }
+    #wcus-hero .wcus-hero__signup span::before {
+      content: url("/wp-content/themes/wcus-2019/assets/big-pencil.svg");
+      display: block;
+      padding-bottom: 15px; }
+  #wcus-hero::after {
+    content: "";
+    background: url("https://wc-us.org/wp-content/uploads/2019/04/bottom-wave.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 140px;
+    z-index: 2; }
+    @media (min-width: 1440px) {
+      #wcus-hero::after {
+        background-size: 100% 140px; } }
 
 .widget_blog_subscription {
   color: #fffffa; }
