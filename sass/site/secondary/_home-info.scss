@@ -4,7 +4,7 @@
 		content: "";
 		display: block;
 		margin: spacing(3) auto;
-		width: 600px;
+		max-width: 600px;
 		height: 10px;
 		border-bottom: 4px dotted $light-brown;
 		background: transparent;
