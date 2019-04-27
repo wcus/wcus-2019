@@ -535,6 +535,84 @@ table {
 .entry-content .wp-block-button.is-style-squared .wp-block-button__link {
   border-radius: 0; }
 
+hr {
+  border-bottom: 4px dotted #9e8b7e;
+  background: transparent;
+  -o-border-image: url("https://wc-us.org/wp-content/uploads/2019/04/border-dot.svg");
+     border-image: url("https://wc-us.org/wp-content/uploads/2019/04/border-dot.svg");
+  border-image-slice: 4 4 4;
+  border-image-width: 0 0 4px;
+  border-image-repeat: round;
+  margin: 60px 0; }
+  hr.wp-block-separator.is-style-dots::before {
+    content: url("https://wc-us.org/wp-content/uploads/2019/04/Separator-Dots-Sparkles.svg");
+    padding-left: 0; }
+  hr.wp-block-separator.is-style-wide {
+    background-image: url("https://wc-us.org/wp-content/uploads/2019/04/Separator-Wide-Sparkles.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-width: 0;
+    height: 72px;
+    margin: 30px 0;
+    position: relative; }
+    hr.wp-block-separator.is-style-wide::before, hr.wp-block-separator.is-style-wide::after {
+      content: "";
+      border-bottom: 4px dotted #9e8b7e;
+      -o-border-image: url("https://wc-us.org/wp-content/uploads/2019/04/border-dot.svg");
+         border-image: url("https://wc-us.org/wp-content/uploads/2019/04/border-dot.svg");
+      border-image-slice: 4 4 4;
+      border-image-width: 0 0 4px;
+      border-image-repeat: round;
+      position: absolute;
+      top: calc(50% - 2px);
+      width: calc(50% - 75px); }
+    hr.wp-block-separator.is-style-wide::after {
+      right: 0; }
+
+.wp-block-media-text {
+  margin: 20px 0;
+  grid-gap: 20px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  background-color: transparent !important;
+  color: #fffffa; }
+  .wp-block-media-text, .wp-block-media-text.has-media-on-the-right {
+    grid-template-columns: 1fr 1fr; }
+  .wp-block-media-text h2 {
+    margin: 0 0 30px;
+    color: #fffffa; }
+  .wp-block-media-text p {
+    margin: 0; }
+    .wp-block-media-text p + p {
+      margin-top: 30px; }
+  .wp-block-media-text a,
+  .wp-block-media-text a:visited {
+    color: rgba(255, 255, 250, 0.8); }
+    .wp-block-media-text a:hover, .wp-block-media-text a:active, .wp-block-media-text a:focus,
+    .wp-block-media-text a:visited:hover,
+    .wp-block-media-text a:visited:active,
+    .wp-block-media-text a:visited:focus {
+      color: #fffffa; }
+  .wp-block-media-text .wp-block-media-text__media img {
+    overflow: hidden;
+    border-radius: 12px; }
+  .wp-block-media-text .wp-block-media-text__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding: 30px;
+    background-color: #003b63;
+    border-radius: 12px; }
+  .wp-block-media-text.has-very-dark-gray-background-color .wp-block-media-text__content {
+    background-color: #303030; }
+  .wp-block-media-text.has-vivid-red-background-color .wp-block-media-text__content {
+    background-color: #bd2b2e; }
+
 .wp-block-latest-posts {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -573,40 +651,6 @@ table {
       .wp-block-latest-posts li a {
         -ms-flex-item-align: end;
             align-self: flex-end; } }
-
-hr {
-  border-bottom: 4px dotted #9e8b7e;
-  background: transparent;
-  -o-border-image: url("https://wc-us.org/wp-content/uploads/2019/04/border-dot.svg");
-     border-image: url("https://wc-us.org/wp-content/uploads/2019/04/border-dot.svg");
-  border-image-slice: 4 4 4;
-  border-image-width: 0 0 4px;
-  border-image-repeat: round;
-  margin: 60px 0; }
-  hr.wp-block-separator.is-style-dots::before {
-    content: url("https://wc-us.org/wp-content/uploads/2019/04/Separator-Dots-Sparkles.svg");
-    padding-left: 0; }
-  hr.wp-block-separator.is-style-wide {
-    background-image: url("https://wc-us.org/wp-content/uploads/2019/04/Separator-Wide-Sparkles.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    border-width: 0;
-    height: 72px;
-    margin: 30px 0;
-    position: relative; }
-    hr.wp-block-separator.is-style-wide::before, hr.wp-block-separator.is-style-wide::after {
-      content: "";
-      border-bottom: 4px dotted #9e8b7e;
-      -o-border-image: url("https://wc-us.org/wp-content/uploads/2019/04/border-dot.svg");
-         border-image: url("https://wc-us.org/wp-content/uploads/2019/04/border-dot.svg");
-      border-image-slice: 4 4 4;
-      border-image-width: 0 0 4px;
-      border-image-repeat: round;
-      position: absolute;
-      top: calc(50% - 2px);
-      width: calc(50% - 75px); }
-    hr.wp-block-separator.is-style-wide::after {
-      right: 0; }
 
 /*--------------------------------------------------------------
 # Forms
