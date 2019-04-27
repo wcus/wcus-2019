@@ -25,7 +25,7 @@
 	color: $white;
 	background-color: $red;
 	border: none;
-	border-radius: 6px;
+	border-radius: $size__border-radius--small;
 	transition: all 0.1s ease-in-out;
 	@include light-on-dark;
 

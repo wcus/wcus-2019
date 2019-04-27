@@ -11,6 +11,7 @@ $size__height--wave-small: 60px;
 $size__width--sidebar: $size__width--main/4;
 
 $size__border-radius: 12px;
+$size__border-radius--small: 6px;
 
 @function spacing( $i: 1 ) {
 	@if ( $i == 0 ) {
