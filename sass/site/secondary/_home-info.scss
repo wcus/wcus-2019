@@ -33,13 +33,20 @@
 }
 
 #content-widget-3 {
-	display: flex;
-	align-items: stretch;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: spacing(1);
+
+	@media (max-width: $breakpoint-medium) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media (max-width: $breakpoint-small) {
+		grid-template-columns: repeat(1, 1fr);
+	}
 
 	.widget {
-		flex: 1;
-		margin: 0 spacing(0);
+		margin: 0;
 		padding: spacing(2) spacing(0);
 		background: $grey;
 		text-align: center;
