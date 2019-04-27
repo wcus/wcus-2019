@@ -16,8 +16,6 @@
 	}
 }
 
-@import "latest-posts";
-
 hr {
 	border-bottom: 4px dotted $light-brown;
 	background: transparent;
@@ -64,5 +62,7 @@ hr {
 			}
 		}
 	}
-
 }
+
+@import "media-text";
+@import "latest-posts";
