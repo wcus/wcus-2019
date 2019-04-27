@@ -69,9 +69,17 @@ hr {
 	border-radius: $size__border-radius;
 
 	h2,
-	.wp-block-cover-image-text,
 	.wp-block-cover-text {
 		color: $cream;
+	}
+
+	// Used in current WP for text (before block was changed to allow child blocks).
+	.wp-block-cover-text {
+		font-family: $font-header;
+		@include font-size( $font__size--level-2 );
+		line-height: 1.3;
+		font-weight: 700;
+		@include light-on-dark;
 	}
 }
 
