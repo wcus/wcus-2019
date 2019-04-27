@@ -435,6 +435,45 @@ table {
   margin: 0 0 1.5em;
   width: 100%; }
 
+.has-very-light-gray-background-color.has-very-light-gray-background-color {
+  background-color: #fffffa; }
+
+.has-very-dark-gray-background-color.has-very-dark-gray-background-color {
+  background-color: #303030;
+  color: #fffffa; }
+
+.has-vivid-red-background-color.has-vivid-red-background-color {
+  background-color: #bd2b2e;
+  color: #fffffa; }
+
+.has-vivid-cyan-blue-background-color.has-vivid-cyan-blue-background-color {
+  background-color: #003b63;
+  color: #fffffa; }
+
+.has-pale-pink-background-color.has-pale-pink-background-color {
+  background-color: #f98386; }
+
+.has-pale-cyan-blue-background-color.has-pale-cyan-blue-background-color {
+  background-color: #7ea1b8; }
+
+.has-very-light-gray-color.has-very-light-gray-color {
+  color: #fffffa; }
+
+.has-very-dark-gray-color.has-very-dark-gray-color {
+  color: #303030; }
+
+.has-vivid-red-color.has-vivid-red-color {
+  color: #bd2b2e; }
+
+.has-vivid-cyan-blue-color.has-vivid-cyan-blue-color {
+  color: #003b63; }
+
+.has-pale-pink-color.has-pale-pink-color {
+  color: #f98386; }
+
+.has-pale-cyan-blue-color.has-pale-cyan-blue-color {
+  color: #7ea1b8; }
+
 .entry-content .wp-block-button .wp-block-button__link {
   display: inline-block;
   padding: 15px;
