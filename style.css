@@ -1411,7 +1411,7 @@ a {
   content: "";
   display: block;
   margin: 60px auto;
-  width: 600px;
+  max-width: 600px;
   height: 10px;
   border-bottom: 4px dotted #9e8b7e;
   background: transparent;
