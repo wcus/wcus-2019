@@ -569,6 +569,14 @@ hr {
     hr.wp-block-separator.is-style-wide::after {
       right: 0; }
 
+.wp-block-cover {
+  background-color: #303030;
+  border-radius: 12px; }
+  .wp-block-cover h2,
+  .wp-block-cover .wp-block-cover-image-text,
+  .wp-block-cover .wp-block-cover-text {
+    color: #fffffa; }
+
 .wp-block-media-text {
   margin: 20px 0;
   grid-gap: 20px;

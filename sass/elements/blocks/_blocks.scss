@@ -64,5 +64,16 @@ hr {
 	}
 }
 
+.wp-block-cover {
+	background-color: $grey;
+	border-radius: $size__border-radius;
+
+	h2,
+	.wp-block-cover-image-text,
+	.wp-block-cover-text {
+		color: $cream;
+	}
+}
+
 @import "media-text";
 @import "latest-posts";
