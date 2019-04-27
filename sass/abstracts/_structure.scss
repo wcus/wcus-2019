@@ -10,6 +10,8 @@ $size__height--wave-small: 60px;
 // Sidebar TBD
 $size__width--sidebar: $size__width--main/4;
 
+$size__border-radius: 12px;
+
 @function spacing( $i: 1 ) {
 	@if ( $i == 0 ) {
 		@return 15px;
