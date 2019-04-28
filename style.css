@@ -475,6 +475,14 @@ table {
 .has-pale-cyan-blue-color.has-pale-cyan-blue-color {
   color: #7ea1b8; }
 
+.entry-content > p,
+.entry-content > ul,
+.entry-content > [class*="wp-block"] {
+  margin-bottom: 30px; }
+
+.entry-content .wp-block-spacer {
+  margin: 0 !important; }
+
 .entry-content .wp-block-button .wp-block-button__link {
   display: inline-block;
   padding: 15px;
@@ -693,6 +701,37 @@ hr {
       background-size: 70px 66px !important;
       background-position: 30px 30px !important;
       text-indent: 60px; } }
+
+.wp-block-quote {
+  margin: 0 0 20px; }
+  .wp-block-quote p {
+    margin: 0; }
+    .wp-block-quote p + p {
+      margin-top: 20px; }
+    .wp-block-quote p:last-of-type {
+      margin-bottom: 20px; }
+  .wp-block-quote cite {
+    padding-left: 30px;
+    background: url("https://wc-us.org/wp-content/uploads/2019/04/text-bubble.svg") top left no-repeat;
+    font-size: 14px;
+    font-size: 1.4rem;
+    color: #747466; }
+  .wp-block-quote.is-style-large {
+    margin-left: -60px;
+    padding: 0 0 0 60px;
+    background: url("https://wc-us.org/wp-content/uploads/2019/04/quotes.svg") top left no-repeat; }
+    @media (max-width: 782px) {
+      .wp-block-quote.is-style-large {
+        margin-left: 0;
+        padding-left: 0;
+        text-indent: 60px; } }
+    .wp-block-quote.is-style-large cite {
+      padding-left: 0;
+      background: none;
+      font-size: 18px;
+      font-size: 1.8rem; }
+      .wp-block-quote.is-style-large cite::before {
+        content: "— "; }
 
 /*--------------------------------------------------------------
 # Forms
