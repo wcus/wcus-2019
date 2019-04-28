@@ -1585,6 +1585,13 @@ a {
   clear: both;
   margin: 0 0 1.5em; }
 
+body.home .entry-header {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
+
 .wcorg-sponsors .widget-title,
 .wcb_widget_sponsors .widget-title {
   margin: 0 0 90px;
