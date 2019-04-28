@@ -627,6 +627,10 @@ hr {
     background-color: #303030; }
   .wp-block-media-text.has-vivid-red-background-color .wp-block-media-text__content {
     background-color: #bd2b2e; }
+  .wp-block-media-text.is-media-text-header .wp-block-media-text__content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
 
 .wp-block-latest-posts {
   -webkit-font-smoothing: antialiased;

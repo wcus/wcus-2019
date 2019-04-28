@@ -59,4 +59,11 @@
 			background-color: $red;
 		}
 	}
+
+	&.is-media-text-header {
+
+		.wp-block-media-text__content {
+			justify-content: center;
+		}
+	}
 }
