@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: WCUS 2019
 Theme URI: http://underscores.me/
@@ -666,6 +667,32 @@ hr {
       .wp-block-latest-posts li a {
         -ms-flex-item-align: end;
             align-self: flex-end; } }
+
+.wp-block-pullquote {
+  background: #303030 url("https://wc-us.org/wp-content/uploads/2019/04/speech.svg") 60px center no-repeat !important;
+  color: #fffffa;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border-radius: 12px;
+  text-align: left;
+  font-style: italic;
+  padding-left: 240px; }
+  .wp-block-pullquote p {
+    margin: 0; }
+    .wp-block-pullquote p + p {
+      margin-top: 30px; }
+    .wp-block-pullquote p:last-of-type {
+      margin-bottom: 30px; }
+  .wp-block-pullquote cite {
+    color: rgba(255, 255, 250, 0.7); }
+    .wp-block-pullquote cite::before {
+      content: "— "; }
+  @media (max-width: 600px) {
+    .wp-block-pullquote {
+      padding-left: 30px;
+      background-size: 70px 66px !important;
+      background-position: 30px 30px !important;
+      text-indent: 60px; } }
 
 /*--------------------------------------------------------------
 # Forms

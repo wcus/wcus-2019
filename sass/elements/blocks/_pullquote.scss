@@ -1,0 +1,37 @@
+.wp-block-pullquote {
+	// Override the style difference between regular/solid color
+	background: $grey url("#{$icon-speaking}") spacing(3) center no-repeat !important;
+	color: $cream;
+	@include light-on-dark;
+	border-radius: $size__border-radius;
+	text-align: left;
+	font-style: italic;
+	padding-left: spacing(9);
+
+	p {
+		margin: 0;
+
+		+ p {
+			margin-top: spacing(2);
+		}
+
+		&:last-of-type {
+			margin-bottom: spacing(2);
+		}
+	}
+
+	cite {
+		color: rgba($cream, 0.7);
+
+		&::before {
+			content: "— ";
+		}
+	}
+
+	@media (max-width: $breakpoint-small) {
+		padding-left: spacing(2);
+		background-size: 70px 66px !important;
+		background-position: spacing(2) spacing(2) !important;
+		text-indent: 60px;
+	}
+}
