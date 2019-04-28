@@ -676,7 +676,7 @@ hr {
         -ms-flex-item-align: end;
             align-self: flex-end; } }
 
-.wp-block-pullquote {
+.wp-block-pullquote.wp-block-pullquote {
   background: #303030 url("https://wc-us.org/wp-content/uploads/2019/04/speech.svg") 60px center no-repeat !important;
   color: #fffffa;
   -webkit-font-smoothing: antialiased;
@@ -684,20 +684,29 @@ hr {
   border-radius: 12px;
   text-align: left;
   font-style: italic;
-  padding-left: 240px; }
-  .wp-block-pullquote p {
+  padding: 60px 60px 60px 240px; }
+  .wp-block-pullquote.wp-block-pullquote blockquote {
     margin: 0; }
-    .wp-block-pullquote p + p {
+  .wp-block-pullquote.wp-block-pullquote p {
+    margin: 0;
+    font-size: 30px;
+    font-size: 3rem; }
+    .wp-block-pullquote.wp-block-pullquote p + p {
       margin-top: 30px; }
-    .wp-block-pullquote p:last-of-type {
+    .wp-block-pullquote.wp-block-pullquote p:last-of-type {
       margin-bottom: 30px; }
-  .wp-block-pullquote cite {
+  .wp-block-pullquote.wp-block-pullquote cite {
     color: rgba(255, 255, 250, 0.7); }
-    .wp-block-pullquote cite::before {
+    .wp-block-pullquote.wp-block-pullquote cite::before {
       content: "— "; }
+  .wp-block-pullquote.wp-block-pullquote.is-style-solid-color blockquote {
+    max-width: 100%; }
+    .wp-block-pullquote.wp-block-pullquote.is-style-solid-color blockquote p {
+      font-size: 30px;
+      font-size: 3rem; }
   @media (max-width: 600px) {
-    .wp-block-pullquote {
-      padding-left: 30px;
+    .wp-block-pullquote.wp-block-pullquote {
+      padding-left: 60px;
       background-size: 70px 66px !important;
       background-position: 30px 30px !important;
       text-indent: 60px; } }
