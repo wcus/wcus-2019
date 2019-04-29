@@ -38,7 +38,8 @@ hr {
 	border-image-slice: 4 4 4;
 	border-image-width: 0 0 4px;
 	border-image-repeat: round;
-	margin: spacing(3) 0;
+	margin: spacing(3) auto;
+	max-width: 600px;
 
 	&.wp-block-separator {
 

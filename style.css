@@ -556,7 +556,8 @@ hr {
   border-image-slice: 4 4 4;
   border-image-width: 0 0 4px;
   border-image-repeat: round;
-  margin: 60px 0; }
+  margin: 60px auto;
+  max-width: 600px; }
   hr.wp-block-separator.is-style-dots::before {
     content: url("https://wc-us.org/wp-content/uploads/2019/04/Separator-Dots-Sparkles.svg");
     padding-left: 0; }
@@ -1303,15 +1304,10 @@ a {
   content: "";
   display: block;
   margin: 60px auto;
-  max-width: 600px;
-  height: 10px;
-  border-bottom: 4px dotted #9e8b7e;
-  background: transparent;
-  -o-border-image: url("https://wc-us.org/wp-content/uploads/2019/04/border-dot.svg");
-     border-image: url("https://wc-us.org/wp-content/uploads/2019/04/border-dot.svg");
-  border-image-slice: 4 4 4;
-  border-image-width: 0 0 4px;
-  border-image-repeat: round; }
+  width: 100%;
+  max-width: 624px;
+  height: 4px;
+  background: url("https://wc-us.org/wp-content/uploads/2019/04/pale-blue-dots-dense.svg") bottom repeat-x; }
 
 #content-widget-2 {
   font-family: "Nunito", "Tahoma", "Verdana", sans-serif;
