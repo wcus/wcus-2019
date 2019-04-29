@@ -21,8 +21,7 @@ textarea {
 	padding: 13px spacing(1);
 
 	&:focus {
-		outline: 2px dotted $grey;
-		outline-offset: 2px;
+		@include dotted-outline;
 	}
 }
 

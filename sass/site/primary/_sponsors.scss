@@ -62,8 +62,7 @@
 		}
 
 		&:focus-within {
-			outline: 2px dotted $grey;
-			outline-offset: 2px;
+			@include dotted-outline;
 			border-color: $light-brown;
 		}
 

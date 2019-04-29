@@ -28,7 +28,7 @@
 			padding: spacing(0);
 
 			&:focus {
-				outline: 2px dotted rgba($white, 0.9);
+				@include dotted-outline(rgba($white, 0.9));
 			}
 		}
 	}
