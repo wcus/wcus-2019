@@ -2022,6 +2022,10 @@ body.home .entry-header {
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
+.comments-area {
+  margin: 60px auto 0;
+  max-width: 620px; }
+
 .comment-content a {
   word-wrap: break-word; }
 
