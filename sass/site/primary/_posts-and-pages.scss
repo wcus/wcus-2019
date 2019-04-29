@@ -24,15 +24,16 @@
 .single {
 
 	.entry-header {
-		background: $blue;
-		color: $white;
+		position: relative;
 		margin-bottom: $size__height--wave;
 		margin-left: calc(50% - 50vw);
 		max-width: none;
-		padding: spacing(5) spacing(2) spacing(4);
-		position: relative;
-		text-align: center;
 		width: 100vw;
+		padding: spacing(5) spacing(2) spacing(4);
+		background: $blue;
+		color: $white;
+		@include light-on-dark;
+		text-align: center;
 
 		@media (min-width: $breakpoint-huge) {
 			margin-bottom: $size__height--wave-huge;
@@ -64,10 +65,20 @@
 		}
 
 		.entry-title {
-			@include font-size( $font__size--header );
-			margin: 0 auto;
-			max-width: $size__width--post;
+			margin: 0 auto spacing(3);
+			max-width: $size__width--main;
 			width: 100%;
+			@include font-size( $font__size--header );
+			letter-spacing: 1px;
+		}
+
+		.entry-meta {
+			font-weight: 700;
+
+			a {
+				color: $white;
+				text-decoration: underline;
+			}
 		}
 	}
 }
@@ -75,11 +86,41 @@
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em auto 0;
+	margin: spacing(2) auto 0;
+	padding-bottom: spacing(3) + 4px;
 	max-width: $size__width--post;
+	background: url("#{$border-light-brown}") bottom repeat-x;
 }
 
 .page-links {
 	clear: both;
-	margin: 0 0 1.5em;
+}
+
+.entry-footer {
+	display: flex;
+	margin: spacing(2) auto spacing(3);
+	max-width: $size__width--post;
+	color: $mid-brown;
+	font-weight: 700;
+	@include font-size(1.6);
+
+	a {
+		color: $mid-brown;
+		text-decoration: none;
+
+		@include hover-state {
+			text-decoration: underline;
+		}
+	}
+
+	.tags-links {
+		width: 50%;
+		padding-left: 32px;
+		background: transparent url("#{$icon-tag}") bottom left no-repeat;
+	}
+
+	.edit-link {
+		text-align: right;
+		width: 50%;
+	}
 }
