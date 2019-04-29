@@ -1,5 +1,15 @@
 .entry-content {
 
+	> p,
+	> ul,
+	> [class*="wp-block"] {
+		margin-bottom: spacing(2);
+	}
+
+	.wp-block-spacer {
+		margin: 0 !important;
+	}
+
 	.wp-block-button {
 
 		.wp-block-button__link {
@@ -85,3 +95,5 @@ hr {
 
 @import "media-text";
 @import "latest-posts";
+@import "pullquote";
+@import "blockquote";
