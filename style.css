@@ -1182,9 +1182,9 @@ a {
     margin: 0 auto; }
   #wcus-hero .wcus-hero__circle-small {
     position: absolute;
+    border-radius: 100%;
     -webkit-box-shadow: 0 1px 10px rgba(86, 19, 21, 0.5);
-            box-shadow: 0 1px 10px rgba(86, 19, 21, 0.5);
-    border-radius: 100%; }
+            box-shadow: 0 1px 10px rgba(86, 19, 21, 0.5); }
   #wcus-hero .wcus-hero__logo {
     background: #fffffa url("https://wc-us.org/wp-content/uploads/2019/04/logo-badge.svg") center no-repeat;
     background-size: 75% 75%;
@@ -1374,7 +1374,8 @@ a {
     width: 100%;
     padding: 15px; }
     .widget_blog_subscription #subscribe-email input:focus {
-      outline: 2px dotted rgba(255, 255, 255, 0.9); }
+      outline: 2px dotted rgba(255, 255, 255, 0.9);
+      outline-offset: 2px; }
   .widget_blog_subscription #jetpack-subscribe-label {
     clip: auto !important;
     position: static !important;
@@ -1432,7 +1433,8 @@ a {
         color: rgba(255, 255, 255, 0.9);
         border-color: rgba(255, 255, 255, 0.9); }
       .widget_blog_subscription #subscribe-submit button:focus {
-        outline: 2px dotted rgba(255, 255, 255, 0.9); }
+        outline: 2px dotted rgba(255, 255, 255, 0.9);
+        outline-offset: 2px; }
   @media (min-width: 480px) {
     .widget_blog_subscription #subscribe-email {
       display: inline; }

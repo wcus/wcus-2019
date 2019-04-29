@@ -35,8 +35,7 @@
 	}
 
 	&:focus {
-		outline: 2px dotted $grey;
-		outline-offset: 2px;
+		@include dotted-outline;
 	}
 
 	&:active {
@@ -55,7 +54,7 @@
 	}
 
 	&:focus {
-		outline: 2px dotted rgba($white, 0.9);
+		@include dotted-outline(rgba($white, 0.9));
 	}
 }
 
@@ -75,7 +74,7 @@
 	}
 
 	&:focus {
-		outline: 2px dotted rgba($white, 0.9);
+		@include dotted-outline(rgba($white, 0.9));
 	}
 }
 
@@ -104,6 +103,6 @@
 	}
 
 	&:focus {
-		outline: 2px dotted rgba($white, 0.9);
+		@include dotted-outline(rgba($white, 0.9));
 	}
 }

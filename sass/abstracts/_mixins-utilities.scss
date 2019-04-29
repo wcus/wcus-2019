@@ -61,3 +61,13 @@
 		@content;
 	}
 }
+
+// Center block
+@mixin shadow($color: $dark-brown, $opacity: 0.5) {
+	box-shadow: 0 1px 10px rgba($color, $opacity);
+}
+
+@mixin dotted-outline($color: $grey) {
+	outline: 2px dotted $color;
+	outline-offset: 2px;
+}

@@ -21,8 +21,8 @@
 
 	.wcus-hero__circle-small {
 		position: absolute;
-		box-shadow: 0 1px 10px rgba($dark-brown, 0.5);
 		border-radius: 100%;
+		@include shadow;
 	}
 
 	.wcus-hero__logo {

@@ -76,12 +76,11 @@
 		}
 
 		@include hover-state {
-			box-shadow: 0 1px 10px rgba($dark-brown, 0.5);
+			@include shadow;
 		}
 
 		&:focus {
-			outline: 2px dotted $grey;
-			outline-offset: 2px;
+			@include dotted-outline;
 		}
 	}
 }
