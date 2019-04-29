@@ -52,14 +52,30 @@
 		background: $grey;
 		text-align: center;
 		border-radius: 12px;
+
+		@include hover-state {
+			@include shadow(darken($grey, 20%));
+		}
+
+		&:focus {
+			@include dotted-outline;
+		}
 	}
 
 	.widget:first-of-type a {
 		background: $red;
+
+		@include hover-state {
+			@include shadow(darken($red, 20%));
+		}
 	}
 
 	.widget:last-of-type a {
 		background: $blue;
+
+		@include hover-state {
+			@include shadow(darken($blue, 20%));
+		}
 	}
 
 	a {
@@ -73,14 +89,6 @@
 			display: block;
 			height: 100px;
 			margin: 0 auto spacing(1);
-		}
-
-		@include hover-state {
-			@include shadow;
-		}
-
-		&:focus {
-			@include dotted-outline;
 		}
 	}
 }
