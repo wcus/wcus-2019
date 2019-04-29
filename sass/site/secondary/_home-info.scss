@@ -45,20 +45,21 @@
 		grid-template-columns: repeat(1, 1fr);
 	}
 
-	.widget {
+	.widget a {
+		display: block;
 		margin: 0;
 		padding: spacing(2) spacing(0);
 		background: $grey;
 		text-align: center;
 		border-radius: 12px;
+	}
 
-		&:first-of-type {
-			background: $red;
-		}
+	.widget:first-of-type a {
+		background: $red;
+	}
 
-		&:last-of-type {
-			background: $blue;
-		}
+	.widget:last-of-type a {
+		background: $blue;
 	}
 
 	a {
@@ -68,19 +69,19 @@
 		color: $cream;
 		text-decoration: none;
 
-		@include hover-state {
-			text-decoration: underline;
-		}
-
-		&:hover img,
-		&:focus img {
-			// This is basically magic, which makes the cream-colored SVGs pink.
-			filter: invert(0.5) sepia(1) saturate(2) hue-rotate(-50deg);
-		}
-
 		img {
 			display: block;
+			height: 100px;
 			margin: 0 auto spacing(1);
+		}
+
+		@include hover-state {
+			box-shadow: 0 1px 10px rgba($dark-brown, 0.5);
+		}
+
+		&:focus {
+			outline: 2px dotted $grey;
+			outline-offset: 2px;
 		}
 	}
 }
