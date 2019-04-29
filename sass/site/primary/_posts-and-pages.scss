@@ -65,11 +65,24 @@
 		}
 
 		.entry-title {
-			margin: 0 auto spacing(3);
+			margin: 0 auto;
 			max-width: $size__width--main;
 			width: 100%;
 			@include font-size( $font__size--header );
 			letter-spacing: 1px;
+		}
+	}
+}
+
+// For posts only.
+.single {
+
+	.entry-header {
+		padding-top: spacing(4);
+		padding-bottom: spacing(3);
+
+		.entry-title {
+			margin-bottom: spacing(2);
 		}
 
 		.entry-meta {

@@ -1704,16 +1704,20 @@ a {
         height: 60px; } }
   .page .entry-header .entry-title,
   .single .entry-header .entry-title {
-    margin: 0 auto 60px;
+    margin: 0 auto;
     max-width: 940px;
     width: 100%;
     font-size: 48px;
     font-size: 4.8rem;
     letter-spacing: 1px; }
-  .page .entry-header .entry-meta,
+
+.single .entry-header {
+  padding-top: 90px;
+  padding-bottom: 60px; }
+  .single .entry-header .entry-title {
+    margin-bottom: 30px; }
   .single .entry-header .entry-meta {
     font-weight: 700; }
-    .page .entry-header .entry-meta a,
     .single .entry-header .entry-meta a {
       color: #fff;
       text-decoration: underline; }
