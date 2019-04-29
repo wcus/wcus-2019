@@ -480,6 +480,10 @@ table {
 .entry-content > [class*="wp-block"] {
   margin-bottom: 30px; }
 
+.entry-content > hr,
+.entry-content > .wp-block-separator {
+  margin-bottom: 60px; }
+
 .entry-content .wp-block-spacer {
   margin: 0 !important; }
 

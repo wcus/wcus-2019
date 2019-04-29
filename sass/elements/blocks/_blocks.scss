@@ -6,6 +6,11 @@
 		margin-bottom: spacing(2);
 	}
 
+	> hr,
+	> .wp-block-separator {
+		margin-bottom: spacing(3);
+	}
+
 	.wp-block-spacer {
 		margin: 0 !important;
 	}
