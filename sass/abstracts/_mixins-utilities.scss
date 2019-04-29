@@ -63,8 +63,8 @@
 }
 
 // Center block
-@mixin shadow($color: $dark-brown, $opacity: 0.5) {
-	box-shadow: 0 1px 10px rgba($color, $opacity);
+@mixin shadow($color: $dark-brown) {
+	box-shadow: 0 1px 10px rgba($color, 0.5);
 }
 
 @mixin dotted-outline($color: $grey) {
