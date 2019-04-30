@@ -607,6 +607,20 @@ hr {
     .wp-block-gallery .blocks-gallery-item figcaption {
       color: #fffffa; }
 
+.googlemaps {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  max-width: 940px;
+  border-radius: 12px;
+  overflow: hidden; }
+  @media (min-width: 940px) {
+    .googlemaps {
+      width: 940px;
+      margin-left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      max-width: none; } }
+
 .wp-block-media-text {
   margin: 20px 0;
   grid-gap: 20px;
