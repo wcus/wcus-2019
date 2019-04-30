@@ -2100,19 +2100,6 @@ body.home .entry-header {
       .wcb_widget_sponsors .wcorg-sponsor-level-bronze h2 {
         grid-column-end: span 3; } }
 
-#tix.tix-js {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  max-width: 940px;
-  padding: 0 30px; }
-  @media (min-width: 940px) {
-    #tix.tix-js {
-      width: 940px;
-      margin-left: 50%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%);
-      max-width: none; } }
-
 #tix .tix-submit .tix-checkout-button {
   display: inline-block;
   padding: 15px;
@@ -2137,6 +2124,20 @@ body.home .entry-header {
   #tix .tix-submit .tix-checkout-button:active {
     -webkit-transform: translateY(1px);
             transform: translateY(1px); }
+
+form[action*="tix_action=attendee_info"] {
+  max-width: 940px; }
+  @media (min-width: 620px) {
+    form[action*="tix_action=attendee_info"] {
+      max-width: calc(100vw - 60px);
+      margin-left: calc((680px - 100vw) / 2); } }
+  @media (min-width: 940px) {
+    form[action*="tix_action=attendee_info"] {
+      width: 940px;
+      max-width: none;
+      margin-left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); } }
 
 .tix_tickets_table {
   border: 4px dotted #9e8b7e;
