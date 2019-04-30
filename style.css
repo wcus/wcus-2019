@@ -914,8 +914,10 @@ textarea {
 
 select {
   background-color: #fff;
-  border: 2px solid #303030;
   height: 40px; }
+  select:focus {
+    outline: 2px dotted #303030;
+    outline-offset: 2px; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -2149,9 +2151,35 @@ form[action*="tix_action=attendee_info"] {
     .tix_tickets_table tbody .tix-column-description {
       display: block;
       width: 100%; } }
+  .tix_tickets_table .tix-ticket-excerpt {
+    display: block;
+    max-width: 620px;
+    color: rgba(48, 48, 48, 0.8); }
+  .tix_tickets_table .tix-column-price {
+    text-align: right;
+    font-weight: 700; }
+  .tix_tickets_table .tix-column-quantity select {
+    min-width: 4em; }
+  .tix_tickets_table .tix-column-remaining {
+    display: none; }
 
 .tix-left {
   font-weight: 700; }
+
+.tix-order-summary {
+  margin-bottom: 90px; }
+
+.tix-attendee-form tbody tr th {
+  text-align: left;
+  font-family: "Nunito", "Tahoma", "Verdana", sans-serif;
+  font-size: 28px;
+  font-size: 2.8rem;
+  line-height: 1.3;
+  font-weight: 900; }
+
+.tix-attendee-form td {
+  border: none;
+  vertical-align: middle; }
 
 .tix-ticket-form input[type="text"],
 .tix-ticket-form input[type="email"],
@@ -2244,6 +2272,10 @@ form[action*="tix_action=attendee_info"] {
   font-weight: 700; }
   .tix-row-coupon strong {
     color: #bd2b2e; }
+
+.tix-payment-method .tix-payment-tab.tix-tab-selected {
+  border: none;
+  text-align: right !important; }
 
 /*--------------------------------------------------------------
 ## Comments
