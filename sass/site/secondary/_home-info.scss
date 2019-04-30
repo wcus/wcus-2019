@@ -4,14 +4,10 @@
 		content: "";
 		display: block;
 		margin: spacing(3) auto;
-		max-width: 600px;
-		height: 10px;
-		border-bottom: 4px dotted $light-brown;
-		background: transparent;
-		border-image: url("#{$sep-dots}");
-		border-image-slice: 4 4 4;
-		border-image-width: 0 0 4px;
-		border-image-repeat: round;
+		width: 100%;
+		max-width: 624px;
+		height: 4px;
+		background: url("#{$border-light-blue-dense}") bottom repeat-x;
 	}
 }
 
