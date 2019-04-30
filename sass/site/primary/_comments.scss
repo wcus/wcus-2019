@@ -10,3 +10,34 @@
 .bypostauthor {
 	display: block;
 }
+
+.comment-form {
+
+	label {
+		display: block;
+	}
+
+	input {
+		width: 66%;
+	}
+
+	.comment-form-cookies-consent {
+
+		label {
+			display: inline;
+		}
+
+		input {
+			width: 16px;
+			height: 16px;
+			margin-right: spacing(0);
+		}
+	}
+
+	.form-submit {
+
+		input {
+			width: auto;
+		}
+	}
+}
