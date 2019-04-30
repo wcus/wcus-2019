@@ -681,8 +681,18 @@ hr {
   -moz-osx-font-smoothing: grayscale;
   font-family: "Nunito", "Tahoma", "Verdana", sans-serif;
   font-weight: 700;
-  margin: 30px 0; }
+  margin: 30px 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px; }
+  .wp-block-latest-posts.is-grid {
+    display: grid; }
+    .wp-block-latest-posts.is-grid li {
+      margin: 0;
+      width: 100%; }
   .wp-block-latest-posts li {
+    width: 100%;
     background: #303030;
     color: #fff;
     padding: 30px;
@@ -713,7 +723,17 @@ hr {
         width: 100%; }
       .wp-block-latest-posts li a {
         -ms-flex-item-align: end;
-            align-self: flex-end; } }
+            align-self: flex-end; }
+    .wp-block-latest-posts.columns-2 {
+      grid-template-columns: repeat(2, 1fr); }
+    .wp-block-latest-posts.columns-3 {
+      grid-template-columns: repeat(3, 1fr); }
+    .wp-block-latest-posts.columns-4 {
+      grid-template-columns: repeat(4, 1fr); }
+    .wp-block-latest-posts.columns-5 {
+      grid-template-columns: repeat(5, 1fr); }
+    .wp-block-latest-posts.columns-6 {
+      grid-template-columns: repeat(6, 1fr); } }
 
 .wp-block-pullquote.wp-block-pullquote {
   background: #303030 url("https://wc-us.org/wp-content/uploads/2019/04/speech.svg") 60px center no-repeat !important;
@@ -1155,24 +1175,29 @@ a {
   margin-left: auto;
   margin-right: auto; }
 
-.alignfull,
-.alignwide {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  max-width: none; }
-  .alignfull img,
-  .alignwide img {
-    width: 100%; }
+@media (min-width: 620px) {
+  .alignfull,
+  .alignwide {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    max-width: none; } }
+
+.alignfull img,
+.alignwide img {
+  width: 100%; }
 
 .alignwide {
   max-width: 940px; }
+  @media (min-width: 620px) {
+    .alignwide {
+      max-width: calc(100vw - 60px);
+      margin-left: calc((680px - 100vw) / 2); } }
   @media (min-width: 940px) {
     .alignwide {
       width: 940px;
       margin-left: 50%;
       -webkit-transform: translateX(-50%);
-              transform: translateX(-50%);
-      max-width: none; } }
+              transform: translateX(-50%); } }
 
 /*--------------------------------------------------------------
 # Clearings
