@@ -437,119 +437,6 @@ table {
   margin: 0 0 1.5em;
   width: 100%; }
 
-#tix {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  max-width: 940px; }
-  @media (min-width: 940px) {
-    #tix {
-      width: 940px;
-      margin-left: 50%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%);
-      max-width: none; } }
-
-tr th:first-child,
-tr td:first-child {
-  padding-left: 0; }
-
-tr th:last-child,
-tr td:last-child {
-  padding-right: 0;
-  text-align: right; }
-  tr th:last-child.tix-right,
-  tr td:last-child.tix-right {
-    text-align: left;
-    line-height: 2; }
-
-.tix-left {
-  font-weight: 700; }
-
-.tix_tickets_table {
-  border: 4px dotted #9e8b7e;
-  border-left-width: 0;
-  border-right-width: 0;
-  border-collapse: inherit;
-  border-spacing: inherit; }
-
-thead {
-  text-align: left; }
-
-td,
-th {
-  padding: 1em 1.5em; }
-
-td {
-  border-top: 1px solid rgba(126, 161, 184, 0.2); }
-
-.tix-ticket-form input[type="text"],
-.tix-ticket-form input[type="email"],
-.tix-ticket-form input[type="url"],
-.tix-ticket-form textarea,
-.tix-private-form input[type="text"],
-.tix-private-form input[type="email"],
-.tix-private-form input[type="url"],
-.tix-private-form textarea,
-.tix-attendee-form input[type="text"],
-.tix-attendee-form input[type="email"],
-.tix-attendee-form input[type="url"],
-.tix-attendee-form textarea,
-.tix-receipt-form input[type="text"],
-.tix-receipt-form input[type="email"],
-.tix-receipt-form input[type="url"],
-.tix-receipt-form textarea {
-  width: 100%; }
-
-select {
-  height: 40px;
-  background-color: #fff; }
-
-#tix-coupon-link {
-  display: inline-block;
-  padding: 15px;
-  font-family: "Nunito", "Tahoma", "Verdana", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  font-size: 1.8rem;
-  color: #fff;
-  background-color: #bd2b2e;
-  border: none;
-  border-radius: 6px;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #bd2b2e;
-  background-color: transparent;
-  padding: 13px;
-  border: 2px solid #bd2b2e;
-  text-decoration: none;
-  border-color: #303030;
-  color: #303030; }
-  #tix-coupon-link:hover, #tix-coupon-link:active, #tix-coupon-link:focus {
-    color: #fff;
-    background-color: #303030; }
-  #tix-coupon-link:focus {
-    outline: 2px dotted #303030;
-    outline-offset: 2px; }
-  #tix-coupon-link:active {
-    -webkit-transform: translateY(1px);
-            transform: translateY(1px); }
-  #tix-coupon-link:hover, #tix-coupon-link:active, #tix-coupon-link:focus {
-    color: #303030;
-    background-color: transparent;
-    border-color: #303030; }
-  #tix-coupon-link:hover, #tix-coupon-link:active, #tix-coupon-link:focus {
-    border-color: #bd2b2e;
-    color: #bd2b2e; }
-
-#tix-coupon-container::before {
-  content: "Coupon Code";
-  margin-right: 60px; }
-
-#tix-coupon-container #tix-coupon-input {
-  width: calc(100% - 330px); }
-
 .has-very-light-gray-background-color.has-very-light-gray-background-color {
   background-color: #fffffa; }
 
@@ -2184,6 +2071,178 @@ body.home .entry-header {
       .wcb_widget_sponsors .wcorg-sponsor-level-bronze .sponsor-level-title,
       .wcb_widget_sponsors .wcorg-sponsor-level-bronze h2 {
         grid-column-end: span 3; } }
+
+thead {
+  text-align: left; }
+
+tr th:first-child,
+tr td:first-child {
+  padding-left: 0; }
+
+tr th:last-child,
+tr td:last-child {
+  padding-right: 0;
+  text-align: right; }
+  tr th:last-child.tix-right,
+  tr td:last-child.tix-right {
+    text-align: left;
+    line-height: 2; }
+
+td,
+th {
+  padding: 1em 1.5em; }
+
+td {
+  border-top: 1px solid rgba(126, 161, 184, 0.2); }
+
+select {
+  background-color: #fff;
+  border: 2px solid #303030;
+  height: 40px; }
+
+#tix.tix-js {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  max-width: 940px;
+  padding: 0 30px; }
+  @media (min-width: 940px) {
+    #tix.tix-js {
+      width: 940px;
+      margin-left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      max-width: none; } }
+
+#tix .tix-submit .tix-checkout-button {
+  display: inline-block;
+  padding: 15px;
+  font-family: "Nunito", "Tahoma", "Verdana", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: #bd2b2e;
+  border: none;
+  border-radius: 6px;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  #tix .tix-submit .tix-checkout-button:hover, #tix .tix-submit .tix-checkout-button:active, #tix .tix-submit .tix-checkout-button:focus {
+    color: #fff;
+    background-color: #303030; }
+  #tix .tix-submit .tix-checkout-button:focus {
+    outline: 2px dotted #303030;
+    outline-offset: 2px; }
+  #tix .tix-submit .tix-checkout-button:active {
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px); }
+
+.tix_tickets_table {
+  border: 4px dotted #9e8b7e;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-collapse: inherit;
+  border-spacing: inherit; }
+  @media (min-width: 600px) {
+    .tix_tickets_table tbody .tix-column-description {
+      display: block;
+      width: 100%; } }
+
+.tix-left {
+  font-weight: 700; }
+
+.tix-ticket-form input[type="text"],
+.tix-ticket-form input[type="email"],
+.tix-ticket-form input[type="url"],
+.tix-ticket-form textarea,
+.tix-ticket-form select,
+.tix-private-form input[type="text"],
+.tix-private-form input[type="email"],
+.tix-private-form input[type="url"],
+.tix-private-form textarea,
+.tix-private-form select,
+.tix-attendee-form input[type="text"],
+.tix-attendee-form input[type="email"],
+.tix-attendee-form input[type="url"],
+.tix-attendee-form textarea,
+.tix-attendee-form select,
+.tix-receipt-form input[type="text"],
+.tix-receipt-form input[type="email"],
+.tix-receipt-form input[type="url"],
+.tix-receipt-form textarea,
+.tix-receipt-form select {
+  width: 100%; }
+
+.tix-ticket-form select,
+.tix-private-form select,
+.tix-attendee-form select,
+.tix-receipt-form select {
+  width: 100%;
+  height: 57px; }
+
+.tix-ticket-form input[type="radio"],
+.tix-ticket-form input[type="checkbox"],
+.tix-private-form input[type="radio"],
+.tix-private-form input[type="checkbox"],
+.tix-attendee-form input[type="radio"],
+.tix-attendee-form input[type="checkbox"],
+.tix-receipt-form input[type="radio"],
+.tix-receipt-form input[type="checkbox"] {
+  margin-right: 0.5em; }
+
+#tix-coupon-link {
+  display: inline-block;
+  padding: 15px;
+  font-family: "Nunito", "Tahoma", "Verdana", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: #bd2b2e;
+  border: none;
+  border-radius: 6px;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #bd2b2e;
+  background-color: transparent;
+  padding: 13px;
+  border: 2px solid #bd2b2e;
+  text-decoration: none;
+  border-color: #303030;
+  color: #303030; }
+  #tix-coupon-link:hover, #tix-coupon-link:active, #tix-coupon-link:focus {
+    color: #fff;
+    background-color: #303030; }
+  #tix-coupon-link:focus {
+    outline: 2px dotted #303030;
+    outline-offset: 2px; }
+  #tix-coupon-link:active {
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px); }
+  #tix-coupon-link:hover, #tix-coupon-link:active, #tix-coupon-link:focus {
+    color: #303030;
+    background-color: transparent;
+    border-color: #303030; }
+  #tix-coupon-link:hover, #tix-coupon-link:active, #tix-coupon-link:focus {
+    border-color: #bd2b2e;
+    color: #bd2b2e; }
+
+#tix-coupon-container::before {
+  content: "Coupon Code";
+  color: #303030;
+  font-weight: 400;
+  margin-right: 60px; }
+
+#tix-coupon-container #tix-coupon-input {
+  width: calc(100% - 330px); }
+
+.tix-row-coupon {
+  font-weight: 700; }
+  .tix-row-coupon strong {
+    color: #bd2b2e; }
 
 /*--------------------------------------------------------------
 ## Comments

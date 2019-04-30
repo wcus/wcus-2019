@@ -1,0 +1,141 @@
+thead {
+	text-align: left;
+}
+
+tr {
+
+	th:first-child,
+	td:first-child {
+		padding-left: 0;
+	}
+
+	th:last-child,
+	td:last-child {
+		padding-right: 0;
+		text-align: right;
+
+		&.tix-right {
+			text-align: left;
+			line-height: 2;
+		}
+	}
+}
+
+td,
+th {
+	padding: 1em 1.5em;
+}
+
+td {
+	border-top: 1px solid rgba($light-blue, 0.2);
+}
+
+select {
+	background-color: $white;
+	border: 2px solid $grey;
+	height: 40px;
+}
+
+#tix {
+
+	&.tix-js {
+		width: 100vw;
+		margin-left: calc(50% - 50vw);
+		max-width: $size__width--main;
+		padding: 0 spacing(2);
+
+		@media (min-width: $size__width--main) {
+			width: $size__width--main;
+			margin-left: 50%;
+			transform: translateX(-50%);
+			max-width: none;
+		}
+	}
+
+	.tix-submit {
+
+		.tix-checkout-button {
+			@include button;
+		}
+	}
+}
+
+.tix_tickets_table {
+	border: 4px dotted $light-brown;
+	border-left-width: 0;
+	border-right-width: 0;
+	border-collapse: inherit;
+	border-spacing: inherit;
+
+	tbody {
+
+		.tix-column-description {
+			@media (min-width: $breakpoint-small) {
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+}
+
+.tix-left {
+	font-weight: 700;
+}
+
+.tix-ticket-form,
+.tix-private-form,
+.tix-attendee-form,
+.tix-receipt-form {
+
+	input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	textarea,
+	select {
+		width: 100%;
+	}
+
+	select {
+		width: 100%;
+		height: 57px;
+	}
+
+	input[type="radio"],
+	input[type="checkbox"] {
+		margin-right: 0.5em;
+	}
+}
+
+#tix-coupon-link {
+	@include button-outline;
+	text-decoration: none;
+	border-color: $gray;
+	color: $gray;
+
+	@include hover-state {
+		border-color: $red;
+		color: $red;
+	}
+}
+
+#tix-coupon-container {
+
+	&::before {
+		content: "Coupon Code";
+		color: $grey;
+		font-weight: 400;
+		margin-right: 60px;
+	}
+
+	#tix-coupon-input {
+		width: calc(100% - 330px);
+	}
+}
+
+.tix-row-coupon {
+	font-weight: 700;
+
+	strong {
+		color: $red;
+	}
+}
