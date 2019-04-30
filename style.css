@@ -887,7 +887,7 @@ input[type="datetime-local"],
 input[type="color"],
 textarea {
   color: #303030;
-  border: 2px solid #303030;
+  border: 1px solid #303030;
   border-radius: 6px;
   padding: 13px 20px; }
   input[type="text"]:focus,
@@ -914,6 +914,7 @@ textarea {
 
 select {
   background-color: #fff;
+  border: 1px solid #303030;
   height: 40px; }
   select:focus {
     outline: 2px dotted #303030;

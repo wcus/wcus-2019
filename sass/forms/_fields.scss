@@ -15,7 +15,7 @@ input[type="datetime-local"],
 input[type="color"],
 textarea {
 	color: $color__text;
-	border: 2px solid $color__text;
+	border: 1px solid $color__text;
 	border-radius: $size__border-radius--small;
 	// 13 is a better padding than the spacing rhythm gives us.
 	padding: 13px spacing(1);
@@ -31,6 +31,7 @@ textarea {
 
 select {
 	background-color: $white;
+	border: 1px solid $color__text;
 	height: 40px;
 
 	&:focus {
