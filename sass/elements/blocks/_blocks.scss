@@ -99,6 +99,43 @@ hr {
 	}
 }
 
+.wp-block-image {
+
+	figcaption {
+		@include font-size(1.6);
+		color: $mid-brown;
+	}
+}
+
+.wp-block-gallery {
+	margin-left: 0;
+
+	.blocks-gallery-item {
+		border-radius: $size__border-radius;
+		overflow: hidden;
+
+		figcaption {
+			color: $cream;
+		}
+	}
+}
+
+// Not technically a block, but the google maps shortcode can't be made `alignwide`.
+.googlemaps {
+	width: 100vw;
+	margin-left: calc(50% - 50vw);
+	max-width: $size__width--main;
+	border-radius: $size__border-radius;
+	overflow: hidden;
+
+	@media (min-width: $size__width--main) {
+		width: $size__width--main;
+		margin-left: 50%;
+		transform: translateX(-50%);
+		max-width: none;
+	}
+}
+
 @import "media-text";
 @import "latest-posts";
 @import "pullquote";

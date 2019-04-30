@@ -426,7 +426,8 @@ img {
   height: auto;
   /* Make sure images are scaled correctly. */
   max-width: 100%;
-  /* Adhere to container width. */ }
+  /* Adhere to container width. */
+  border-radius: 12px; }
 
 figure {
   margin: 1em 0;
@@ -597,6 +598,33 @@ hr {
     font-weight: 700;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
+
+.wp-block-image figcaption {
+  font-size: 16px;
+  font-size: 1.6rem;
+  color: #747466; }
+
+.wp-block-gallery {
+  margin-left: 0; }
+  .wp-block-gallery .blocks-gallery-item {
+    border-radius: 12px;
+    overflow: hidden; }
+    .wp-block-gallery .blocks-gallery-item figcaption {
+      color: #fffffa; }
+
+.googlemaps {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  max-width: 940px;
+  border-radius: 12px;
+  overflow: hidden; }
+  @media (min-width: 940px) {
+    .googlemaps {
+      width: 940px;
+      margin-left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      max-width: none; } }
 
 .wp-block-media-text {
   margin: 20px 0;
@@ -1012,24 +1040,66 @@ a {
   .page-navigation-container .menu-item-has-children > a::after {
     display: none; } }
 
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
+.comment-navigation,
+.posts-navigation,
 .post-navigation {
-  margin: 0 0 1.5em;
-  overflow: hidden; }
-
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-  float: left;
-  width: 50%; }
-
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-  float: right;
-  text-align: right;
-  width: 50%; }
+  max-width: 620px;
+  color: #747466;
+  font-weight: 700;
+  font-size: 16px;
+  font-size: 1.6rem; }
+  .comment-navigation a,
+  .posts-navigation a,
+  .post-navigation a {
+    color: #747466;
+    text-decoration: none; }
+    .comment-navigation a:hover, .comment-navigation a:active, .comment-navigation a:focus,
+    .posts-navigation a:hover,
+    .posts-navigation a:active,
+    .posts-navigation a:focus,
+    .post-navigation a:hover,
+    .post-navigation a:active,
+    .post-navigation a:focus {
+      text-decoration: underline; }
+  .site-main .comment-navigation, .site-main
+  .posts-navigation, .site-main
+  .post-navigation {
+    margin: 30px auto 0;
+    padding-bottom: 44px;
+    background: url("https://wc-us.org/wp-content/uploads/2019/04/separator-short-wide.svg") bottom center no-repeat; }
+  .comment-navigation .nav-links,
+  .posts-navigation .nav-links,
+  .post-navigation .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .comment-navigation .nav-previous,
+  .posts-navigation .nav-previous,
+  .post-navigation .nav-previous {
+    width: 50%; }
+    .comment-navigation .nav-previous a::before,
+    .posts-navigation .nav-previous a::before,
+    .post-navigation .nav-previous a::before {
+      content: "";
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+      background: transparent url("https://wc-us.org/wp-content/uploads/2019/04/arrow-left.svg") bottom left no-repeat; }
+  .comment-navigation .nav-next,
+  .posts-navigation .nav-next,
+  .post-navigation .nav-next {
+    text-align: right;
+    width: 50%; }
+    .comment-navigation .nav-next a::after,
+    .posts-navigation .nav-next a::after,
+    .post-navigation .nav-next a::after {
+      content: "";
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+      background: transparent url("https://wc-us.org/wp-content/uploads/2019/04/arrow-left.svg") top left no-repeat;
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg); }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1621,15 +1691,17 @@ a {
 
 .page .entry-header,
 .single .entry-header {
-  background: #003b63;
-  color: #fff;
+  position: relative;
   margin-bottom: 95px;
   margin-left: calc(50% - 50vw);
   max-width: none;
+  width: 100vw;
   padding: 120px 30px 90px;
-  position: relative;
-  text-align: center;
-  width: 100vw; }
+  background: #003b63;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center; }
   @media (min-width: 1440px) {
     .page .entry-header,
     .single .entry-header {
@@ -1660,21 +1732,57 @@ a {
         height: 60px; } }
   .page .entry-header .entry-title,
   .single .entry-header .entry-title {
+    margin: 0 auto;
+    max-width: 940px;
+    width: 100%;
     font-size: 48px;
     font-size: 4.8rem;
-    margin: 0 auto;
-    max-width: 620px;
-    width: 100%; }
+    letter-spacing: 1px; }
+
+.single .entry-header {
+  padding-top: 90px;
+  padding-bottom: 60px; }
+  .single .entry-header .entry-title {
+    margin-bottom: 30px; }
+  .single .entry-header .entry-meta {
+    font-weight: 700; }
+    .single .entry-header .entry-meta a {
+      color: #fff;
+      text-decoration: underline; }
 
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5em auto 0;
-  max-width: 620px; }
+  margin: 30px auto 0;
+  padding-bottom: 64px;
+  max-width: 620px;
+  background: url("https://wc-us.org/wp-content/uploads/2019/04/pale-brown-dots.svg") bottom repeat-x; }
 
 .page-links {
-  clear: both;
-  margin: 0 0 1.5em; }
+  clear: both; }
+
+.entry-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px auto 60px;
+  max-width: 620px;
+  color: #747466;
+  font-weight: 700;
+  font-size: 16px;
+  font-size: 1.6rem; }
+  .entry-footer a {
+    color: #747466;
+    text-decoration: none; }
+    .entry-footer a:hover, .entry-footer a:active, .entry-footer a:focus {
+      text-decoration: underline; }
+  .entry-footer .tags-links {
+    width: 50%;
+    padding-left: 32px;
+    background: transparent url("https://wc-us.org/wp-content/uploads/2019/04/tag.svg") bottom left no-repeat; }
+  .entry-footer .edit-link {
+    text-align: right;
+    width: 50%; }
 
 body.home .entry-header {
   clip: rect(1px, 1px, 1px, 1px);
@@ -1942,11 +2050,54 @@ body.home .entry-header {
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
+.comments-area {
+  margin: 60px auto 0;
+  max-width: 620px; }
+
 .comment-content a {
   word-wrap: break-word; }
 
 .bypostauthor {
   display: block; }
+
+.comment-meta {
+  color: #747466;
+  font-weight: 700;
+  font-size: 16px;
+  font-size: 1.6rem; }
+  .comment-meta a {
+    color: #747466;
+    text-decoration: none; }
+    .comment-meta a:hover, .comment-meta a:active, .comment-meta a:focus {
+      text-decoration: underline; }
+
+.comment-list {
+  margin: 0 0 60px;
+  padding: 0; }
+  .comment-list .children {
+    padding-top: 30px;
+    padding-left: 30px; }
+  .comment-list .avatar {
+    float: left;
+    margin-right: 15px;
+    margin-top: 8px; }
+
+.comment-form label {
+  display: block; }
+
+.comment-form input {
+  width: 66%; }
+
+.comment-form .comment-form-cookies-consent label {
+  display: inline; }
+
+.comment-form .comment-form-cookies-consent input {
+  width: 16px;
+  height: 16px;
+  margin-right: 15px; }
+
+.comment-form .form-submit input {
+  width: auto; }
 
 /*--------------------------------------------------------------
 # Media
