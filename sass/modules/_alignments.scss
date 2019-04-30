@@ -15,12 +15,13 @@
 	@include center-block;
 }
 
-// .alignwide {}
 .alignfull,
 .alignwide {
-	width: 100vw;
-	margin-left: calc(50% - 50vw);
-	max-width: none;
+	@media (min-width: $size__width--post) {
+		width: 100vw;
+		margin-left: calc(50% - 50vw);
+		max-width: none;
+	}
 
 	img {
 		width: 100%;
@@ -30,10 +31,14 @@
 .alignwide {
 	max-width: $size__width--main;
 
+	@media (min-width: $size__width--post) {
+		max-width: calc(100vw - #{spacing(2) * 2});
+		margin-left: calc((#{$size__width--post + (spacing(2) * 2)} - 100vw) / 2);
+	}
+
 	@media (min-width: $size__width--main) {
 		width: $size__width--main;
 		margin-left: 50%;
 		transform: translateX(-50%);
-		max-width: none;
 	}
 }
