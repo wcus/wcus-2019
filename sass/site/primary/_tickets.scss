@@ -1,6 +1,4 @@
 #tix {
-	max-width: 100vw;
-	overflow: scroll;
 
 	.tix-submit {
 
@@ -8,16 +6,23 @@
 			@include button;
 		}
 	}
+
+	@media (max-width: $breakpoint-content-width) {
+		max-width: 100vw;
+		overflow: scroll;
+	}
 }
 
 form[action*="tix_action=attendee_info"] {
 	max-width: $size__width--main;
 	width: $size__width--post;
 	overflow-x: auto;
+	margin-left: 0;
 
-	@media (min-width: $size__width--post) {
+	@media (min-width: $breakpoint-content-width) {
+		width: $size__width--main;
 		max-width: calc(100vw - #{spacing(2) * 2});
-		margin-left: calc((#{$size__width--post + (spacing(2) * 2)} - 100vw) / 2);
+		margin-left: calc((#{$breakpoint-content-width} - 100vw) / 2);
 	}
 
 	@media (min-width: $size__width--main) {
