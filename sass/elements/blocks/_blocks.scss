@@ -93,6 +93,27 @@ hr {
 	}
 }
 
+.wp-block-image {
+
+	figcaption {
+		@include font-size(1.6);
+		color: $mid-brown;
+	}
+}
+
+.wp-block-gallery {
+	margin-left: 0;
+
+	.blocks-gallery-item {
+		border-radius: $size__border-radius;
+		overflow: hidden;
+
+		figcaption {
+			color: $cream;
+		}
+	}
+}
+
 @import "media-text";
 @import "latest-posts";
 @import "pullquote";

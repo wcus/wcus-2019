@@ -426,7 +426,8 @@ img {
   height: auto;
   /* Make sure images are scaled correctly. */
   max-width: 100%;
-  /* Adhere to container width. */ }
+  /* Adhere to container width. */
+  border-radius: 12px; }
 
 figure {
   margin: 1em 0;
@@ -592,6 +593,19 @@ hr {
     font-weight: 700;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
+
+.wp-block-image figcaption {
+  font-size: 16px;
+  font-size: 1.6rem;
+  color: #747466; }
+
+.wp-block-gallery {
+  margin-left: 0; }
+  .wp-block-gallery .blocks-gallery-item {
+    border-radius: 12px;
+    overflow: hidden; }
+    .wp-block-gallery .blocks-gallery-item figcaption {
+      color: #fffffa; }
 
 .wp-block-media-text {
   margin: 20px 0;
