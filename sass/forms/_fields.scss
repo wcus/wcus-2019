@@ -28,3 +28,9 @@ textarea {
 textarea {
 	width: 100%;
 }
+
+select {
+	background-color: $white;
+	border: 2px solid $grey;
+	height: 40px;
+}
