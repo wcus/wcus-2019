@@ -1873,7 +1873,7 @@ a {
   .entry-footer .tags-links {
     width: 50%;
     padding-left: 32px;
-    background: transparent url("https://wc-us.org/wp-content/uploads/2019/04/tag.svg") bottom left no-repeat; }
+    background: transparent url("https://wc-us.org/wp-content/uploads/2019/04/tag.svg") left 3px no-repeat; }
   .entry-footer .edit-link {
     text-align: right;
     width: 50%; }
