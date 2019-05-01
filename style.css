@@ -448,10 +448,6 @@ tr th:last-child,
 tr td:last-child {
   padding-right: 0;
   text-align: right; }
-  tr th:last-child.tix-right,
-  tr td:last-child.tix-right {
-    text-align: left;
-    line-height: 2; }
 
 td,
 th {
@@ -2213,6 +2209,17 @@ form[action*="tix_action=attendee_info"] {
 
 .tix-left {
   font-weight: 700; }
+
+.tix-right.tix-right {
+  text-align: left; }
+  .tix-right.tix-right label {
+    display: block;
+    margin-bottom: 8px;
+    padding-left: 28px; }
+    .tix-right.tix-right label input {
+      margin-left: -28px; }
+  .tix-right.tix-right br {
+    display: none; }
 
 .tix-order-summary {
   margin-bottom: 90px; }
