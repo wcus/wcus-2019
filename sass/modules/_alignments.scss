@@ -31,9 +31,9 @@
 .alignwide {
 	max-width: $size__width--main;
 
-	@media (min-width: $size__width--post) {
+	@media (min-width: $breakpoint-content-width) {
 		max-width: calc(100vw - #{spacing(2) * 2});
-		margin-left: calc((#{$size__width--post + (spacing(2) * 2)} - 100vw) / 2);
+		margin-left: calc((#{$breakpoint-content-width} - 100vw) / 2);
 	}
 
 	@media (min-width: $size__width--main) {
