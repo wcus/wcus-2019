@@ -67,6 +67,24 @@ form[action*="tix_action=attendee_info"] {
 	font-weight: 700;
 }
 
+.tix-right.tix-right {
+	text-align: left;
+
+	label {
+		display: block;
+		margin-bottom: 8px;
+		padding-left: 28px;
+
+		input {
+			margin-left: -28px;
+		}
+	}
+
+	br {
+		display: none;
+	}
+}
+
 .tix-order-summary {
 	margin-bottom: spacing(4);
 }
