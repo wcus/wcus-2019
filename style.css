@@ -1778,6 +1778,15 @@ a {
 .group-blog .byline {
   display: inline; }
 
+.blog .entry-header,
+.blog .page-title,
+.archive .entry-header,
+.archive .page-title,
+.error404 .entry-header,
+.error404 .page-title {
+  margin: 30px auto 0;
+  max-width: 620px; }
+
 .page .entry-header,
 .single .entry-header {
   position: relative;

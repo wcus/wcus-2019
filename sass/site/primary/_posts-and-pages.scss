@@ -20,6 +20,17 @@
 	display: inline;
 }
 
+.blog,
+.archive,
+.error404 {
+
+	.entry-header,
+	.page-title {
+		margin: spacing(2) auto 0;
+		max-width: $size__width--post;
+	}
+}
+
 .page,
 .single {
 
