@@ -2176,9 +2176,8 @@ body.home .entry-header {
     overflow: scroll; } }
 
 form[action*="tix_action=attendee_info"] {
-  max-width: 940px;
-  width: 620px;
-  overflow-x: auto;
+  max-width: 100%;
+  width: 100%;
   margin-left: 0; }
   @media (min-width: 680px) {
     form[action*="tix_action=attendee_info"] {
@@ -2192,6 +2191,20 @@ form[action*="tix_action=attendee_info"] {
       margin-left: 50%;
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%); } }
+
+@media (max-width: 680px) {
+  th.tix-column-price,
+  th.tix-column-quantity {
+    display: none; } }
+
+@media (max-width: 680px) {
+  td.tix-column-description, td.tix-column-price, td.tix-column-quantity {
+    display: block;
+    padding-right: 0; }
+  td.tix-column-price::before {
+    content: "Price:"; }
+  td.tix-column-quantity::before {
+    content: "Quantity:"; } }
 
 .tix_tickets_table {
   border: 4px dotted #9e8b7e;
