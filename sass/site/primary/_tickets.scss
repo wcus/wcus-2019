@@ -14,9 +14,8 @@
 }
 
 form[action*="tix_action=attendee_info"] {
-	max-width: $size__width--main;
-	width: $size__width--post;
-	overflow-x: auto;
+	max-width: 100%;
+	width: 100%;
 	margin-left: 0;
 
 	@media (min-width: $breakpoint-content-width) {
@@ -30,6 +29,39 @@ form[action*="tix_action=attendee_info"] {
 		max-width: none;
 		margin-left: 50%;
 		transform: translateX(-50%);
+	}
+}
+
+th.tix-column-price,
+th.tix-column-quantity {
+	@media (max-width: $breakpoint-content-width) {
+		display: none;
+	}
+}
+
+td {
+	@media (max-width: $breakpoint-content-width) {
+
+		&.tix-column-description,
+		&.tix-column-price,
+		&.tix-column-quantity {
+			display: block;
+			padding-right: 0;
+		}
+
+		&.tix-column-price {
+
+			&::before {
+				content: "Price:";
+			}
+		}
+
+		&.tix-column-quantity {
+
+			&::before {
+				content: "Quantity:";
+			}
+		}
 	}
 }
 
@@ -162,11 +194,18 @@ form[action*="tix_action=attendee_info"] {
 		content: "Coupon Code";
 		color: $grey;
 		font-weight: 400;
-		margin-right: 60px;
+
+		@media (min-width: $breakpoint-content-width) {
+			margin-right: 60px;
+		}
 	}
 
 	#tix-coupon-input {
-		width: calc(100% - 330px);
+		width: 100%;
+
+		@media (min-width: $breakpoint-content-width) {
+			width: calc(100% - 330px);
+		}
 	}
 }
 
