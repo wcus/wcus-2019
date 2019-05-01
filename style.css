@@ -2334,11 +2334,16 @@ form[action*="tix_action=attendee_info"] {
 #tix-coupon-container::before {
   content: "Coupon Code";
   color: #303030;
-  font-weight: 400;
-  margin-right: 60px; }
+  font-weight: 400; }
+  @media (min-width: 680px) {
+    #tix-coupon-container::before {
+      margin-right: 60px; } }
 
 #tix-coupon-container #tix-coupon-input {
-  width: calc(100% - 330px); }
+  width: 100%; }
+  @media (min-width: 680px) {
+    #tix-coupon-container #tix-coupon-input {
+      width: calc(100% - 330px); } }
 
 .tix-row-coupon {
   font-weight: 700; }

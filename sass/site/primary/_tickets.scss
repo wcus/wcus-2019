@@ -176,11 +176,18 @@ td {
 		content: "Coupon Code";
 		color: $grey;
 		font-weight: 400;
-		margin-right: 60px;
+
+		@media (min-width: $breakpoint-content-width) {
+			margin-right: 60px;
+		}
 	}
 
 	#tix-coupon-input {
-		width: calc(100% - 330px);
+		width: 100%;
+
+		@media (min-width: $breakpoint-content-width) {
+			width: calc(100% - 330px);
+		}
 	}
 }
 
