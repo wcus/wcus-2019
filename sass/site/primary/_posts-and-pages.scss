@@ -121,7 +121,8 @@
 }
 
 .entry-footer {
-	display: flex;
+	display: grid;
+	grid-template-columns: auto auto;
 	margin: spacing(2) auto spacing(3);
 	max-width: $size__width--post;
 	color: $mid-brown;
@@ -137,14 +138,28 @@
 		}
 	}
 
-	.tags-links {
-		width: 50%;
+	span:not(.edit-link) {
 		padding-left: 32px;
-		background: transparent url("#{$icon-tag}") left 3px no-repeat;
+		background-color: transparent;
+		background-position: left 3px;
+		background-repeat: no-repeat;
+	}
+
+	.cat-links {
+		background-image: url("#{$icon-category}");
+	}
+
+	.tags-links {
+		grid-row-start: 2;
+		background-image: url("#{$icon-tag}");
+	}
+
+	.comments-link {
+		grid-row-start: 3;
+		background-image: url("#{$icon-text}");
 	}
 
 	.edit-link {
 		text-align: right;
-		width: 50%;
 	}
 }

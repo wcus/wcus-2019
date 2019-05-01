@@ -1856,9 +1856,8 @@ a {
   clear: both; }
 
 .entry-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
   margin: 30px auto 60px;
   max-width: 620px;
   color: #747466;
@@ -1870,13 +1869,21 @@ a {
     text-decoration: none; }
     .entry-footer a:hover, .entry-footer a:active, .entry-footer a:focus {
       text-decoration: underline; }
-  .entry-footer .tags-links {
-    width: 50%;
+  .entry-footer span:not(.edit-link) {
     padding-left: 32px;
-    background: transparent url("https://wc-us.org/wp-content/uploads/2019/04/tag.svg") left 3px no-repeat; }
+    background-color: transparent;
+    background-position: left 3px;
+    background-repeat: no-repeat; }
+  .entry-footer .cat-links {
+    background-image: url("https://wc-us.org/wp-content/uploads/2019/05/category.svg"); }
+  .entry-footer .tags-links {
+    grid-row-start: 2;
+    background-image: url("https://wc-us.org/wp-content/uploads/2019/04/tag.svg"); }
+  .entry-footer .comments-link {
+    grid-row-start: 3;
+    background-image: url("https://wc-us.org/wp-content/uploads/2019/04/text-bubble.svg"); }
   .entry-footer .edit-link {
-    text-align: right;
-    width: 50%; }
+    text-align: right; }
 
 body.home .entry-header {
   clip: rect(1px, 1px, 1px, 1px);
