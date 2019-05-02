@@ -1858,6 +1858,7 @@ a {
 .entry-footer {
   display: grid;
   grid-template-columns: auto auto;
+  grid-row-gap: 5px;
   margin: 30px auto 60px;
   max-width: 620px;
   color: #747466;
@@ -1877,13 +1878,15 @@ a {
   .entry-footer .cat-links {
     background-image: url("https://wc-us.org/wp-content/uploads/2019/05/category.svg"); }
   .entry-footer .tags-links {
-    grid-row-start: 2;
     background-image: url("https://wc-us.org/wp-content/uploads/2019/04/tag.svg"); }
   .entry-footer .comments-link {
-    grid-row-start: 3;
     background-image: url("https://wc-us.org/wp-content/uploads/2019/04/text-bubble.svg"); }
   .entry-footer .edit-link {
     text-align: right; }
+  .entry-footer span:not(.edit-link):nth-of-type(2) {
+    grid-row-start: 2; }
+  .entry-footer span:not(.edit-link):nth-of-type(3) {
+    grid-row-start: 2; }
 
 body.home .entry-header {
   clip: rect(1px, 1px, 1px, 1px);

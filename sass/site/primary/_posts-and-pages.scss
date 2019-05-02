@@ -123,6 +123,7 @@
 .entry-footer {
 	display: grid;
 	grid-template-columns: auto auto;
+	grid-row-gap: 5px;
 	margin: spacing(2) auto spacing(3);
 	max-width: $size__width--post;
 	color: $mid-brown;
@@ -150,16 +151,22 @@
 	}
 
 	.tags-links {
-		grid-row-start: 2;
 		background-image: url("#{$icon-tag}");
 	}
 
 	.comments-link {
-		grid-row-start: 3;
 		background-image: url("#{$icon-text}");
 	}
 
 	.edit-link {
 		text-align: right;
+	}
+
+	span:not(.edit-link):nth-of-type(2) {
+		grid-row-start: 2;
+	}
+
+	span:not(.edit-link):nth-of-type(3) {
+		grid-row-start: 2;
 	}
 }
