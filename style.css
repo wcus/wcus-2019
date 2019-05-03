@@ -1886,7 +1886,7 @@ a {
   .entry-footer span:not(.edit-link):nth-of-type(2) {
     grid-row-start: 2; }
   .entry-footer span:not(.edit-link):nth-of-type(3) {
-    grid-row-start: 2; }
+    grid-row-start: 3; }
 
 body.home .entry-header {
   clip: rect(1px, 1px, 1px, 1px);
