@@ -1003,7 +1003,7 @@ a {
         height: 16px;
         -webkit-transform: rotate(-90deg);
                 transform: rotate(-90deg);
-        background: url("https://wc-us.org/wp-content/uploads/2019/04/arrow-down-hover.svg") no-repeat center; }
+        background: url("https://wc-us.org/wp-content/uploads/2019/05/chevron-down-hover.svg") no-repeat center; }
       .page-navigation-container ul ul .focus > a {
         border-left: 3px solid currentColor; }
     .page-navigation-container ul li:hover > ul,
@@ -1018,10 +1018,10 @@ a {
       background-image: url("https://wc-us.org/wp-content/uploads/2019/04/underline-hover.svg"); }
     .page-navigation-container li.menu-item-has-children:hover > a::after,
     .page-navigation-container li.menu-item-has-children.focus > a::after {
-      background-image: url("https://wc-us.org/wp-content/uploads/2019/04/arrow-down-hover.svg"); }
+      background-image: url("https://wc-us.org/wp-content/uploads/2019/05/chevron-down-hover.svg"); }
   .page-navigation-container a {
     display: inline-block;
-    padding: 25px 15px;
+    padding: 25px 10px;
     font-family: "Nunito", "Tahoma", "Verdana", sans-serif;
     font-weight: 700;
     color: #003b63;
@@ -1034,11 +1034,11 @@ a {
   .page-navigation-container .menu-item-has-children > a::after {
     content: "";
     display: inline-block;
-    vertical-align: middle;
-    margin-left: 15px;
-    width: 16px;
+    vertical-align: top;
+    margin-left: 8px;
+    width: 10px;
     height: 1em;
-    background: url("https://wc-us.org/wp-content/uploads/2019/04/arrow-down.svg") no-repeat center; }
+    background: url("https://wc-us.org/wp-content/uploads/2019/05/chevron-down.svg") no-repeat center; }
   .page-navigation-container .callout > a {
     display: inline-block;
     padding: 15px;
@@ -1082,7 +1082,7 @@ a {
   .page-navigation-container .current-menu-item.menu-item-has-children > a::after,
   .page-navigation-container .current_page_ancestor.menu-item-has-children > a::after,
   .page-navigation-container .current-menu-ancestor.menu-item-has-children > a::after {
-    background-image: url("https://wc-us.org/wp-content/uploads/2019/04/arrow-down-current.svg"); }
+    background-image: url("https://wc-us.org/wp-content/uploads/2019/05/chevron-down-current.svg"); }
 
 .js .menu-toggle,
 .js .dropdown-toggle {
@@ -1094,7 +1094,7 @@ a {
     vertical-align: middle;
     width: 24px;
     height: 24px;
-    background: transparent url("https://wc-us.org/wp-content/uploads/2019/04/arrow-down.svg") no-repeat center;
+    background: transparent url("https://wc-us.org/wp-content/uploads/2019/05/chevron-down.svg") no-repeat center;
     background-size: 16px 16px; }
   .js .menu-toggle {
     display: inline-block;

@@ -47,7 +47,7 @@
 				width: 16px;
 				height: 16px;
 				transform: rotate(-90deg);
-				background: url("#{$icon-arrow-down-hover}") no-repeat center;
+				background: url("#{$icon-chevron-down-hover}") no-repeat center;
 			}
 
 			.focus > a {
@@ -73,13 +73,13 @@
 
 		&.menu-item-has-children:hover > a::after,
 		&.menu-item-has-children.focus > a::after {
-			background-image: url("#{$icon-arrow-down-hover}");
+			background-image: url("#{$icon-chevron-down-hover}");
 		}
 	}
 
 	a {
 		display: inline-block;
-		padding: 25px #{ spacing(2) / 2};
+		padding: 25px 10px;
 		font-family: $font-button;
 		font-weight: 700;
 		color: $blue;
@@ -97,11 +97,11 @@
 	.menu-item-has-children > a::after {
 		content: "";
 		display: inline-block;
-		vertical-align: middle;
-		margin-left: spacing(0);
-		width: 16px;
+		vertical-align: top;
+		margin-left: 8px;
+		width: 10px;
 		height: 1em;
-		background: url("#{$icon-arrow-down}") no-repeat center;
+		background: url("#{$icon-chevron-down}") no-repeat center;
 	}
 
 	.callout {
@@ -133,7 +133,7 @@
 		}
 
 		&.menu-item-has-children > a::after {
-			background-image: url("#{$icon-arrow-down-current}");
+			background-image: url("#{$icon-chevron-down-current}");
 		}
 	}
 }
@@ -150,7 +150,7 @@
 		vertical-align: middle;
 		width: 24px;
 		height: 24px;
-		background: transparent url("#{$icon-arrow-down}") no-repeat center;
+		background: transparent url("#{$icon-chevron-down}") no-repeat center;
 		background-size: 16px 16px;
 	}
 
