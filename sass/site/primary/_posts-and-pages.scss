@@ -20,60 +20,31 @@
 	display: inline;
 }
 
-.blog,
-.archive,
-.error404 {
+.site-main > header,
+.page-header {
+	@include blue-wave-header;
 
-	.entry-header,
 	.page-title {
-		margin: spacing(2) auto 0;
-		max-width: $size__width--post;
+		margin: 0 auto;
+		max-width: $size__width--main;
+		@include font-size( $font__size--header );
+		letter-spacing: 1px;
 	}
+}
+
+.page-title.screen-reader-text {
+	clip: unset;
+	clip-path: unset;
+	position: static !important;
+	height: auto;
+	width: auto;
 }
 
 .page,
 .single {
 
 	.entry-header {
-		position: relative;
-		margin-bottom: $size__height--wave;
-		margin-left: calc(50% - 50vw);
-		max-width: none;
-		width: 100vw;
-		padding: spacing(5) spacing(2) spacing(4);
-		background: $blue;
-		color: $white;
-		@include light-on-dark;
-		text-align: center;
-
-		@media (min-width: $breakpoint-huge) {
-			margin-bottom: $size__height--wave-huge;
-		}
-
-		@media (max-width: $breakpoint-mobile) {
-			margin-bottom: $size__height--wave-small;
-		}
-
-		&::after {
-			content: "";
-			background: url("#{$short_wave}") no-repeat top;
-			background-size: contain;
-			position: absolute;
-			left: 0;
-			bottom: -$size__height--wave;
-			height: $size__height--wave;
-			width: 100vw;
-
-			@media (min-width: $breakpoint-huge) {
-				bottom: -$size__height--wave-huge;
-				height: $size__height--wave-huge;
-			}
-
-			@media (max-width: $breakpoint-mobile) {
-				bottom: -$size__height--wave-small;
-				height: $size__height--wave-small;
-			}
-		}
+		@include blue-wave-header;
 
 		.entry-title {
 			margin: 0 auto;
@@ -114,6 +85,10 @@
 	padding-bottom: spacing(3) + 4px;
 	max-width: $size__width--post;
 	background: url("#{$border-light-brown}") bottom repeat-x;
+
+	*:first-child {
+		margin-top: 0;
+	}
 }
 
 .page-links {
@@ -168,5 +143,52 @@
 
 	span:not(.edit-link):nth-of-type(3) {
 		grid-row-start: 2;
+	}
+}
+
+// Styles for archive pages.
+.blog,
+.archive {
+
+	.entry-header {
+		margin: spacing(2) auto 0;
+		max-width: $size__width--post;
+
+		.entry-title {
+			margin-bottom: spacing(0);
+
+			a {
+				color: $blue;
+				text-decoration: none;
+
+				@include hover-state {
+					text-decoration: underline;
+				}
+			}
+		}
+
+		.entry-meta {
+			color: $mid-brown;
+			font-weight: 700;
+			@include font-size(1.6);
+
+			a {
+				color: $mid-brown;
+				text-decoration: none;
+
+				@include hover-state {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	.entry-content,
+	.entry-summary {
+		background: none;
+	}
+
+	.entry-footer {
+		display: none;
 	}
 }
