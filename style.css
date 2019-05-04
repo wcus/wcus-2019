@@ -2501,11 +2501,14 @@ body.page-slug-attendees .entry-content {
 
 body.page-slug-attendees #tix-attendees {
   text-align: center; }
+  body.page-slug-attendees #tix-attendees ul {
+    margin: 0;
+    padding: 0; }
   body.page-slug-attendees #tix-attendees li {
     height: auto;
     min-height: 146px;
     margin-bottom: 30px; }
-    body.page-slug-attendees #tix-attendees li:nth-of-type(4n+1) {
+    body.page-slug-attendees #tix-attendees li:nth-of-type(5n+1) {
       clear: left; }
   body.page-slug-attendees #tix-attendees .avatar {
     float: none;
@@ -2524,6 +2527,36 @@ body.page-slug-attendees #tix-attendees {
   body.page-slug-attendees #tix-attendees .tix-attendee-twitter {
     font-size: 16px;
     font-size: 1.6rem; }
+  body.page-slug-attendees #tix-attendees li {
+    /* stylelint-disable-line no-duplicate-selectors */ }
+    @media (max-width: 782px) {
+      body.page-slug-attendees #tix-attendees li {
+        width: 25%; }
+        body.page-slug-attendees #tix-attendees li:nth-of-type(5n+1) {
+          clear: none; }
+        body.page-slug-attendees #tix-attendees li:nth-of-type(4n+1) {
+          clear: left; } }
+    @media (max-width: 600px) {
+      body.page-slug-attendees #tix-attendees li {
+        width: 33.3333%; }
+        body.page-slug-attendees #tix-attendees li:nth-of-type(4n+1) {
+          clear: none; }
+        body.page-slug-attendees #tix-attendees li:nth-of-type(3n+1) {
+          clear: left; } }
+    @media (max-width: 480px) {
+      body.page-slug-attendees #tix-attendees li {
+        width: 100%;
+        clear: left;
+        text-align: left; }
+        body.page-slug-attendees #tix-attendees li .avatar {
+          float: left;
+          margin-right: 30px; } }
+    @media (max-width: 380px) {
+      body.page-slug-attendees #tix-attendees li {
+        text-align: center; }
+        body.page-slug-attendees #tix-attendees li .avatar {
+          float: none;
+          margin-right: 0; } }
 
 .error404 .page-content .search-form,
 .error404 .page-content .widget {

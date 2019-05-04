@@ -8,12 +8,17 @@ body.page-slug-attendees {
 	#tix-attendees {
 		text-align: center;
 
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+
 		li {
 			height: auto;
 			min-height: 146px;
 			margin-bottom: spacing(2);
 
-			&:nth-of-type(4n+1) {
+			&:nth-of-type(5n+1) {
 				clear: left;
 			}
 		}
@@ -42,6 +47,52 @@ body.page-slug-attendees {
 
 		.tix-attendee-twitter {
 			@include font-size(1.6);
+		}
+
+		li { /* stylelint-disable-line no-duplicate-selectors */
+			@media (max-width: $breakpoint-medium) {
+				width: 25%;
+
+				&:nth-of-type(5n+1) {
+					clear: none;
+				}
+
+				&:nth-of-type(4n+1) {
+					clear: left;
+				}
+			}
+
+			@media (max-width: $breakpoint-small) {
+				width: 33.3333%;
+
+				&:nth-of-type(4n+1) {
+					clear: none;
+				}
+
+				&:nth-of-type(3n+1) {
+					clear: left;
+				}
+			}
+
+			@media (max-width: $breakpoint-mobile) {
+				width: 100%;
+				clear: left;
+				text-align: left;
+
+				.avatar {
+					float: left;
+					margin-right: spacing(2);
+				}
+			}
+
+			@media (max-width: $breakpoint-tiny) {
+				text-align: center;
+
+				.avatar {
+					float: none;
+					margin-right: 0;
+				}
+			}
 		}
 	}
 }
