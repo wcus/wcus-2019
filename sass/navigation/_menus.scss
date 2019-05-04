@@ -169,7 +169,12 @@
 		width: 24px;
 		height: 24px;
 		background: transparent url("#{$icon-chevron-down}") no-repeat center;
-		background-size: 16px 16px;
+		background-size: 18px 9px;
+		transition: none;
+
+		&.toggled-on {
+			transform: rotate(180deg);
+		}
 	}
 
 	.js .menu-toggle {
@@ -191,10 +196,18 @@
 
 		ul {
 			display: none;
+			text-align: left;
 		}
 
 		&.toggled-on .menu {
 			display: block;
+			position: absolute;
+			top: 73px;
+			left: 0;
+			right: 0;
+			padding: spacing(1) spacing(2) spacing(2);
+			background: $white;
+			box-shadow: 0 4px 4px rgba($grey, 0.2);
 		}
 
 		.sub-menu {
@@ -206,19 +219,67 @@
 
 			&.toggled-on {
 				display: block;
+				padding-top: spacing(0);
+				padding-bottom: spacing(0);
+				background-image: url("#{$icon-underline-hover}");
+				background-repeat: no-repeat;
+			}
+
+			a {
+				width: auto;
+			}
+
+			li:hover > a::after {
+				display: none;
 			}
 		}
 
 		li {
 			display: block;
+
+			&:hover > a,
+			&.focus > a {
+				background-image: none;
+			}
 		}
 
 		a {
-			padding: spacing(0);
+			padding: 10px;
+			display: block;
 		}
 
-		.menu-item-has-children > a::after {
-			display: none;
+		.current_page_item,
+		.current-menu-item,
+		.current_page_ancestor,
+		.current-menu-ancestor {
+
+			> a {
+				background-image: none;
+			}
+		}
+
+		.menu-item-has-children {
+			position: relative;
+
+			.dropdown-toggle {
+				position: absolute;
+				top: 0;
+				right: 0;
+				height: 40px;
+				width: 40px;
+			}
+
+			> a::after {
+				display: none;
+			}
+		}
+
+		.callout {
+
+			> a {
+				display: block;
+				text-align: center;
+			}
 		}
 	}
 }

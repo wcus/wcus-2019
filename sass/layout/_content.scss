@@ -23,6 +23,10 @@
 		padding: 0 spacing(2);
 	}
 
+	@media (max-width: $breakpoint-medium) {
+		padding-right: 0;
+	}
+
 	* {
 		z-index: 1;
 	}
