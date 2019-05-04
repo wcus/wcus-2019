@@ -2496,6 +2496,35 @@ body.page-slug-tickets .entry-content {
 .tix-row-question-1297 .tix-left {
   vertical-align: top; }
 
+body.page-slug-attendees .entry-content {
+  max-width: 940px; }
+
+body.page-slug-attendees #tix-attendees {
+  text-align: center; }
+  body.page-slug-attendees #tix-attendees li {
+    height: auto;
+    min-height: 146px;
+    margin-bottom: 30px; }
+    body.page-slug-attendees #tix-attendees li:nth-of-type(4n+1) {
+      clear: left; }
+  body.page-slug-attendees #tix-attendees .avatar {
+    float: none;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%; }
+  body.page-slug-attendees #tix-attendees .tix-field {
+    margin-left: 0;
+    font-size: 18px;
+    font-size: 1.8rem; }
+  body.page-slug-attendees #tix-attendees .tix-attendee-name {
+    display: none; }
+  body.page-slug-attendees #tix-attendees .tix-please-provide-your-name-as-you-would-like-it-to-appear-on-your-badge {
+    font-weight: 700;
+    margin-bottom: 5px; }
+  body.page-slug-attendees #tix-attendees .tix-attendee-twitter {
+    font-size: 16px;
+    font-size: 1.6rem; }
+
 .error404 .page-content .search-form,
 .error404 .page-content .widget {
   margin-bottom: 60px; }

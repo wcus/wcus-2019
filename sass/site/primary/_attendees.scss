@@ -1,0 +1,47 @@
+body.page-slug-attendees {
+
+	.entry-content {
+		max-width: $size__width--main;
+	}
+
+	// Need to use ID since the plugin CSS uses it :/
+	#tix-attendees {
+		text-align: center;
+
+		li {
+			height: auto;
+			min-height: 146px;
+			margin-bottom: spacing(2);
+
+			&:nth-of-type(4n+1) {
+				clear: left;
+			}
+		}
+
+		.avatar {
+			float: none;
+			width: 96px;
+			height: 96px;
+			border-radius: 50%;
+		}
+
+		.tix-field {
+			margin-left: 0;
+			@include font-size($font__size--body);
+		}
+
+		// Respect attendee's preference for name
+		.tix-attendee-name {
+			display: none;
+		}
+
+		.tix-please-provide-your-name-as-you-would-like-it-to-appear-on-your-badge {
+			font-weight: 700;
+			margin-bottom: 5px;
+		}
+
+		.tix-attendee-twitter {
+			@include font-size(1.6);
+		}
+	}
+}
