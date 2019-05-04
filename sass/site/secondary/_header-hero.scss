@@ -111,10 +111,30 @@
 	}
 
 	@media (max-width: $breakpoint-small) {
+		background-image: none;
+		padding-bottom: spacing(3);
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 300px;
+			background: url("#{$hero-image}") no-repeat center;
+			background-size: cover;
+		}
+
+		&::after {
+			top: 162px;
+			bottom: unset;
+			z-index: 1;
+		}
 
 		.wcus-hero__circle {
 			width: 380px;
 			height: 380px;
+			z-index: 2;
 		}
 
 		.wcus-hero__logo {
@@ -144,6 +164,40 @@
 			p {
 				margin-top: 0;
 				@include font-size(2.4);
+			}
+		}
+	}
+
+	@media (max-width: $breakpoint-mobile) {
+		padding-top: spacing(3);
+
+		.wcus-hero__circle {
+			width: 310px;
+			height: 310px;
+		}
+
+		.wcus-hero__logo {
+			top: -25px;
+			left: -10px;
+			width: 120px;
+			height: 120px;
+		}
+
+		.wcus-hero__signup {
+			width: 100px;
+			height: 100px;
+			bottom: -15px;
+		}
+
+		.wcus-hero__message {
+
+			h2 {
+				@include font-size(2.6);
+			}
+
+			p {
+				margin-top: 0;
+				@include font-size(1.8);
 			}
 		}
 	}

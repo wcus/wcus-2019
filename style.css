@@ -1493,28 +1493,67 @@ a {
       #wcus-hero::after {
         background-size: 100% 140px; } }
   @media (max-width: 600px) {
-    #wcus-hero .wcus-hero__circle {
-      width: 380px;
-      height: 380px; }
-    #wcus-hero .wcus-hero__logo {
-      width: 180px;
-      height: 180px; }
-    #wcus-hero .wcus-hero__signup {
-      width: 120px;
-      height: 120px;
-      font-size: 14px;
-      font-size: 1.4rem; }
-      #wcus-hero .wcus-hero__signup span::before {
-        background-size: 21px 21px;
-        height: 21px;
-        padding-bottom: 7.5px; }
-    #wcus-hero .wcus-hero__message h2 {
-      font-size: 32px;
-      font-size: 3.2rem; }
-    #wcus-hero .wcus-hero__message p {
-      margin-top: 0;
-      font-size: 24px;
-      font-size: 2.4rem; } }
+    #wcus-hero {
+      background-image: none;
+      padding-bottom: 60px; }
+      #wcus-hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 300px;
+        background: url("https://wc-us.org/wp-content/uploads/2019/04/wcus-background.jpg") no-repeat center;
+        background-size: cover; }
+      #wcus-hero::after {
+        top: 162px;
+        bottom: unset;
+        z-index: 1; }
+      #wcus-hero .wcus-hero__circle {
+        width: 380px;
+        height: 380px;
+        z-index: 2; }
+      #wcus-hero .wcus-hero__logo {
+        width: 180px;
+        height: 180px; }
+      #wcus-hero .wcus-hero__signup {
+        width: 120px;
+        height: 120px;
+        font-size: 14px;
+        font-size: 1.4rem; }
+        #wcus-hero .wcus-hero__signup span::before {
+          background-size: 21px 21px;
+          height: 21px;
+          padding-bottom: 7.5px; }
+      #wcus-hero .wcus-hero__message h2 {
+        font-size: 32px;
+        font-size: 3.2rem; }
+      #wcus-hero .wcus-hero__message p {
+        margin-top: 0;
+        font-size: 24px;
+        font-size: 2.4rem; } }
+  @media (max-width: 480px) {
+    #wcus-hero {
+      padding-top: 60px; }
+      #wcus-hero .wcus-hero__circle {
+        width: 310px;
+        height: 310px; }
+      #wcus-hero .wcus-hero__logo {
+        top: -25px;
+        left: -10px;
+        width: 120px;
+        height: 120px; }
+      #wcus-hero .wcus-hero__signup {
+        width: 100px;
+        height: 100px;
+        bottom: -15px; }
+      #wcus-hero .wcus-hero__message h2 {
+        font-size: 26px;
+        font-size: 2.6rem; }
+      #wcus-hero .wcus-hero__message p {
+        margin-top: 0;
+        font-size: 18px;
+        font-size: 1.8rem; } }
 
 #content-widgets::after {
   content: "";
