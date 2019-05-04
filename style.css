@@ -1774,14 +1774,62 @@ a {
 .group-blog .byline {
   display: inline; }
 
-.blog .entry-header,
-.blog .page-title,
-.archive .entry-header,
-.archive .page-title,
-.error404 .entry-header,
-.error404 .page-title {
-  margin: 30px auto 0;
-  max-width: 620px; }
+.site-main > header,
+.page-header {
+  position: relative;
+  margin-bottom: 95px;
+  margin-left: calc(50% - 50vw);
+  max-width: none;
+  width: 100vw;
+  padding: 120px 30px 90px;
+  background: #003b63;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center; }
+  @media (min-width: 1440px) {
+    .site-main > header,
+    .page-header {
+      margin-bottom: 7vw; } }
+  @media (max-width: 480px) {
+    .site-main > header,
+    .page-header {
+      margin-bottom: 60px; } }
+  .site-main > header::after,
+  .page-header::after {
+    content: "";
+    background: url("https://wc-us.org/wp-content/uploads/2019/04/short-wave.svg") no-repeat top;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    bottom: -95px;
+    height: 95px;
+    width: 100vw; }
+    @media (min-width: 1440px) {
+      .site-main > header::after,
+      .page-header::after {
+        bottom: -7vw;
+        height: 7vw; } }
+    @media (max-width: 480px) {
+      .site-main > header::after,
+      .page-header::after {
+        bottom: -60px;
+        height: 60px; } }
+  .site-main > header .page-title,
+  .page-header .page-title {
+    margin: 0 auto;
+    max-width: 940px;
+    font-size: 48px;
+    font-size: 4.8rem;
+    letter-spacing: 1px; }
+
+.page-title.screen-reader-text {
+  clip: unset;
+  -webkit-clip-path: unset;
+          clip-path: unset;
+  position: static !important;
+  height: auto;
+  width: auto; }
 
 .page .entry-header,
 .single .entry-header {
@@ -1851,6 +1899,10 @@ a {
   padding-bottom: 64px;
   max-width: 620px;
   background: url("https://wc-us.org/wp-content/uploads/2019/04/pale-brown-dots.svg") bottom repeat-x; }
+  .page-content *:first-child,
+  .entry-content *:first-child,
+  .entry-summary *:first-child {
+    margin-top: 0; }
 
 .page-links {
   clear: both; }
@@ -1887,6 +1939,48 @@ a {
     grid-row-start: 2; }
   .entry-footer span:not(.edit-link):nth-of-type(3) {
     grid-row-start: 3; }
+
+.blog .entry-header,
+.archive .entry-header {
+  margin: 30px auto 0;
+  max-width: 620px; }
+  .blog .entry-header .entry-title,
+  .archive .entry-header .entry-title {
+    margin-bottom: 15px; }
+    .blog .entry-header .entry-title a,
+    .archive .entry-header .entry-title a {
+      color: #003b63;
+      text-decoration: none; }
+      .blog .entry-header .entry-title a:hover, .blog .entry-header .entry-title a:active, .blog .entry-header .entry-title a:focus,
+      .archive .entry-header .entry-title a:hover,
+      .archive .entry-header .entry-title a:active,
+      .archive .entry-header .entry-title a:focus {
+        text-decoration: underline; }
+  .blog .entry-header .entry-meta,
+  .archive .entry-header .entry-meta {
+    color: #747466;
+    font-weight: 700;
+    font-size: 16px;
+    font-size: 1.6rem; }
+    .blog .entry-header .entry-meta a,
+    .archive .entry-header .entry-meta a {
+      color: #747466;
+      text-decoration: none; }
+      .blog .entry-header .entry-meta a:hover, .blog .entry-header .entry-meta a:active, .blog .entry-header .entry-meta a:focus,
+      .archive .entry-header .entry-meta a:hover,
+      .archive .entry-header .entry-meta a:active,
+      .archive .entry-header .entry-meta a:focus {
+        text-decoration: underline; }
+
+.blog .entry-content,
+.blog .entry-summary,
+.archive .entry-content,
+.archive .entry-summary {
+  background: none; }
+
+.blog .entry-footer,
+.archive .entry-footer {
+  display: none; }
 
 body.home .entry-header {
   clip: rect(1px, 1px, 1px, 1px);
@@ -2401,6 +2495,13 @@ body.page-slug-tickets .entry-content {
 .tix-row-question-1296 .tix-left,
 .tix-row-question-1297 .tix-left {
   vertical-align: top; }
+
+.error404 .page-content .search-form,
+.error404 .page-content .widget {
+  margin-bottom: 60px; }
+
+.error404 .page-content .search-field {
+  width: calc(100% - 110px); }
 
 /*--------------------------------------------------------------
 ## Comments

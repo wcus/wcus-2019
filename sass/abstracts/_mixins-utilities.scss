@@ -62,12 +62,56 @@
 	}
 }
 
-// Center block
+// Add a standard box shadow to the element.
 @mixin shadow($color: $dark-brown) {
 	box-shadow: 0 1px 10px rgba($color, 0.5);
 }
 
+// Add the standard focus style outline.
 @mixin dotted-outline($color: $grey) {
 	outline: 2px dotted $color;
 	outline-offset: 2px;
+}
+
+// Add the blue background & wave.
+@mixin blue-wave-header {
+	position: relative;
+	margin-bottom: $size__height--wave;
+	margin-left: calc(50% - 50vw);
+	max-width: none;
+	width: 100vw;
+	padding: spacing(5) spacing(2) spacing(4);
+	background: $blue;
+	color: $white;
+	@include light-on-dark;
+	text-align: center;
+
+	@media (min-width: $breakpoint-huge) {
+		margin-bottom: $size__height--wave-huge;
+	}
+
+	@media (max-width: $breakpoint-mobile) {
+		margin-bottom: $size__height--wave-small;
+	}
+
+	&::after {
+		content: "";
+		background: url("#{$short_wave}") no-repeat top;
+		background-size: contain;
+		position: absolute;
+		left: 0;
+		bottom: -$size__height--wave;
+		height: $size__height--wave;
+		width: 100vw;
+
+		@media (min-width: $breakpoint-huge) {
+			bottom: -$size__height--wave-huge;
+			height: $size__height--wave-huge;
+		}
+
+		@media (max-width: $breakpoint-mobile) {
+			bottom: -$size__height--wave-small;
+			height: $size__height--wave-small;
+		}
+	}
 }
