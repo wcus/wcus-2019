@@ -115,9 +115,18 @@
 			background-image: url("#{$icon-pencil}") !important;
 			background-position: spacing(1) center !important;
 			background-size: 17px 17px;
+
+			@media screen and (max-width: $breakpoint-large) {
+				margin-left: 5px;
+			}
 		}
 
 		&:hover > a {
+			color: $cream;
+		}
+
+		&.current_page_item > a,
+		&.current-menu-item > a {
 			color: $cream;
 		}
 	}
@@ -134,6 +143,15 @@
 
 		&.menu-item-has-children > a::after {
 			background-image: url("#{$icon-chevron-down-current}");
+		}
+	}
+
+	@media screen and (max-width: $breakpoint-large) {
+		@include font-size(1.6);
+
+		a {
+			padding-left: 5px;
+			padding-right: 5px;
 		}
 	}
 }

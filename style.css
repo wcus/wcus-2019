@@ -1070,7 +1070,13 @@ a {
     .page-navigation-container .callout > a:active {
       -webkit-transform: translateY(1px);
               transform: translateY(1px); }
+    @media screen and (max-width: 960px) {
+      .page-navigation-container .callout > a {
+        margin-left: 5px; } }
   .page-navigation-container .callout:hover > a {
+    color: #fffffa; }
+  .page-navigation-container .callout.current_page_item > a,
+  .page-navigation-container .callout.current-menu-item > a {
     color: #fffffa; }
   .page-navigation-container .current_page_item > a,
   .page-navigation-container .current-menu-item > a,
@@ -1083,6 +1089,13 @@ a {
   .page-navigation-container .current_page_ancestor.menu-item-has-children > a::after,
   .page-navigation-container .current-menu-ancestor.menu-item-has-children > a::after {
     background-image: url("https://wc-us.org/wp-content/uploads/2019/05/chevron-down-current.svg"); }
+  @media screen and (max-width: 960px) {
+    .page-navigation-container {
+      font-size: 16px;
+      font-size: 1.6rem; }
+      .page-navigation-container a {
+        padding-left: 5px;
+        padding-right: 5px; } }
 
 .js .menu-toggle,
 .js .dropdown-toggle {
