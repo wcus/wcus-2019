@@ -40,9 +40,14 @@ The block color palette colors are re-mapped by the theme to our theme colors. T
 
 | Editor Color | Theme Color Name | Theme Color |
 |--------------|------------------|-------------|
-| ![](https://placehold.it/18/eeeeee/000000?text=+) Very Light Gray  | Cream | ![](https://placehold.it/18/fffffa/000000?text=+) `#fffffa` |
-| ![](https://placehold.it/18/313131/000000?text=+) Very Dark Gray  | Grey | ![](https://placehold.it/18/303030/000000?text=+) `#303030` |
-| ![](https://placehold.it/18/cf2e2e/000000?text=+) Vivid Red  | Red | ![](https://placehold.it/18/bd2b2e/000000?text=+) `#bd2b2e` |
-| ![](https://placehold.it/18/0693e3/000000?text=+) Vivid Cyan Blue  | Blue | ![](https://placehold.it/18/003b63/000000?text=+) `#003b63` |
 | ![](https://placehold.it/18/f78da7/000000?text=+) Pale Pink  | Light Pink | ![](https://placehold.it/18/f98386/000000?text=+) `#f98386` |
+| ![](https://placehold.it/18/cf2e2e/000000?text=+) Vivid Red  | Red | ![](https://placehold.it/18/bd2b2e/000000?text=+) `#bd2b2e` |
+| ![](https://placehold.it/18/ff6900/000000?text=+) Luminous vivid orange | | n/a |
+| ![](https://placehold.it/18/fcb900/000000?text=+) Luminous vivid amber | | n/a |
+| ![](https://placehold.it/18/7bdcb5/000000?text=+) Light green cyan | | n/a |
+| ![](https://placehold.it/18/00d084/000000?text=+) Vivid green cyan | | n/a |
 | ![](https://placehold.it/18/8ed1fc/000000?text=+) Pale Cyan Blue  | Light Blue | ![](https://placehold.it/18/7ea1b8/000000?text=+) `#7ea1b8` |
+| ![](https://placehold.it/18/0693e3/000000?text=+) Vivid Cyan Blue  | Blue | ![](https://placehold.it/18/003b63/000000?text=+) `#003b63` |
+| ![](https://placehold.it/18/eeeeee/000000?text=+) Very Light Gray  | Cream | ![](https://placehold.it/18/fffffa/000000?text=+) `#fffffa` |
+| ![](https://placehold.it/18/abb8c3/000000?text=+) Cyan bluish gray | | n/a |
+| ![](https://placehold.it/18/313131/000000?text=+) Very Dark Gray  | Grey | ![](https://placehold.it/18/303030/000000?text=+) `#303030` |
