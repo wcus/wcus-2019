@@ -28,6 +28,11 @@ body.page-slug-tickets {
 	border-collapse: inherit;
 	border-spacing: inherit;
 
+	th:last-child,
+	td:last-child {
+		text-align: right;
+	}
+
 	.tix-ticket-excerpt {
 		display: block;
 		max-width: $size__width--post;

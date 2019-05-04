@@ -447,8 +447,7 @@ tr td:first-child {
 
 tr th:last-child,
 tr td:last-child {
-  padding-right: 0;
-  text-align: right; }
+  padding-right: 0; }
 
 td,
 th {
@@ -2284,6 +2283,9 @@ body.page-slug-tickets .entry-content {
   border-right-width: 0;
   border-collapse: inherit;
   border-spacing: inherit; }
+  .tix_tickets_table th:last-child,
+  .tix_tickets_table td:last-child {
+    text-align: right; }
   .tix_tickets_table .tix-ticket-excerpt {
     display: block;
     max-width: 620px;
