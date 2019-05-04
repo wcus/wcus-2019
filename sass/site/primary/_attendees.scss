@@ -11,12 +11,21 @@ body.page-slug-attendees {
 		ul {
 			margin: 0;
 			padding: 0;
+			display: flex;
+			flex-wrap: wrap;
+
+			@media (max-width: $breakpoint-mobile) {
+				display: block;
+			}
 		}
 
 		li {
 			height: auto;
 			min-height: 146px;
 			margin-bottom: spacing(2);
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
 
 			&:nth-of-type(5n+1) {
 				clear: left;
@@ -24,13 +33,17 @@ body.page-slug-attendees {
 		}
 
 		.avatar {
+			margin-left: auto;
+			margin-right: auto;
 			float: none;
 			width: 96px;
 			height: 96px;
+			margin-bottom: 10px;
 			border-radius: 50%;
 		}
 
 		.tix-field {
+			flex: 1 0 100%;
 			margin-left: 0;
 			@include font-size($font__size--body);
 		}
@@ -42,7 +55,6 @@ body.page-slug-attendees {
 
 		.tix-please-provide-your-name-as-you-would-like-it-to-appear-on-your-badge {
 			font-weight: 700;
-			margin-bottom: 5px;
 		}
 
 		.tix-attendee-twitter {
@@ -50,7 +62,7 @@ body.page-slug-attendees {
 		}
 
 		li { /* stylelint-disable-line no-duplicate-selectors */
-			@media (max-width: $breakpoint-medium) {
+			@media (max-width: $breakpoint-large) {
 				width: 25%;
 
 				&:nth-of-type(5n+1) {
@@ -62,7 +74,7 @@ body.page-slug-attendees {
 				}
 			}
 
-			@media (max-width: $breakpoint-small) {
+			@media (max-width: $breakpoint-medium) {
 				width: 33.3333%;
 
 				&:nth-of-type(4n+1) {
@@ -78,6 +90,7 @@ body.page-slug-attendees {
 				width: 100%;
 				clear: left;
 				text-align: left;
+				display: block;
 
 				.avatar {
 					float: left;
