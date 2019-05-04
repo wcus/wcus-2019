@@ -33,3 +33,16 @@ If you need to, you can also run `npx gulp css` (if you're on npm 5.2+), which w
 ## CSS Structure
 
 TBD 🎨
+
+## Colors
+
+The block color palette colors are re-mapped by the theme to our theme colors. The following table shows which colors are mapped to what theme color. Note that if you use Dark Gray, Vivid Red, or Vivid Cyan Blue, it automatically switches the text color to white.
+
+| Editor Color | Theme Color Name | Theme Color |
+|--------------|------------------|-------------|
+| ![](https://placehold.it/18/eeeeee/000000?text=+) Very Light Gray  | Cream | ![](https://placehold.it/18/fffffa/000000?text=+) `#fffffa` |
+| ![](https://placehold.it/18/313131/000000?text=+) Very Dark Gray  | Grey | ![](https://placehold.it/18/303030/000000?text=+) `#303030` |
+| ![](https://placehold.it/18/cf2e2e/000000?text=+) Vivid Red  | Red | ![](https://placehold.it/18/bd2b2e/000000?text=+) `#bd2b2e` |
+| ![](https://placehold.it/18/0693e3/000000?text=+) Vivid Cyan Blue  | Blue | ![](https://placehold.it/18/003b63/000000?text=+) `#003b63` |
+| ![](https://placehold.it/18/f78da7/000000?text=+) Pale Pink  | Light Pink | ![](https://placehold.it/18/f98386/000000?text=+) `#f98386` |
+| ![](https://placehold.it/18/8ed1fc/000000?text=+) Pale Cyan Blue  | Light Blue | ![](https://placehold.it/18/7ea1b8/000000?text=+) `#7ea1b8` |
