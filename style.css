@@ -1113,7 +1113,13 @@ a {
     display: inline-block;
     margin-top: 10px;
     margin-left: 20px;
-    padding: 15px 20px; }
+    padding: 15px 20px;
+    background: transparent url("https://wc-us.org/wp-content/uploads/2019/05/hamburger.svg") no-repeat center;
+    background-size: 26px 17px;
+    text-indent: -999em; }
+  .toggled-on .menu-toggle {
+    background: transparent url("https://wc-us.org/wp-content/uploads/2019/05/cross.svg") no-repeat center;
+    background-size: 18px 18px; }
   .page-navigation-container ul {
     display: none; }
   .page-navigation-container.toggled-on .menu {
