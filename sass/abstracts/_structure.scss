@@ -32,6 +32,7 @@ $breakpoint-large:  960px;
 $breakpoint-medium: 782px;
 $breakpoint-small:  600px;
 $breakpoint-mobile: 480px;
+$breakpoint-tiny:   380px;
 
 // Special breakpoint used for alignwide responsive styles.
 $breakpoint-content-width: $size__width--post + (spacing(2) * 2);

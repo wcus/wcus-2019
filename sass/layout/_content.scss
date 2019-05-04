@@ -56,6 +56,20 @@
 	max-width: 212px;
 }
 
+.custom-logo-link {
+	@media (max-width: $breakpoint-tiny) {
+		display: block;
+		height: 24px;
+		width: 84px;
+		background: url("#{$logo-small}") no-repeat center;
+		background-size: 84px 15px;
+
+		img {
+			display: none;
+		}
+	}
+}
+
 .main-navigation {
 	flex: 1;
 }
