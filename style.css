@@ -1070,7 +1070,13 @@ a {
     .page-navigation-container .callout > a:active {
       -webkit-transform: translateY(1px);
               transform: translateY(1px); }
+    @media screen and (max-width: 960px) {
+      .page-navigation-container .callout > a {
+        margin-left: 5px; } }
   .page-navigation-container .callout:hover > a {
+    color: #fffffa; }
+  .page-navigation-container .callout.current_page_item > a,
+  .page-navigation-container .callout.current-menu-item > a {
     color: #fffffa; }
   .page-navigation-container .current_page_item > a,
   .page-navigation-container .current-menu-item > a,
@@ -1083,6 +1089,13 @@ a {
   .page-navigation-container .current_page_ancestor.menu-item-has-children > a::after,
   .page-navigation-container .current-menu-ancestor.menu-item-has-children > a::after {
     background-image: url("https://wc-us.org/wp-content/uploads/2019/05/chevron-down-current.svg"); }
+  @media screen and (max-width: 960px) {
+    .page-navigation-container {
+      font-size: 16px;
+      font-size: 1.6rem; }
+      .page-navigation-container a {
+        padding-left: 5px;
+        padding-right: 5px; } }
 
 .js .menu-toggle,
 .js .dropdown-toggle {
@@ -1095,16 +1108,36 @@ a {
     width: 24px;
     height: 24px;
     background: transparent url("https://wc-us.org/wp-content/uploads/2019/05/chevron-down.svg") no-repeat center;
-    background-size: 16px 16px; }
+    background-size: 18px 9px;
+    -webkit-transition: none;
+    transition: none; }
+    .js .dropdown-toggle.toggled-on {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg); }
   .js .menu-toggle {
     display: inline-block;
     margin-top: 10px;
     margin-left: 20px;
-    padding: 15px 20px; }
+    padding: 15px 20px;
+    background: transparent url("https://wc-us.org/wp-content/uploads/2019/05/hamburger.svg") no-repeat center;
+    background-size: 26px 17px;
+    text-indent: -999em; }
+  .toggled-on .menu-toggle {
+    background: transparent url("https://wc-us.org/wp-content/uploads/2019/05/cross.svg") no-repeat center;
+    background-size: 18px 18px; }
   .page-navigation-container ul {
-    display: none; }
+    display: none;
+    text-align: left; }
   .page-navigation-container.toggled-on .menu {
-    display: block; }
+    display: block;
+    position: absolute;
+    top: 73px;
+    left: 0;
+    right: 0;
+    padding: 20px 30px 30px;
+    background: #fff;
+    -webkit-box-shadow: 0 4px 4px rgba(48, 48, 48, 0.2);
+            box-shadow: 0 4px 4px rgba(48, 48, 48, 0.2); }
   .page-navigation-container .sub-menu {
     position: static;
     display: none;
@@ -1112,13 +1145,41 @@ a {
     padding: 0;
     border: none; }
     .page-navigation-container .sub-menu.toggled-on {
-      display: block; }
+      display: block;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      background-image: url("https://wc-us.org/wp-content/uploads/2019/04/underline-hover.svg");
+      background-repeat: no-repeat; }
+    .page-navigation-container .sub-menu a {
+      width: auto; }
+    .page-navigation-container .sub-menu li:hover > a::after {
+      display: none; }
   .page-navigation-container li {
     display: block; }
+    .page-navigation-container li:hover > a,
+    .page-navigation-container li.focus > a {
+      background-image: none; }
   .page-navigation-container a {
-    padding: 15px; }
-  .page-navigation-container .menu-item-has-children > a::after {
-    display: none; } }
+    padding: 10px;
+    display: block; }
+  .page-navigation-container .current_page_item > a,
+  .page-navigation-container .current-menu-item > a,
+  .page-navigation-container .current_page_ancestor > a,
+  .page-navigation-container .current-menu-ancestor > a {
+    background-image: none; }
+  .page-navigation-container .menu-item-has-children {
+    position: relative; }
+    .page-navigation-container .menu-item-has-children .dropdown-toggle {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 40px;
+      width: 40px; }
+    .page-navigation-container .menu-item-has-children > a::after {
+      display: none; }
+  .page-navigation-container .callout > a {
+    display: block;
+    text-align: center; } }
 
 .comment-navigation,
 .posts-navigation,
@@ -1423,7 +1484,7 @@ a {
     background-repeat: no-repeat;
     background-position: center bottom;
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     width: 100%;
     height: 140px;
@@ -1432,28 +1493,67 @@ a {
       #wcus-hero::after {
         background-size: 100% 140px; } }
   @media (max-width: 600px) {
-    #wcus-hero .wcus-hero__circle {
-      width: 380px;
-      height: 380px; }
-    #wcus-hero .wcus-hero__logo {
-      width: 180px;
-      height: 180px; }
-    #wcus-hero .wcus-hero__signup {
-      width: 120px;
-      height: 120px;
-      font-size: 14px;
-      font-size: 1.4rem; }
-      #wcus-hero .wcus-hero__signup span::before {
-        background-size: 21px 21px;
-        height: 21px;
-        padding-bottom: 7.5px; }
-    #wcus-hero .wcus-hero__message h2 {
-      font-size: 32px;
-      font-size: 3.2rem; }
-    #wcus-hero .wcus-hero__message p {
-      margin-top: 0;
-      font-size: 24px;
-      font-size: 2.4rem; } }
+    #wcus-hero {
+      background-image: none;
+      padding-bottom: 60px; }
+      #wcus-hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 300px;
+        background: url("https://wc-us.org/wp-content/uploads/2019/04/wcus-background.jpg") no-repeat center;
+        background-size: cover; }
+      #wcus-hero::after {
+        top: 162px;
+        bottom: unset;
+        z-index: 1; }
+      #wcus-hero .wcus-hero__circle {
+        width: 380px;
+        height: 380px;
+        z-index: 2; }
+      #wcus-hero .wcus-hero__logo {
+        width: 180px;
+        height: 180px; }
+      #wcus-hero .wcus-hero__signup {
+        width: 120px;
+        height: 120px;
+        font-size: 14px;
+        font-size: 1.4rem; }
+        #wcus-hero .wcus-hero__signup span::before {
+          background-size: 21px 21px;
+          height: 21px;
+          padding-bottom: 7.5px; }
+      #wcus-hero .wcus-hero__message h2 {
+        font-size: 32px;
+        font-size: 3.2rem; }
+      #wcus-hero .wcus-hero__message p {
+        margin-top: 0;
+        font-size: 24px;
+        font-size: 2.4rem; } }
+  @media (max-width: 480px) {
+    #wcus-hero {
+      padding-top: 60px; }
+      #wcus-hero .wcus-hero__circle {
+        width: 310px;
+        height: 310px; }
+      #wcus-hero .wcus-hero__logo {
+        top: -25px;
+        left: -10px;
+        width: 120px;
+        height: 120px; }
+      #wcus-hero .wcus-hero__signup {
+        width: 100px;
+        height: 100px;
+        bottom: -15px; }
+      #wcus-hero .wcus-hero__message h2 {
+        font-size: 26px;
+        font-size: 2.6rem; }
+      #wcus-hero .wcus-hero__message p {
+        margin-top: 0;
+        font-size: 18px;
+        font-size: 1.8rem; } }
 
 #content-widgets::after {
   content: "";
@@ -1472,6 +1572,10 @@ a {
   line-height: 1.3;
   color: #003b63;
   text-align: center; }
+  @media (max-width: 480px) {
+    #content-widget-2 {
+      font-size: 24px;
+      font-size: 2.4rem; } }
   #content-widget-2 p {
     margin: 0; }
     #content-widget-2 p + p {
@@ -1679,6 +1783,7 @@ a {
 
 .site-header {
   position: relative;
+  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1690,6 +1795,9 @@ a {
   @media (max-width: 1300px) {
     .site-header {
       padding: 0 30px; } }
+  @media (max-width: 782px) {
+    .site-header {
+      padding-right: 0; } }
   .site-header * {
     z-index: 1; }
   .site-header::before {
@@ -1709,6 +1817,16 @@ a {
 .site-branding {
   padding: 24px 0 22px;
   max-width: 212px; }
+
+@media (max-width: 380px) {
+  .custom-logo-link {
+    display: block;
+    height: 24px;
+    width: 84px;
+    background: url("https://wc-us.org/wp-content/uploads/2019/05/logo-black-small.png") no-repeat center;
+    background-size: 84px 15px; }
+    .custom-logo-link img {
+      display: none; } }
 
 .main-navigation {
   -webkit-box-flex: 1;

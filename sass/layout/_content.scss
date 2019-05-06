@@ -13,6 +13,7 @@
 
 .site-header {
 	position: relative;
+	z-index: 10;
 	display: flex;
 	flex-wrap: wrap;
 	margin-left: auto;
@@ -21,6 +22,10 @@
 
 	@media (max-width: #{$size__width--nav + spacing(2) * 2} ) {
 		padding: 0 spacing(2);
+	}
+
+	@media (max-width: $breakpoint-medium) {
+		padding-right: 0;
 	}
 
 	* {
@@ -50,6 +55,20 @@
 .site-branding {
 	padding: 24px 0 22px;
 	max-width: 212px;
+}
+
+.custom-logo-link {
+	@media (max-width: $breakpoint-tiny) {
+		display: block;
+		height: 24px;
+		width: 84px;
+		background: url("#{$logo-small}") no-repeat center;
+		background-size: 84px 15px;
+
+		img {
+			display: none;
+		}
+	}
 }
 
 .main-navigation {
