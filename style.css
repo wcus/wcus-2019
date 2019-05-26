@@ -2701,6 +2701,31 @@ body.page-slug-attendees #tix-attendees {
           float: none;
           margin-right: 0; } }
 
+.wcorg-organizers .wcorg-organizer {
+  position: relative;
+  margin-bottom: 45px; }
+  .wcorg-organizers .wcorg-organizer > h2 {
+    font-size: 20px;
+    font-size: 2rem;
+    line-height: 1.3;
+    font-weight: 900;
+    color: #303030; }
+  @media (min-width: 600px) {
+    .wcorg-organizers .wcorg-organizer {
+      padding-left: 126px; } }
+
+.wcorg-organizers .avatar {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%; }
+  @media (min-width: 600px) {
+    .wcorg-organizers .avatar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-right: 0;
+      float: none; } }
+
 .error404 .page-content .search-form,
 .error404 .page-content .widget {
   margin-bottom: 60px; }
