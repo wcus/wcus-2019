@@ -949,6 +949,23 @@ select {
     outline: 2px dotted #303030;
     outline-offset: 2px; }
 
+.contact-form.contact-form input[type="email"],
+.contact-form.contact-form input[type="text"],
+.contact-form.contact-form input[type="url"],
+.contact-form.contact-form textarea {
+  width: 100%;
+  max-width: 100%; }
+
+.contact-form.contact-form select {
+  min-width: 80px; }
+
+.contact-form.contact-form select,
+.contact-form.contact-form input[type="email"],
+.contact-form.contact-form input[type="text"],
+.contact-form.contact-form input[type="url"],
+.contact-form.contact-form textarea {
+  margin-bottom: 30px; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -1746,6 +1763,13 @@ a {
       .widget_blog_subscription #subscribe-submit button {
         width: 100%; } }
 
+p#subscribe-email {
+  display: inline-block;
+  width: 80%; }
+
+p#subscribe-submit {
+  display: inline-block; }
+
 .jetpack_widget_social_icons .widget-title {
   margin: 0;
   display: inline-block;
@@ -1998,6 +2022,11 @@ a {
     font-size: 48px;
     font-size: 4.8rem;
     letter-spacing: 1px; }
+    @media (max-width: 960px) {
+      .page .entry-header .entry-title,
+      .single .entry-header .entry-title {
+        font-size: 36px;
+        font-size: 3.6rem; } }
 
 .single .entry-header {
   padding-top: 90px;
@@ -2415,6 +2444,21 @@ body.page-slug-tickets .entry-content {
     min-width: 4em; }
   .tix_tickets_table .tix-column-remaining {
     display: none; }
+  .tix_tickets_table th[colspan="2"] {
+    text-align: left; }
+  .tix_tickets_table .tix-row-question-1300 .tix-right,
+  .tix_tickets_table .tix-row-question-1291 .tix-right,
+  .tix_tickets_table .tix-row-question-1318 .tix-right,
+  .tix_tickets_table .tix-row-question-1296 .tix-right,
+  .tix_tickets_table .tix-row-question-1297 .tix-right,
+  .tix_tickets_table .tix-row-question-1298 .tix-right,
+  .tix_tickets_table .tix-row-question-1299 .tix-right,
+  .tix_tickets_table .tix-row-question-1301 .tix-right,
+  .tix_tickets_table .tix-row-privacy .tix-right,
+  .tix_tickets_table .tix-row-allergy .tix-right,
+  .tix_tickets_table .tix-row-accommodations .tix-right,
+  .tix_tickets_table .tix-row-coc .tix-right {
+    text-align: left; }
   @media (max-width: 680px) {
     .tix_tickets_table {
       display: block; }

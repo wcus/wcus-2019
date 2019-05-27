@@ -55,6 +55,29 @@ body.page-slug-tickets {
 		display: none;
 	}
 
+	th[colspan="2"] {
+		text-align: left;
+	}
+
+	// Align specific question-fields to the left.
+	.tix-row-question-1300,
+	.tix-row-question-1291,
+	.tix-row-question-1318,
+	.tix-row-question-1296,
+	.tix-row-question-1297,
+	.tix-row-question-1298,
+	.tix-row-question-1299,
+	.tix-row-question-1301,
+	.tix-row-privacy,
+	.tix-row-allergy,
+	.tix-row-accommodations,
+	.tix-row-coc {
+
+		.tix-right {
+			text-align: left;
+		}
+	}
+
 	@media (max-width: $breakpoint-content-width) {
 		display: block;
 

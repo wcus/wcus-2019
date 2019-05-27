@@ -52,6 +52,10 @@
 			width: 100%;
 			@include font-size( $font__size--header );
 			letter-spacing: 1px;
+
+			@media (max-width: $breakpoint-large) {
+				@include font-size( $font__size--level-1 );
+			}
 		}
 	}
 }

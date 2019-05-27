@@ -38,3 +38,27 @@ select {
 		@include dotted-outline;
 	}
 }
+
+// Specificity hack :(
+.contact-form.contact-form {
+
+	input[type="email"],
+	input[type="text"],
+	input[type="url"],
+	textarea {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	select {
+		min-width: 80px;
+	}
+
+	select,
+	input[type="email"],
+	input[type="text"],
+	input[type="url"],
+	textarea {
+		margin-bottom: 30px;
+	}
+}
