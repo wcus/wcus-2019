@@ -1430,7 +1430,7 @@ a {
     -webkit-box-shadow: 0 1px 10px rgba(86, 19, 21, 0.5);
             box-shadow: 0 1px 10px rgba(86, 19, 21, 0.5);
     z-index: 1; }
-    #wcus-hero .wcus-hero__circle-small::after {
+    #wcus-hero .wcus-hero__circle-small:not(.wcus-hero__logo)::after {
       content: "";
       position: absolute;
       left: 0;
@@ -1447,7 +1447,7 @@ a {
       -webkit-transition: opacity 0.2s ease-in-out, scale 0.2s ease-in-out;
       transition: opacity 0.2s ease-in-out, scale 0.2s ease-in-out;
       opacity: 0; }
-    #wcus-hero .wcus-hero__circle-small:hover::after, #wcus-hero .wcus-hero__circle-small:focus::after {
+    #wcus-hero .wcus-hero__circle-small:not(.wcus-hero__logo):hover::after, #wcus-hero .wcus-hero__circle-small:not(.wcus-hero__logo):focus::after {
       opacity: 1; }
   #wcus-hero .wcus-hero__logo {
     background: #fffffa url("https://wc-us.org/wp-content/uploads/2019/04/logo-badge.svg") center no-repeat;
