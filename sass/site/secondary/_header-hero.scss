@@ -23,6 +23,34 @@
 		position: absolute;
 		border-radius: 100%;
 		@include shadow;
+		z-index: 1;
+
+		&:not(.wcus-hero__logo) {
+
+			&::after {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				z-index: -1;
+				background: $red;
+				border-radius: 50%;
+				box-shadow: 0 1px 20px rgba(86, 19, 21, 0.9);
+				transform: scale(1.01, 1.01);
+				transition: opacity 0.2s ease-in-out, scale 0.2s ease-in-out;
+				opacity: 0;
+			}
+
+			&:hover,
+			&:focus {
+
+				&::after {
+					opacity: 1;
+				}
+			}
+		}
 	}
 
 	.wcus-hero__logo {
