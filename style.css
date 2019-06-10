@@ -2822,6 +2822,27 @@ body.page-slug-attendees #tix-attendees {
       margin-right: 0;
       float: none; } }
 
+.wordcamp-block.wordcamp-organizers {
+  padding-left: 0; }
+  .wordcamp-block.wordcamp-organizers .wordcamp-organizer {
+    position: relative;
+    margin-bottom: 60px; }
+  .wordcamp-block.wordcamp-organizers .avatar {
+    width: 140px;
+    border-radius: 50%;
+    display: block;
+    float: left;
+    margin-right: 1em; }
+  @media (min-width: 600px) {
+    .wordcamp-block.wordcamp-organizers .wordcamp-organizer {
+      padding-left: 170px; }
+    .wordcamp-block.wordcamp-organizers .avatar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-right: 0;
+      float: none; } }
+
 .error404 .page-content .search-form,
 .error404 .page-content .widget {
   margin-bottom: 60px; }
