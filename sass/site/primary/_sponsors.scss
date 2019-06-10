@@ -124,3 +124,9 @@
 		@include make-cols( 6 );
 	}
 }
+
+body.page-slug-sponsors .entry-content {
+	// Disable the bottom border on sponsor page,
+	// since the sponsor widget is hidden on this page.
+	background: none;
+}

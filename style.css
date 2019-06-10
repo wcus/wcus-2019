@@ -2444,6 +2444,9 @@ body.home .entry-header {
       .wcb_widget_sponsors .wcorg-sponsor-level-bronze h2 {
         grid-column-end: span 3; } }
 
+body.page-slug-sponsors .entry-content {
+  background: none; }
+
 body.page-slug-tickets .entry-content {
   max-width: 940px; }
   body.page-slug-tickets .entry-content > *:not(div) {
