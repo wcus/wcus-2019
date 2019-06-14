@@ -21,7 +21,6 @@
 	}
 }
 
-.wcorg-sponsors,
 .wcb_widget_sponsors {
 
 	.widget-title {
@@ -32,8 +31,7 @@
 		text-align: center;
 	}
 
-	.sponsor-level-title,
-	[class^="wcorg-sponsor-level-"] > h2 {
+	.sponsor-level-title {
 		margin: 0 0 spacing(0);
 		@include font-size( $font__size--level-2 );
 		font-weight: 700;
@@ -42,9 +40,13 @@
 		text-transform: none;
 		text-align: center;
 	}
+}
+
+.wordcamp-block.wordcamp-sponsors,
+.wcb_widget_sponsors {
 
 	.sponsor-logo.sponsor-logo,
-	.wcorg-sponsor {
+	.wordcamp-post-list__post {
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -66,67 +68,72 @@
 			border-color: $light-brown;
 		}
 
-		a {
-			outline: none;
-		}
-
 		@media (max-width: $breakpoint-medium) {
 			padding: spacing(1) spacing(0);
 		}
 	}
+}
 
-	.wcorg-sponsor {
-		padding: 0;
+.wordcamp-block.wordcamp-sponsors .wordcamp-post-list__post {
+	margin-bottom: 0;
 
-		a {
-			display: block;
-			padding: spacing(2) spacing(1);
+	a {
+		outline: none;
+		display: block;
 
-			@media (max-width: $breakpoint-medium) {
-				padding: spacing(1) spacing(0);
-			}
+		img {
+			vertical-align: middle;
+			width: auto;
 		}
 	}
+}
 
-	.sponsor-level,
-	[class^="wcorg-sponsor-level-"] {
-		display: grid;
-		grid-gap: spacing(1);
-		margin-bottom: spacing(4);
+// Sponsor level layouts
+.wordcamp-block.wordcamp-sponsors,
+.wcb_widget_sponsors .sponsor-level {
+	display: grid;
+	grid-gap: spacing(1);
+	margin-bottom: spacing(4);
 
-		@media (max-width: $breakpoint-medium) {
-			grid-gap: spacing(1)/2;
-		}
+	@media (max-width: $breakpoint-medium) {
+		grid-gap: spacing(1)/2;
 	}
 
-	.sponsor-level.diamond,
-	.wcorg-sponsor-level-diamond {
+	// Individual sponsor levels
+	&.diamond,
+	&.has-grid-columns-2 {
 		@include make-cols( 2 );
 	}
 
-	.sponsor-level.platinum,
-	.wcorg-sponsor-level-platinum {
+	&.platinum,
+	&.has-grid-columns-3 {
 		@include make-cols( 3 );
 	}
 
-	.sponsor-level.gold,
-	.wcorg-sponsor-level-gold {
+	&.gold,
+	&.has-grid-columns-4 {
 		@include make-cols( 4 );
 	}
 
-	.sponsor-level.silver,
-	.wcorg-sponsor-level-silver {
+	&.silver,
+	&.has-grid-columns-5 {
 		@include make-cols( 5 );
 	}
 
-	.sponsor-level.bronze,
-	.wcorg-sponsor-level-bronze {
+	&.bronze,
+	&.has-grid-columns-6 {
 		@include make-cols( 6 );
 	}
 }
 
+// Some page-specific styles
 body.page-slug-sponsors .entry-content {
 	// Disable the bottom border on sponsor page,
 	// since the sponsor widget is hidden on this page.
 	background: none;
+
+	h2 {
+		margin: 0 0 spacing(2);
+		text-align: center;
+	}
 }
