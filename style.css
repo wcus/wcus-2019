@@ -427,8 +427,9 @@ img {
   height: auto;
   /* Make sure images are scaled correctly. */
   max-width: 100%;
-  /* Adhere to container width. */
-  border-radius: 12px; }
+  /* Adhere to container width. */ }
+  .entry-content img {
+    border-radius: 12px; }
 
 figure {
   margin: 1em 0;
