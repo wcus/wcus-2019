@@ -16,6 +16,7 @@
  * this is the first additional site you've created)
  */
 function wcus_2019_enable_features( $sites ) {
+	$sites[] = 47;
 	$sites[] = 49;
 	return $sites;
 }
