@@ -914,7 +914,8 @@ ol.has-fancy-style {
       grid-column: 1;
       grid-row: 2;
       margin: 0 0 30px;
-      padding: 0; }
+      padding: 0;
+      text-align: center; }
     .wordcamp-block.wordcamp-speakers .wordcamp-speakers__content {
       grid-column: 1;
       grid-row: 3; } }
