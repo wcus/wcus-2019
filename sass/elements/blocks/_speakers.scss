@@ -61,12 +61,12 @@
 		}
 
 		&:nth-of-type(4n+3) .wordcamp-image__avatar-container {
-			background: url("#{$sparkle-3}") left 15px no-repeat;
+			background: url("#{$sparkle-3}") center 15px no-repeat;
 			background-size: 230px 163px;
 		}
 
 		&:nth-of-type(4n) .wordcamp-image__avatar-container {
-			background: url("#{$sparkle-4}") left 10px no-repeat;
+			background: url("#{$sparkle-4}") center 10px no-repeat;
 			background-size: 230px 186px;
 		}
 	}
@@ -78,6 +78,31 @@
 
 	.wordcamp-speakers__permalink {
 		display: none;
+	}
+
+	@media (max-width: $breakpoint-small) {
+
+		.wordcamp-speaker {
+			grid-template-columns: auto;
+		}
+
+		.wordcamp-speakers__title {
+			grid-column: 1;
+			grid-row: 1;
+			text-align: center;
+		}
+
+		.wordcamp-image__avatar-container {
+			grid-column: 1;
+			grid-row: 2;
+			margin: 0 0 spacing(2);
+			padding: 0;
+		}
+
+		.wordcamp-speakers__content {
+			grid-column: 1;
+			grid-row: 3;
+		}
 	}
 
 	&.has-layout-grid {

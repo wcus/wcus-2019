@@ -893,16 +893,31 @@ ol.has-fancy-style {
       background: url("https://wc-us.org/wp-content/uploads/2019/07/sparkle-bg-2.svg") center 170px no-repeat;
       background-size: 230px 22px; }
     .wordcamp-block.wordcamp-speakers .wordcamp-post-list__post:nth-of-type(4n+3) .wordcamp-image__avatar-container {
-      background: url("https://wc-us.org/wp-content/uploads/2019/07/sparkle-bg-3.svg") left 15px no-repeat;
+      background: url("https://wc-us.org/wp-content/uploads/2019/07/sparkle-bg-3.svg") center 15px no-repeat;
       background-size: 230px 163px; }
     .wordcamp-block.wordcamp-speakers .wordcamp-post-list__post:nth-of-type(4n) .wordcamp-image__avatar-container {
-      background: url("https://wc-us.org/wp-content/uploads/2019/07/sparkle-bg-4.svg") left 10px no-repeat;
+      background: url("https://wc-us.org/wp-content/uploads/2019/07/sparkle-bg-4.svg") center 10px no-repeat;
       background-size: 230px 186px; }
   .wordcamp-block.wordcamp-speakers .wordcamp-speakers__content {
     grid-column: 2;
     grid-row: 2; }
   .wordcamp-block.wordcamp-speakers .wordcamp-speakers__permalink {
     display: none; }
+  @media (max-width: 600px) {
+    .wordcamp-block.wordcamp-speakers .wordcamp-speaker {
+      grid-template-columns: auto; }
+    .wordcamp-block.wordcamp-speakers .wordcamp-speakers__title {
+      grid-column: 1;
+      grid-row: 1;
+      text-align: center; }
+    .wordcamp-block.wordcamp-speakers .wordcamp-image__avatar-container {
+      grid-column: 1;
+      grid-row: 2;
+      margin: 0 0 30px;
+      padding: 0; }
+    .wordcamp-block.wordcamp-speakers .wordcamp-speakers__content {
+      grid-column: 1;
+      grid-row: 3; } }
   .wordcamp-block.wordcamp-speakers.has-layout-grid .wordcamp-speaker {
     display: block;
     text-align: center; }
