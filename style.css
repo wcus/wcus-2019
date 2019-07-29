@@ -854,6 +854,74 @@ ol.has-fancy-style {
     line-height: 60px;
     text-align: center; }
 
+.wordcamp-block.wordcamp-speakers {
+  padding-left: 0; }
+  .wordcamp-block.wordcamp-speakers .wordcamp-speaker {
+    display: grid;
+    grid-template-columns: 260px auto; }
+  .wordcamp-block.wordcamp-speakers .wordcamp-speakers__title {
+    grid-column: 2;
+    grid-row: 1; }
+    .wordcamp-block.wordcamp-speakers .wordcamp-speakers__title a {
+      color: #303030;
+      text-decoration: none; }
+      .wordcamp-block.wordcamp-speakers .wordcamp-speakers__title a:hover, .wordcamp-block.wordcamp-speakers .wordcamp-speakers__title a:active, .wordcamp-block.wordcamp-speakers .wordcamp-speakers__title a:focus {
+        color: #bd2b2e;
+        text-decoration: underline; }
+      .wordcamp-block.wordcamp-speakers .wordcamp-speakers__title a:focus {
+        outline: none; }
+  .wordcamp-block.wordcamp-speakers .wordcamp-image__avatar-container {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    margin-left: 0;
+    margin-right: 30px;
+    padding-left: 15px; }
+    .wordcamp-block.wordcamp-speakers .wordcamp-image__avatar-container a:focus {
+      outline: none; }
+      .wordcamp-block.wordcamp-speakers .wordcamp-image__avatar-container a:focus img {
+        -webkit-box-shadow: 0 1px 10px rgba(48, 48, 48, 0.5);
+                box-shadow: 0 1px 10px rgba(48, 48, 48, 0.5); }
+    .wordcamp-block.wordcamp-speakers .wordcamp-image__avatar-container img {
+      max-width: 200px;
+      border-radius: 50%; }
+  .wordcamp-block.wordcamp-speakers .wordcamp-post-list__post {
+    margin-bottom: 60px; }
+    .wordcamp-block.wordcamp-speakers .wordcamp-post-list__post:nth-of-type(4n+1) .wordcamp-image__avatar-container {
+      background: url("https://wc-us.org/wp-content/uploads/2019/07/sparkle-bg-1.svg") center top no-repeat;
+      background-size: 230px 180px; }
+    .wordcamp-block.wordcamp-speakers .wordcamp-post-list__post:nth-of-type(4n+2) .wordcamp-image__avatar-container {
+      background: url("https://wc-us.org/wp-content/uploads/2019/07/sparkle-bg-2.svg") center 170px no-repeat;
+      background-size: 230px 22px; }
+    .wordcamp-block.wordcamp-speakers .wordcamp-post-list__post:nth-of-type(4n+3) .wordcamp-image__avatar-container {
+      background: url("https://wc-us.org/wp-content/uploads/2019/07/sparkle-bg-3.svg") left 15px no-repeat;
+      background-size: 230px 163px; }
+    .wordcamp-block.wordcamp-speakers .wordcamp-post-list__post:nth-of-type(4n) .wordcamp-image__avatar-container {
+      background: url("https://wc-us.org/wp-content/uploads/2019/07/sparkle-bg-4.svg") left 10px no-repeat;
+      background-size: 230px 186px; }
+  .wordcamp-block.wordcamp-speakers .wordcamp-speakers__content {
+    grid-column: 2;
+    grid-row: 2; }
+  .wordcamp-block.wordcamp-speakers .wordcamp-speakers__permalink {
+    display: none; }
+  .wordcamp-block.wordcamp-speakers.has-layout-grid .wordcamp-speaker {
+    display: block;
+    text-align: center; }
+  .wordcamp-block.wordcamp-speakers.has-layout-grid .wordcamp-image__avatar-container {
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 0; }
+  .wordcamp-block.wordcamp-speakers.has-layout-grid .wordcamp-post-list__post:nth-of-type(4n+1) .wordcamp-image__avatar-container {
+    background-position: center top; }
+  .wordcamp-block.wordcamp-speakers.has-layout-grid .wordcamp-post-list__post:nth-of-type(4n+2) .wordcamp-image__avatar-container {
+    background-position: center 170px; }
+  .wordcamp-block.wordcamp-speakers.has-layout-grid .wordcamp-post-list__post:nth-of-type(4n+3) .wordcamp-image__avatar-container {
+    background-position: center 15px; }
+  .wordcamp-block.wordcamp-speakers.has-layout-grid .wordcamp-post-list__post:nth-of-type(4n) .wordcamp-image__avatar-container {
+    background-position: center 10px; }
+  .wordcamp-block.wordcamp-speakers.has-layout-grid .wordcamp-speakers__content {
+    margin-top: 30px;
+    text-align: left; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
