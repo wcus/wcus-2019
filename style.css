@@ -2893,6 +2893,28 @@ body.page-slug-attendees #tix-attendees {
       margin-right: 0;
       float: none; } }
 
+body.single-wcb_speaker .speaker-avatar {
+  position: relative;
+  text-align: center; }
+  body.single-wcb_speaker .speaker-avatar img {
+    border-radius: 50%; }
+  body.single-wcb_speaker .speaker-avatar::before, body.single-wcb_speaker .speaker-avatar::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: calc(50% - 93px);
+    background: url("https://wc-us.org/wp-content/uploads/2019/07/side-border.svg") left center no-repeat; }
+  body.single-wcb_speaker .speaker-avatar::before {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: scale(-1);
+            transform: scale(-1); }
+  body.single-wcb_speaker .speaker-avatar::after {
+    top: 0;
+    bottom: 0;
+    right: 0; }
+
 .community-spotlight {
   background: #003b63;
   border-radius: 12px;
