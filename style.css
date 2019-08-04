@@ -938,6 +938,49 @@ ol.has-fancy-style {
     margin-top: 30px;
     text-align: left; }
 
+.wordcamp-block.wordcamp-sessions {
+  padding-left: 0; }
+  .wordcamp-block.wordcamp-sessions .wordcamp-session {
+    margin-bottom: 60px; }
+  .wordcamp-block.wordcamp-sessions .wordcamp-sessions__title a {
+    color: #303030;
+    text-decoration: none; }
+    .wordcamp-block.wordcamp-sessions .wordcamp-sessions__title a:hover, .wordcamp-block.wordcamp-sessions .wordcamp-sessions__title a:active, .wordcamp-block.wordcamp-sessions .wordcamp-sessions__title a:focus {
+      color: #bd2b2e;
+      text-decoration: underline; }
+    .wordcamp-block.wordcamp-sessions .wordcamp-sessions__title a:focus {
+      outline: none; }
+  .wordcamp-block.wordcamp-sessions .wordcamp-sessions__speakers,
+  .wordcamp-block.wordcamp-sessions .wordcamp-sessions__categories {
+    color: #747466;
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-style: normal; }
+    .wordcamp-block.wordcamp-sessions .wordcamp-sessions__speakers a,
+    .wordcamp-block.wordcamp-sessions .wordcamp-sessions__categories a {
+      color: currentColor;
+      text-decoration: none; }
+      .wordcamp-block.wordcamp-sessions .wordcamp-sessions__speakers a:hover, .wordcamp-block.wordcamp-sessions .wordcamp-sessions__speakers a:active, .wordcamp-block.wordcamp-sessions .wordcamp-sessions__speakers a:focus,
+      .wordcamp-block.wordcamp-sessions .wordcamp-sessions__categories a:hover,
+      .wordcamp-block.wordcamp-sessions .wordcamp-sessions__categories a:active,
+      .wordcamp-block.wordcamp-sessions .wordcamp-sessions__categories a:focus {
+        text-decoration: underline; }
+  .wordcamp-block.wordcamp-sessions .wordcamp-sessions__time-location {
+    display: block;
+    height: 24px;
+    margin-bottom: 20px;
+    padding-left: 32px;
+    font-style: normal; }
+  .wordcamp-block.wordcamp-sessions .wordcamp-sessions__categories {
+    display: block;
+    height: 24px;
+    padding-left: 32px;
+    background-image: url("https://wc-us.org/wp-content/uploads/2019/04/tag.svg");
+    background-color: transparent;
+    background-position: left 3px;
+    background-repeat: no-repeat; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
