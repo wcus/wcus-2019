@@ -309,6 +309,10 @@
 
 	.nav-links {
 		display: flex;
+
+		div:first-child:last-child {
+			width: 100%;
+		}
 	}
 
 	.nav-previous {
