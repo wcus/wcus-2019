@@ -1316,6 +1316,10 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+    .comment-navigation .nav-links div:first-child:last-child,
+    .posts-navigation .nav-links div:first-child:last-child,
+    .post-navigation .nav-links div:first-child:last-child {
+      width: 100%; }
   .comment-navigation .nav-previous,
   .posts-navigation .nav-previous,
   .post-navigation .nav-previous {
@@ -2914,6 +2918,29 @@ body.single-wcb_speaker .speaker-avatar {
     top: 0;
     bottom: 0;
     right: 0; }
+
+body.single-wcb_session #session-speaker-names {
+  padding: 0; }
+
+body.single-wcb_session .session-categories-links {
+  display: inline-block;
+  height: 24px;
+  padding-left: 32px;
+  background-image: url("https://wc-us.org/wp-content/uploads/2019/04/tag.svg");
+  background-color: transparent;
+  background-position: left 3px;
+  background-repeat: no-repeat;
+  font-weight: 700;
+  font-size: 16px;
+  font-size: 1.6rem; }
+  body.single-wcb_session .session-categories-links a {
+    color: #747466;
+    text-decoration: none; }
+    body.single-wcb_session .session-categories-links a:hover, body.single-wcb_session .session-categories-links a:active, body.single-wcb_session .session-categories-links a:focus {
+      text-decoration: underline; }
+
+body.single-wcb_session .entry-footer {
+  display: none; }
 
 .community-spotlight {
   background: #003b63;
