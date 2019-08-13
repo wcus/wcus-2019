@@ -34,6 +34,7 @@ table.wcpt-schedule {
 		border-top: $border-style;
 		border-left: $border-style;
 		@include font-size( 1.6 );
+		vertical-align: top;
 	}
 
 	th {
@@ -43,12 +44,14 @@ table.wcpt-schedule {
 		font-weight: 900;
 		text-align: center;
 		background: $header-bg;
+		vertical-align: middle;
 	}
 
 	.wcpt-col-time,
 	.wcpt-time {
 		background: $header-bg;
 		width: 6em;
+		text-align: left;
 	}
 
 	.wcpt-session-speakers {
@@ -67,6 +70,10 @@ table.wcpt-schedule {
 		// Anything with a colspan > 1 should be centered, it spans multiple tracks.
 		&[colspan]:not([colspan="1"]) {
 			text-align: center;
+		}
+
+		&[colspan="6"]:not(.wcb-session-opening-remarks) {
+			background: $header-bg;
 		}
 
 		div.wcb-session-favourite-icon a.fav-session-button {
