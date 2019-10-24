@@ -9,3 +9,14 @@ a {
 		color: $blue;
 	}
 }
+
+.schedule-anchors,
+.inpage-anchors {
+	font-weight: 700;
+	margin-bottom: spacing(3);
+
+	img {
+		margin: 0 7px;
+		vertical-align: middle;
+	}
+}

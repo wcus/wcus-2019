@@ -1107,6 +1107,15 @@ a {
   a:hover, a:active, a:focus {
     color: #003b63; }
 
+.schedule-anchors,
+.inpage-anchors {
+  font-weight: 700;
+  margin-bottom: 60px; }
+  .schedule-anchors img,
+  .inpage-anchors img {
+    margin: 0 7px;
+    vertical-align: middle; }
+
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
@@ -3042,13 +3051,6 @@ body.single-wcb_session .entry-footer {
 
 .error404 .page-content .search-field {
   width: calc(100% - 110px); }
-
-body.page-slug-schedule .schedule-anchors {
-  font-weight: 700;
-  margin-bottom: 60px; }
-  body.page-slug-schedule .schedule-anchors img {
-    margin: 0 7px;
-    vertical-align: middle; }
 
 body.page-slug-schedule table.wcpt-schedule {
   margin-bottom: 90px; }
