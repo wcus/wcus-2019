@@ -3097,6 +3097,11 @@ table.wcpt-schedule {
     text-align: center; }
   table.wcpt-schedule td[colspan="6"]:not(.wcb-session-opening-remarks) {
     background: rgba(126, 161, 184, 0.05); }
+  table.wcpt-schedule td.wcb-session-morning-office-yoga::before {
+    content: "Second Floor Atrium"; }
+  table.wcpt-schedule td div.wcb-session-favourite-icon {
+    clear: both;
+    text-align: right; }
   table.wcpt-schedule td div.wcb-session-favourite-icon a.fav-session-button {
     border: none;
     color: rgba(126, 161, 184, 0.5) !important; }
@@ -3134,6 +3139,8 @@ table.wcpt-schedule {
       table.wcpt-schedule td {
         border: none;
         border-bottom: 1px solid #e5eced; }
+        table.wcpt-schedule td[colspan]:not([colspan="1"]) {
+          text-align: left; }
         table.wcpt-schedule td.wcpt-session-empty {
           display: none; }
       table.wcpt-schedule .wcpt-time {
