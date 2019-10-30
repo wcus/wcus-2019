@@ -981,6 +981,48 @@ ol.has-fancy-style {
     background-position: left 3px;
     background-repeat: no-repeat; }
 
+.wp-block-wordcamp-live-schedule .wordcamp-live-schedule__session {
+  border: 1px solid #e5eced;
+  margin-bottom: 0;
+  margin-top: -1px; }
+
+.wp-block-wordcamp-live-schedule .wordcamp-live-schedule__session-track {
+  padding: 15px 20px;
+  border-right: 1px solid #e5eced;
+  background: rgba(126, 161, 184, 0.05);
+  font-size: 16px;
+  font-size: 1.6rem;
+  vertical-align: top;
+  width: 25%; }
+
+.wp-block-wordcamp-live-schedule .wordcamp-live-schedule__session-details {
+  margin-left: 0;
+  padding: 15px 20px; }
+
+.wp-block-wordcamp-live-schedule .wordcamp-live-schedule__session-title {
+  margin-bottom: 0; }
+  .wp-block-wordcamp-live-schedule .wordcamp-live-schedule__session-title a {
+    color: inherit;
+    text-decoration: none; }
+    .wp-block-wordcamp-live-schedule .wordcamp-live-schedule__session-title a:hover {
+      color: #bd2b2e;
+      text-decoration: underline; }
+
+.wp-block-wordcamp-live-schedule .wordcamp-live-schedule__session-speaker {
+  font-size: 0.9em; }
+
+.wp-block-wordcamp-live-schedule .wordcamp-live-schedule__session-cat {
+  font-size: 0.8em; }
+
+@media (max-width: 600px) {
+  .wp-block-wordcamp-live-schedule .wordcamp-live-schedule__session {
+    display: block; }
+  .wp-block-wordcamp-live-schedule .wordcamp-live-schedule__session-track {
+    display: block;
+    border-right: none;
+    border-bottom: 1px solid #e5eced;
+    width: auto; } }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
