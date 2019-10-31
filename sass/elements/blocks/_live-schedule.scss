@@ -5,6 +5,34 @@ $header-bg: rgba($light-blue, 0.05);
 
 .wp-block-wordcamp-live-schedule {
 
+	.wordcamp-live-schedule__title {
+		position: relative;
+		margin-top: spacing(3) !important;
+		text-align: center;
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			display: block;
+			width: calc(50% - 93px); // 96/2 + 45px
+			background: url("#{$border-sides}") left center no-repeat;
+		}
+
+		&::before {
+			top: 0;
+			bottom: 0;
+			left: 0;
+			transform: scale(-1);
+		}
+
+		&::after {
+			top: 0;
+			bottom: 0;
+			right: 0;
+		}
+	}
+
 	.wordcamp-live-schedule__session {
 		border: $border-style;
 		margin-bottom: 0;

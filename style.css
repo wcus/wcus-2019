@@ -981,6 +981,27 @@ ol.has-fancy-style {
     background-position: left 3px;
     background-repeat: no-repeat; }
 
+.wp-block-wordcamp-live-schedule .wordcamp-live-schedule__title {
+  position: relative;
+  margin-top: 60px !important;
+  text-align: center; }
+  .wp-block-wordcamp-live-schedule .wordcamp-live-schedule__title::before, .wp-block-wordcamp-live-schedule .wordcamp-live-schedule__title::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: calc(50% - 93px);
+    background: url("https://wc-us.org/wp-content/uploads/2019/07/side-border.svg") left center no-repeat; }
+  .wp-block-wordcamp-live-schedule .wordcamp-live-schedule__title::before {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: scale(-1);
+            transform: scale(-1); }
+  .wp-block-wordcamp-live-schedule .wordcamp-live-schedule__title::after {
+    top: 0;
+    bottom: 0;
+    right: 0; }
+
 .wp-block-wordcamp-live-schedule .wordcamp-live-schedule__session {
   border: 1px solid #e5eced;
   margin-bottom: 0;
