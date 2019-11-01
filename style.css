@@ -3243,7 +3243,7 @@ table.wcpt-schedule {
           color: #21759b; } }
 
 body.page-template-day-of-event #wcus-hero {
-  background-image: url("https://wc-us.org/wp-content/uploads/2019/10/wcus-dayof-3.png");
+  background-image: url("https://2019.us.wordcamp.org/files/2019/10/wcus-dayof-3.png");
   padding-top: 30px;
   padding-bottom: 270px;
   text-align: center; }
@@ -3252,7 +3252,7 @@ body.page-template-day-of-event #wcus-hero {
     color: #fffffa; }
   @media (max-width: 600px) {
     body.page-template-day-of-event #wcus-hero::before {
-      background-image: url("https://wc-us.org/wp-content/uploads/2019/10/wcus-dayof-3.png"); } }
+      background-image: url("https://2019.us.wordcamp.org/files/2019/10/wcus-dayof-3.png"); } }
 
 /*--------------------------------------------------------------
 ## Comments
