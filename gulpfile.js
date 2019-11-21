@@ -9,7 +9,7 @@ function css() {
 	var processors = [
 		autoprefixer( { browsers: ['last 2 versions'] } )
 	];
-	return gulp.src( './sass/style.scss' )
+	return gulp.src( './sass/*.scss' )
 		.pipe( sass().on( 'error', sass.logError ) )
 		.pipe( postcss( processors ) )
 		.pipe( gulp.dest( '.' ) )
