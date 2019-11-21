@@ -1,0 +1,25 @@
+/*--------------------------------------------------------------
+>>> WCUS 2019 for 2020
+----------------------------------------------------------------
+This stylesheet is a subset of the full 2019 styles. Any
+2020-specific styles should be written here.
+--------------------------------------------------------------*/
+@import "abstracts/abstract";
+@import "normalize";
+@import "typography/typography";
+@import "elements/elements";
+@import "forms/forms";
+@import "navigation/navigation";
+@import "modules/accessibility";
+@import "modules/alignments";
+@import "modules/clearings";
+@import "layout/content";
+@import "site/secondary/widgets";
+@import "site/primary/posts-and-pages";
+@import "site/primary/404";
+@import "site/primary/comments";
+@import "media/media";
+
+/*--------------------------------------------------------------
+>>> Customizations
+---------------------------------------------------------------*/
